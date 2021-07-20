@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Menlo}
+
+.navbar {
+  width: 100%;
+  background-color: #FFFFFF;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ffffff;
+}
+
+.navbar a.active {
+  background-color: #FFFFFF;
+}
+
+sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.content {
+    text-align: justify;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.img {
+width: 20%
+}
+
+</style>
+<body>
+
+
+<div class="navbar">
+  <a href="index.html">Home</a> 
+  <a href="about.html">About</a> 
+  <a href="work.html">Work</a>
+  <a class:"active" href="contact.html">Contact</a> 
+</div>
+
+<hr>
+
+<div class="content">
+<p>My main email is matteo@matteodimaio.xyz, and any email sent to this address via <a href="https://tutanota.com/">Tutanota<a/> will be end-to-end encrypted.</p>
+<p>If you want to send encrypted mail via PGP, my PGP fingerprint is 2179 775C CCBB 59C6 84FF BCCF 5434 3BCB E77B ECF8, and you can find my public key <a href="publickey.txt">here</a>.</p>
+<p>Please support social media initatives with seeking common ground and rejecting addictive, exploitative business models at their heart. My WT Social profile is <a href="https://wt.social/u/matteo-di-maio">@matteodimaio</a>, and you can reach me on Mastodon at @matthewdimiaow@mastodon.social.</p>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("navbar");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html> 

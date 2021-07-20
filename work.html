@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Menlo}
+
+.navbar {
+  width: 100%;
+  background-color: #FFFFFF;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ffffff;
+}
+
+.navbar a.active {
+  background-color: #FFFFFF;
+}
+
+sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.content {
+  padding: 16px;
+  text-align: justify;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.img {
+width: 20%
+}
+
+</style>
+<body>
+
+
+<div class="navbar">
+  <a href="index.html">Home</a> 
+  <a class:"active" href="about.html">About</a> 
+  <a href="work.html">Work</a>
+  <a href="contact.html">Contact</a> 
+</div>
+
+<hr>
+
+<div class="content">
+
+<p>Recent</p>
+
+<p> <a href="https://www.newsroom.co.nz/the-new-zealand-novel-that-refuses-to-disappear">On the curious story of the bombing of John Mulgan's man alone...</a></p>
+
+<p>2021</p>
+
+<p> <a href="https://www.newsroom.co.nz/second-hand-bookstores-defeat-covid">On the resurgence of second-hand bookstores post-lockdown...</a> <a href="https://www.newsroom.co.nz/we-know-what-you-read-this-summer">On the summer reads of Kiwi politicians...</a> <a href="http://affinitymagazine.us/2021/03/27/on-horses-and-garden-lawns-how-to-break-free-of-history/">On social anthropology and the folly of societal norms...</a> <a href="https://www.cambridgenews.nz/2021/03/opinion-the-changing-times/">On the speed of history...</a> </p>
+
+<p>2020</p>
+
+<p> <a href="https://www.newsroom.co.nz/searching-for-the-holy-grail-of-rare-books">On New Zealand's rarest books...</a> <a href="https://www.newsroom.co.nz/get-thee-to-a-second-hand-bookstore">On the struggles of NZ's second-hand bookstores during lockdown...</a> <a href="http://affinitymagazine.us/2020/04/05/covid-19-is-not-stopping-school-climate-strikers/">On how school climate strikers are adapting to a socially distant world...</a> <a href="http://affinitymagazine.us/2020/04/09/life-and-simulated-death-with-mirror-touch-synaesthesia/">A profile of a girl who can feel everything you feel, via Mirror Touch Synaesthesia...</a> <a href="http://affinitymagazine.us/2020/05/03/dispatch-from-new-zealand-lockdown-eases-minus-the-protests/">A dispatch as lockdown ends...</a> <a href="http://affinitymagazine.us/2020/05/30/a-new-normal-an-insight-into-new-zealands-cautious-school-reopenings/">Insight into coming back to school, as one of the first countries in the world to do so...</a> <a href="http://affinitymagazine.us/2020/07/13/is-a-mental-health-crisis-coming-for-the-worlds-teens-the-risk-is-certainly-there/">A long-read on the threat Covid posed to teen mental health...</a> <a href="http://affinitymagazine.us/2020/09/08/how-teens-ought-to-think-about-a-i/">How teens ought to think about AI...</a> <a href="https://www.cambridgenews.nz/2020/05/its-back-to-school-with-social-distancing/">A back-to-school dispatch...</a> <a href="https://www.cambridgenews.nz/2020/04/life-in-our-sister-cities/">Life in Cambridge's sister cities...</a> </p>
+
+<p>2019/2018</p>
+
+<p> <a href="https://www.theneweuropean.co.uk/brexit-news/matteo-di-maio-slim-pickings-in-new-zealand-trade-deal-34740">On trade prospects post-Brexit and NZ's relationship with the "motherland"...</a> <a href="https://www.opendemocracy.net/en/can-europe-make-it/dominoes-are-falling-will-quitaly-prove-one-too-many-for-eu/">On a anti-EU movement in Italy, and prime minister troubles...</a> <a href="https://www.independent.co.uk/voices/trump-new-zealand-jacinda-ardern-liberal-politics-democracy-a8442561.html">On living in a haven of liberalism in a populist world... </a> <a href="https://citymonitor.ai/horizons/new-zealand-climate-change-driving-eco-nationalist-revival-4421">On econationalism in NZ </a> </p>
+
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+\
+var header = document.getElementById("navbar");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html> 
