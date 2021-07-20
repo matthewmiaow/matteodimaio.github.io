@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Matteo's website</title>
+<meta name="google-site-verification" content="oOO6T8Maa_ezG-YGgWCWyh2W8Wba33-dx8Sx_9DE5vg" />
+</head>
+<style>
+* {box-sizing: border-box}
+body {font-family: Menlo;
+background-color: #161515;
+}
+
+.navbar {
+  max-width: 100%;
+  background-color: #161515;
+  overflow: 100%;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #161515;
+}
+
+.navbar a.active {
+  background-color: #161515;
+}
+
+sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.content {
+    text-align: justify;
+  margin-left: 20%;
+  margin-right: 20%;
+  color: #ffffff;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+}
+
+
+</style>
+<body>
+
+
+<div class="navbar">
+  <a class="active" href="#">Home</a> 
+  <a href="about.html">About</a>
+  <a href="work.html">Work</a>
+  <a href="contact.html">Contact</a> 
+</div>
+
+<hr>
+
+<div class="aligncenter">
+    <img src="Matteo.png" alt="matteo" style="width:50%;>
+</div>
+
+<div class="content">
+<p> <b>Welcome to the web page of Matteo Di Maio</b> </p>
+<p>Journalism, tech and graphic design</p>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("navbar");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html> 
