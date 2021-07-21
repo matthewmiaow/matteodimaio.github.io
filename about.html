@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title> Matteo's website</title>
+<meta name="google-site-verification" content="oOO6T8Maa_ezG-YGgWCWyh2W8Wba33-dx8Sx_9DE5vg" />
+</head>
 <style>
 * {box-sizing: border-box}
-body {font-family: Menlo}
-background-color: #0a0a0a;
+body {font-family: Menlo;
+background-color: #161515;
+}
 
 .navbar {
-  width: 100%;
-  background-color: #0a0a0a;
-  overflow: auto;
+  max-width: 100%;
+  background-color: #161515;
+  overflow: 100%;
 }
 
 .navbar a {
@@ -22,6 +26,14 @@ background-color: #0a0a0a;
   text-align: center;
 }
 
+.navbar a:hover {
+  background-color: #161515;
+}
+
+.navbar a.active {
+  background-color: #161515;
+}
+
 sticky {
   position: fixed;
   top: 0;
@@ -29,23 +41,28 @@ sticky {
 }
 
 .content {
-  padding: 16px;
-  text-align: justify;
+    text-align: justify;
   margin-left: 20%;
   margin-right: 20%;
+  color: #ffffff;
 }
 
-.img {
-width: 20%
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
 }
+
 
 </style>
 <body>
 
 
 <div class="navbar">
-  <a href="index.html">Home</a> 
-  <a class:"active" href="about.html">About</a> 
+  <a class="active" href="#">Home</a> 
+  <a href="about.html">About</a>
   <a href="work.html">Work</a>
   <a href="contact.html">Contact</a> 
 </div>
@@ -58,7 +75,7 @@ width: 20%
 
 <script>
 window.onscroll = function() {myFunction()};
-\
+
 var header = document.getElementById("navbar");
 var sticky = header.offsetTop;
 
