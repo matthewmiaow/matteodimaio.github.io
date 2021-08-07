@@ -1,67 +1,47 @@
+
 <!DOCTYPE html>
+
 <html>
-<title> Work </title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+
+<title> Matteo’s website</title>
+
+</head>
+
 <style>
-* {box-sizing: border-box}
-body {font-family: Menlo;
-background-color: #161515;
-}
-  
-.navbar {
-  width: 100%;
-  background-color: #161515;
-  overflow: auto;
-}
 
-.navbar a {
-  float: left;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-  width: 25%; /* Four links of equal widths */
-  text-align: center;
-}
-
-.navbar a:hover {
-  background-color: #161515;
-}
-
-.navbar a.active {
-  background-color: #161515;
-}
-
-sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+body {
+Float: right;
+text-align: right;
+Margin-right: 20px;
+Margin-top: 30px;
+Font-family: Menlo, Times New Roman, Courier New;
 }
 
 .content {
-  padding: 16px;
-  text-align: justify;
-  margin-left: 20%;
-  margin-right: 20%;
-  color: white;
+float: right;
+text-align: right;
+width: 500px;
+font-family: "Courier New";
 }
-
-.img {
-width: 20%
-}
-
+    
 </style>
+
 <body>
 
+<div>
+<p> <b>Matteo Di Maio’s</b> home patch on the ‘Net </p>
+<div>
 
-<div class="navbar">
-  <a href="index.html">Home</a> 
-  <a class:"active" href="about.html">About</a> 
-  <a href="work.html">Work</a>
-  <a href="contact.html">Contact</a> 
+<div>
+<a href="#">Home</a><br/>
+<a href="about.html">About</a><br/>
+<a href="work.html">Work</a><br/>
+<a href="contact.html">Contact</a><br/>
+<a href="links.html">Links</a><br/>
+<a href="http://blog.matteodimaio.xyz">Blog</a><br/>
 </div>
-
-<hr>
 
 <div class="content">
 
@@ -87,19 +67,6 @@ width: 20%
 <p> <a href="https://matteodimaio2021.medium.com">Essays and reports</a> for school this year; classics, critical theory and statistics.</p>
 </div>
 
-<script>
-window.onscroll = function() {myFunction()};
-\
-var header = document.getElementById("navbar");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
 </body>
-</html> 
+
+</html>
