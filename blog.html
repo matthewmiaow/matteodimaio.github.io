@@ -317,90 +317,19 @@
 /***********/
 
 html {
-    padding: 0;
-    margin: 0;
     background-color: var(--GW-body-background-color);
     color: var(--GW-body-text-color);
-    font-size: 20px;
-    font-weight: 400;
-    font-family: var(--GW-serif-font-stack);
 }
 
 body {
-    max-width: 800px;
-
-    font-size: var(--GW-body-text-font-size);
-}
-
-@media only screen and (max-width: 649px) {
-    html {
-        font-size: 30px;
-    }
-}
-
-@media only screen and (min-width: 650px) {
-    body {
-        padding: 0 25px 0 10px;
-        margin: 0 auto;
-    }
-    @media only screen and (min-width: 1185px) {
-        body {
-            padding: 0 60px 0 5px;
-        }
-    }
-    main {
-        min-height: 100vh;
-        display: flex;
-        flex-flow: column;
-    }
-    /*  Breakpoint for sidenotes.
-        */
-    @media only screen and (min-width: 1761px) {
-        main {
-            position: relative;
-            right: 40px;
-        }
-    }
-    article {
-        flex: 1 1 auto;
-    }
-    #sidebar {
-        position: absolute;
-    }
-    header,
-    article {
-        margin-left: 155px;
-    }
-    @media only screen and (max-width: 1200px) {
-        header,
-        article {
-            margin-left: 145px;
-        }
-    }
-    @media only screen and (max-width: 1120px) {
-        header,
-        article {
-            margin-left: 140px;
-        }
-    }
-    @media only screen and (max-width: 1040px) {
-        header,
-        article {
-            margin-left: 135px;
-        }
-    }
-    @media only screen and (max-width: 960px) {
-        header,
-        article {
-            margin-left: 130px;
-        }
-    }
-}
-
-@media only screen and (max-width: 649px) {
-    body {
-        margin: 0 15px;
-    }
+margin-left: 1%;
+    margin-right: 14%;
+    padding-left: 4%;
+    font-family: "Source Serif Pro",  "Apple Garamond", "Baskerville", "Libre Baskerville", "Times New Roman", "Droid Serif", "Times", serif;
+    background-color: #f4f7f6;
+    color: #111;
+    max-width: 1400px;
+    counter-reset: sidenote-counter;
 }
 
 svg {
