@@ -3,6 +3,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -82,6 +83,7 @@ By the time the Arch of Constantine was erect"
 <link rel="preload" href="/SourceSerifPro-BASIC-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/SourceSerifPro-BASIC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/SourceSerifPro-BASIC-RegularItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/FancyEnglish.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
 <style>
     @font-face {
@@ -141,9 +143,18 @@ By the time the Arch of Constantine was erect"
         unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
         font-display: swap
     }
+
+@font-face {
+        font-family: 'Romantique Initials';
+        font-weight: 400;
+        font-style: normal;
+        src: url('/Romantiqueinitials.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
  
     body {
-    font-family: "Source Serif Pro",  "Apple Garamond", "Baskerville", "Libre Baskerville", "Times New Roman", "Droid Serif", "Times", serif;
+    font-family: "Source Serif Pro", "Intellecta Monograms Random Samples Eleven", "Romantique Initials", "Apple Garamond", "Baskerville", "Libre Baskerville", "Times New Roman", "Droid Serif", "Times", serif;
     margin: auto;
     padding: 20px;
     max-width: 720px;
@@ -412,10 +423,9 @@ html {
 }
 
 body {
-    margin-left: 1%;
-    margin-right: 14%;
+    margin-left: 15%;
+    margin-right: 4%;
     padding-left: 4%;
-    font-family: "Source Serif Pro",  "Apple Garamond", "Baskerville", "Libre Baskerville", "Times New Roman", "Droid Serif", "Times", serif;
     background-color: #f4f7f6;
     color: #111;
     max-width: 1400px;
@@ -438,16 +448,16 @@ h1 {
     line-height: 1;
 Text-align: center;
 font-variant: small-caps;
+Font-family: "Source Serif Pro";
 
 }
 
-h1:first-of-type: {
-    font-weight: 600;
-    margin-top: 4rem;
-    margin-bottom: 1.5rem;
-    font-size: 4rem;
-    line-height: 1;
-Font: Cheshire Initials;
+.drop-cap:first-letter {
+  float: left;
+  font-size: 10em;
+  line-height: 1.2em;
+margin: 0;
+Font-family: "Romantique Initials";
 }
 
 .title {
@@ -499,13 +509,6 @@ p.subtitle {
     line-height: 1;
 }
 
-h3:first-of-type:first-letter {
-  float: left;
-  font-size: 5em;
-  margin: 0 .1em 0 0;
-  line-height: 0.85;
-  font: Georgia
-}
 
 th {
 font-weight: 400;
@@ -924,7 +927,7 @@ MD_
     <nav>
       
 <a href="/">
-<img alt="HTML tutorial" src="https://matteodimaio.xyz/Blog-logo.png" width="200">
+<img alt="HTML tutorial" src="https://matteodimaio.xyz/logo.png" width="200">
 </a>
 
 
@@ -951,7 +954,8 @@ MD_
 <div><p><em>Essay in response to NCEA question on Roman conceptions of victory in artwork</em></p>
 <p>| <em>meta</em> <br/>
 |  <em>Finished • School</em>  |</p>
-<h3 id="by-the-time-the-arch-of-constantine-was-erected-in-315ce-the-roman-conception-of-victory-had-fully-morphed-to-fit-the-emperor-centric-model-of-the-late-imperial-period-victory-such-classical-artworks-made-clear-was-an-individualistic-triumph-of-the-emperor-built-near-the-coliseum-in-the-centre-of-the-roman-forum-the-arch-was-assembled-hastily-and-largely-consists-of-friezes-borrowed-from-existing-imperial-art-projects-the-battle-of-millvian-bridge-which-ended-the-intra-roman-civil-war-after-the-breakdown-of-the-tetrarchy-concluded-not-long-before-the-arch-was-finalized-the-various-friezes-across-the-work-reflect-several-key-ideas-the-romans-held-regarding-military-victory-this-being-after-all-a-triumphal-arch-victory-meant-crucially-that-wealth-would-flow-back-to-rome-but-it-also-meant-the-spread-of-civilization-into-supposedly-barbaric-areas-this-legitimized-imperialism-most-importantly-however-the-arch-reflects-the-central-conception-of-victory-as-an-individual-triumph-of-a-sole-near-divine-emperor-the-ara-pacis-built-in-13-bce-at-the-dawn-of-the-empire-comes-at-a-similar-post-civil-war-inflection-point-but-flatters-the-sole-emperor-less-given-the-republican-social-currents-of-the-time-this-essay-will-examine-the-two-structures-and-what-they-can-tell-us-about-roman-perceptions-of-victory">By the time the Arch of Constantine was erected in 315CE, the Roman conception of victory had fully morphed to fit the Emperor-centric model of the late imperial period. Victory, such classical artworks made clear, was an individualistic triumph of the Emperor. Built near the coliseum, in the centre of the Roman forum, the arch was assembled hastily, and largely consists of friezes “borrowed” from existing imperial art projects. The battle of Millvian bridge, which ended the intra-Roman civil war after the breakdown of the Tetrarchy, concluded not long before the arch was finalized. The various friezes across the work reflect several key ideas the Romans held regarding military victory, this being, after all, a triumphal arch. Victory meant, crucially, that wealth would flow back to Rome—but it also meant the spread of civilization into supposedly barbaric areas. This legitimized imperialism. Most importantly, however, the arch reflects the central conception of victory as an individual triumph of a sole, near-divine Emperor. The Ara Pacis, built in 13 BCE at the dawn of the Empire, comes at a similar post-civil war inflection point, but flatters the sole emperor less given the Republican social currents of the time. This essay will examine the two structures and what they can tell us about Roman perceptions of victory.</h3>
+<p class="drop-cap">
+By the time the Arch of Constantine was erected in 315CE, the Roman conception of victory had fully morphed to fit the Emperor-centric model of the late imperial period. Victory, such classical artworks made clear, was an individualistic triumph of the Emperor. Built near the coliseum, in the centre of the Roman forum, the arch was assembled hastily, and largely consists of friezes “borrowed” from existing imperial art projects. The battle of Millvian bridge, which ended the intra-Roman civil war after the breakdown of the Tetrarchy, concluded not long before the arch was finalized. The various friezes across the work reflect several key ideas the Romans held regarding military victory, this being, after all, a triumphal arch. Victory meant, crucially, that wealth would flow back to Rome—but it also meant the spread of civilization into supposedly barbaric areas. This legitimized imperialism. Most importantly, however, the arch reflects the central conception of victory as an individual triumph of a sole, near-divine Emperor. The Ara Pacis, built in 13 BCE at the dawn of the Empire, comes at a similar post-civil war inflection point, but flatters the sole emperor less given the Republican social currents of the time. This essay will examine the two structures and what they can tell us about Roman perceptions of victory.</p>
 <p>On the underside of the central walkway in Constantine’s Arch are two friezes “borrowed” from Trajan’s Great Frieze, the one on the right depicting Constantine being crowned by Nike, the victory goddess, with Athena (Minerva)  looking on approvingly. The historical context for this victory scene was the end of the most recent Civil War between the eastern and western arms of the Empire. Constantine, of the west, eventually defeated his eastern counterpart Maxentius at the battle of Millvian bridge. He was now the sole ruler of the entire Empire, and, as the arch implies, its most crucial general. This individualistic perception of military triumph did by no means begin with the Empire — Pompey and Crassus, both generals in the Republican period, received triumphs in their names. But what was unique to Roman imperial society was such an idealized portrayal of the leader. For example, the 10 roundrels or medallions on each side of the arch, which depict Constantine in various acts of masculine superiority. The roundrels, bar two, were originally Hadrian’s, but are remodeled to look like the current victor. Each contains a scene of extraordinary bravery or piety, like the hunting of a lion. This combination of historically-grounded symbolism—in the form of Constantine being crowned after the end of the war—and generalized idealistic portraits—in the form of the medallions—work together to place the onus of the victory on Constantine. Knowing, of course, that the medallions were originally Hadrian’s, it makes sense to infer that this emperor-centric conception of victory was common in imperial Rome.</p>
 <p>The Ara Pacis, or altar of peace, was in many ways also a piece of victory architecture, coming after the battle of Actium, which ended the civil war between Augustus and Marcus Anthony at the end of the breakdown of the Second Triumvirate. Here, the artistic focus was less on the battle and its victors, and more on the implications of the resultant peace. There are notable differences in how each artwork conceptualizes victory. For example, Augustus’ likeness is celebrated in the two central panels on either side of the altar. At this point in the transition from Republic to Empire, however, Augustus was still acting under a semblance of democracy, so, at least in central Italy, self-deification in art was impossible — by Constantine, a full throttle cult of personality was in throw. Here, the depiction is simply of Augustus’ family, a nod to his traditionalist values. The differences in the cultural expectations for how victory worked boil down to degrees of nuance — the Ara Pacis thanks Augustus for his peace-bringing victory through subtle pagan symbology in its form, while the Arch directly implicated Constantine in the battle. Scenes on the Ara Pacis like the Tellus Mater, for example, in which the earth goddess sits above dual spirits of the waterways, upon a cornucopia of barley and food and general prosperity, imply that the Augustan-delivered peace will lead to greater abundance in Rome.  The differing form of the two artworks is reflective hugely of the socio-cultural climate. Consider, for example, that the patrician lens on Caesar’s death was that is was because he pushed the line into monarchy too far. Suetonius, the bibliographer, wrote explicitly that Caesar’s death was due to his wish that he should be king. The Ara Pacis was set against the anti-monarchist sentiment coursing through the Roman patrician class after the murder, in which Augustus, after subsuming more power from the Senate, was rightly cautious to flatter his image in victory art of the time.</p>
 <p>A comparison of the Arch of Constantine to Augustus’ Ara Pacis makes the arch seem more prosaic in form — the scenes are of course legendary and certainly not examples of Hellenistic realism, but they do depict real Roman emperors in real historical events. The Ara Pacis is more allegorical, with friezes of the Lavinian Sow, or Aeneas, or the goddess Roma. References to the nascent Christian cult are not seen on the arch, but the allusions to Rome’s pagan origin stories are perhaps toned down. Constantine was certainly not uncomfortable with emperor worship, however, in the way Augustus certainly was.</p>
