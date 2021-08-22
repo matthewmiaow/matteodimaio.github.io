@@ -1,0 +1,1010 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>
+📜
+</text></svg>">
+  <title>
+The principles of extropy (2003)
+  </title>
+  
+  
+<link rel="preload" href="/SourceSansPro-BASIC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/SourceSerifPro-BASIC-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/SourceSerifPro-BASIC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/SourceSerifPro-BASIC-RegularItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/FancyEnglish.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
+<style>
+    @font-face {
+        font-family: 'Source Serif Pro';
+        font-weight: 400;
+        font-style: normal;
+        src: url('/SourceSerifPro-BASIC-Regular.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+    @font-face {
+        font-family: 'Source Serif Pro';
+        font-weight: 400;
+        font-style: italic;
+        src: url('/SourceSerifPro-BASIC-RegularItalic.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Source Serif Pro';
+        font-weight: 600;
+        font-style: normal;
+        src: url('/SourceSerifPro-BASIC-Semibold.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+    @font-face {
+        font-family: 'Source Serif Pro';
+        font-weight: 700;
+        font-style: normal;
+        src: url('/SourceSerifPro-BASIC-Bold.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-weight: 400;
+        font-style: normal;
+        src: url('/SourceSansPro-BASIC-Regular.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-weight: 400;
+        font-style: italic;
+        src: url('/SourceSansPro-BASIC-RegularItalic.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-weight: 700;
+        font-style: normal;
+        src: url('/SourceSansPro-BASIC-Bold.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+
+@font-face {
+        font-family: 'Romantique Initials';
+        font-weight: 400;
+        font-style: normal;
+        src: url('/Romantiqueinitials.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+ 
+    body {
+    font-family: "Source Serif Pro", "Intellecta Monograms Random Samples Eleven", "Romantique Initials", "Apple Garamond", "Baskerville", "Libre Baskerville", "Times New Roman", "Droid Serif", "Times", serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6,
+strong,
+b {
+    color: #222;
+}
+
+a {
+    color: #3273dc;
+    /*color: #ff5e6c;*/
+}
+
+.title {
+    text-decoration: none;
+    border: 0;
+}
+
+.title h1 {
+    font-size: 1.5em;
+}
+
+.title span {
+    font-weight: 400;
+}
+
+.bear::before {
+    content: "ᕦʕ •ᴥ•ʔᕤ";
+    font-weight: 400;
+}
+.bear:hover::before {
+    content: "ᕙʕ ಠᴥಠʔᕗ";
+    font-weight: 400;
+}
+
+nav a {
+    margin-right: 10px;
+}
+
+textarea,
+input:not([type="submit"]) {
+    background-color: inherit;
+    color: inherit;
+    border: 1px dashed;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.full-width textarea,
+.full-width input:not([type="submit"], [type="checkbox"]) {
+    width: 100%;
+}
+
+.inline {
+    width: auto !important;
+}
+
+textarea:required,
+input:required:not([type="submit"]){
+    border: 1px solid;
+}
+
+
+content {
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+code{
+    font-family: monospace;
+    padding: 2px;
+    background-color: #f2f2f2;
+    color: #222;
+    border-radius: 3px;
+}
+
+.highlight,
+.code {
+    padding: 1px 15px;
+    background-color: #f2f2f2;
+    color: #222;
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+}
+
+.helptext {
+    color: #777;
+    font-size: small;
+}
+
+.errorlist {
+    color: #eba613;
+    font-size: small;
+}
+
+#id_favicon {
+    width: 20px;
+    text-align: center;
+}
+
+#date-range,
+#initial-values,
+#import-contacts {
+    display: none;
+}
+
+#date-range:target,
+#initial-values:target,
+#import-contacts:target {
+    display: block;
+}
+
+/* dashboard post list and analytics */
+ul.post-list {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.post-list li {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px dashed;
+}
+
+ul.post-list li span {
+    flex: 0 0 130px;
+}
+
+ul.post-list li span.number {
+    flex: 0 0 50px;
+}
+
+ul.post-list li a {
+    flex: max-content;
+}
+
+ul.post-list li small {
+    text-align: right;
+    flex: 0 0 115px;
+}
+
+/* blog posts */
+ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.blog-posts li {
+    display: flex;
+}
+
+ul.blog-posts li span {
+    flex: 0 0 130px;
+}
+
+ul.blog-posts li a:visited {
+  color: #8b6fcb;
+}
+
+/* discovery feed */
+ul.discover-posts {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.discover-posts li {
+    display: flex;
+    line-height: 1.2;
+}
+
+ul.discover-posts li span {
+    flex: 0 0 40px;
+}
+
+ul.discover-posts li a:visited {
+  color: #8b6fcb;
+}
+
+ul.discover-posts li div {
+    padding-bottom: 8px;
+}
+
+ul.discover-posts li small {
+    color: #777 !important;
+}
+
+ul.discover-posts li small a {
+    color: #777 !important;
+}
+
+
+    @media (prefers-color-scheme: dark) {
+    body {
+        background-color:#01242e;
+        color: #ddd;
+    }
+
+    h1,
+    h2,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+        color: #eee;
+    }
+
+    a {
+        color: #8cc2dd;
+    }
+
+    code {
+        background-color: #777;
+    }
+
+    pre code {
+        color: #ddd;
+    }
+
+    blockquote {
+        color: #ccc;
+    }
+
+    .helptext {
+        color: #aaa;
+    }
+}
+
+
+/* Tufte CSS styles */
+html {
+    font-size: 15px;
+}
+
+body {
+    margin-left: 15%;
+    margin-right: 4%;
+    padding-left: 4%;
+    background-color: #f4f7f6;
+    color: #111;
+    max-width: 1400px;
+    counter-reset: sidenote-counter;
+}
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #151515;
+        color: #ddd;
+    }
+}
+
+h1 {
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    font-size: 3.2rem;
+    line-height: 1;
+Text-align: center;
+font-variant: small-caps;
+Font-family: "Source Serif Pro";
+
+}
+
+.drop-cap:first-letter {
+  float: left;
+  font-size: 10em;
+  line-height: 1.2em;
+margin: 0;
+Font-family: "Romantique Initials";
+}
+
+.title {
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    font-size: 0rem;
+    line-height: 1;
+color: #fffff8;
+
+}
+
+h2 {
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 2.1rem;
+    margin-bottom: 1.4rem;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+h3 {
+   font-size: 1.4rem;
+   line-height: 2rem;
+margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding-right: 1;
+    vertical-align: baseline;
+font-style: normal;
+Text-align: justify;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 55%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+p.subtitle {
+    font-style: italic;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    display: block;
+    line-height: 1;
+}
+
+
+th {
+font-weight: 400;
+margin-top: 2.1rem;
+margin-bottom: 1.4rem;
+font-size: 1.6rem;
+line-height: 1;
+font-style: normal;
+font-variant: small-caps;
+
+}
+
+.numeral {
+Font-size: 1.6rem;
+}
+
+.danger {
+    color: red;
+}
+
+article {
+    padding: 5rem 0rem;
+}
+
+.footer {
+color: #111;
+}
+
+section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+p,
+dl,
+ol,
+ul {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+p {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding-right: 1;
+    vertical-align: baseline;
+Text-align: justify; 
+}
+
+
+/* Chapter Epigraphs */
+div.epigraph {
+    margin: 5em 0;
+}
+
+div.epigraph > blockquote {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+div.epigraph > blockquote,
+div.epigraph > blockquote > p {
+    font-style: italic;
+}
+
+div.epigraph > blockquote > footer {
+    font-style: normal;
+color: #ffffff;
+}
+
+div.epigraph > blockquote > footer > cite {
+    font-style: italic;
+}
+/* end chapter epigraphs styles */
+
+blockquote {
+    font-size: 1.4rem;
+}
+
+blockquote p {
+    width: 55%;
+    margin-right: 40px;
+}
+
+blockquote footer {
+    width: 55%;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+section > p,
+section > footer,
+section > table {
+    width: 55%;
+}
+
+/* 50 + 5 == 55, to be the same width as paragraph */
+section > dl,
+section > ol,
+section > ul {
+    width: 50%;
+    -webkit-padding-start: 5%;
+}
+
+dt:not(:first-child),
+li:not(:first-child) {
+    margin-top: 0.25rem;
+}
+
+figure {
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    max-width: 55%;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin: 0 0 3em 0;
+}
+
+figcaption {
+    float: right;
+    clear: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    vertical-align: baseline;
+    position: relative;
+    max-width: 40%;
+}
+
+figure.fullwidth figcaption {
+    margin-right: 24%;
+}
+
+/* Links: replicate underline that clears descenders */
+a:link,
+a:visited {
+    color: inherit;
+}
+
+.no-tufte-underline:link {
+    background: unset;
+    text-shadow: unset;
+}
+
+a:link, .tufte-underline, .hover-tufte-underline:hover {
+    text-decoration: none;
+    background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(currentColor, currentColor);
+    background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(currentColor, currentColor);
+    -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: 0.03em 0 #fffff8, -0.03em 0 #fffff8, 0 0.03em #fffff8, 0 -0.03em #fffff8, 0.06em 0 #fffff8, -0.06em 0 #fffff8, 0.09em 0 #fffff8, -0.09em 0 #fffff8, 0.12em 0 #fffff8, -0.12em 0 #fffff8, 0.15em 0 #fffff8, -0.15em 0 #fffff8;
+    background-position: 0% 93%, 100% 93%, 0% 93%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    a:link, .tufte-underline, .hover-tufte-underline:hover {
+        background-position-y: 87%, 87%, 87%;
+    }
+}
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    a:link, .tufte-underline, .hover-tufte-underline:hover {
+        text-shadow: 0.03em 0 #151515, -0.03em 0 #151515, 0 0.03em #151515, 0 -0.03em #151515, 0.06em 0 #151515, -0.06em 0 #151515, 0.09em 0 #151515, -0.09em 0 #151515, 0.12em 0 #151515, -0.12em 0 #151515, 0.15em 0 #151515, -0.15em 0 #151515;
+    }
+}
+
+a:link::selection,
+a:link::-moz-selection {
+    text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
+    background: #b4d5fe;
+}
+
+/* Sidenotes, margin notes, figures, captions */
+img {
+    max-width: 100%;
+Text-align: center;
+}
+
+.sidenote, 
+.marginnote {
+    float: right;
+    clear: right;
+    margin-right: -30%;
+    width: 20%;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.3;
+    vertical-align: baseline;
+    position: relative;
+}
+
+.sidenote-number {
+    counter-increment: sidenote-counter;
+}
+
+.sidenote-number:after,
+.sidenote:before {
+    font-family: et-book-roman-old-style;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.sidenote-number:after {
+    content: counter(sidenote-counter);
+    font-size: 1rem;
+    top: -0.5rem;
+    left: 0.1rem;
+}
+
+.sidenote:before {
+    content: counter(sidenote-counter) " ";
+    font-size: 1rem;
+    top: -0.5rem;
+}
+
+blockquote .sidenote,
+blockquote .marginnote {
+    margin-right: -82%;
+    min-width: 59%;
+    text-align: left;
+}
+
+div.fullwidth,
+table.fullwidth {
+    width: 100%;
+}
+
+div.table-wrapper {
+    overflow-x: auto;
+    font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
+}
+
+.sans {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    letter-spacing: .03em;
+}
+
+code, pre > code {
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 1.0rem;
+    line-height: 1.42;
+    -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+}
+
+.sans > code {
+    font-size: 1.2rem;
+}
+
+h1 > code,
+h2 > code,
+h3 > code {
+    font-size: 0.80em;
+}
+
+.marginnote > code,
+.sidenote > code {
+    font-size: 1rem;
+}
+
+pre > code {
+    font-size: 0.9rem;
+    width: 52.5%;
+    margin-left: 2.5%;
+    overflow-x: auto;
+    display: block;
+}
+
+pre.fullwidth > code {
+    width: 90%;
+}
+
+.fullwidth {
+    max-width: 90%;
+    clear:both;
+}
+
+span.newthought {
+    font-variant: small-caps;
+    font-size: 1.2em;
+}
+
+input.margin-toggle {
+    display: none;
+}
+
+label.sidenote-number {
+    display: inline;
+}
+
+label.margin-toggle:not(.sidenote-number) {
+    display: none;
+}
+
+.iframe-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 760px) {
+    body {
+        width: 84%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    hr,
+    section > p,
+    section > footer,
+    section > table {
+        width: 100%;
+    }
+
+    pre > code {
+        width: 97%;
+    }
+
+    section > dl,
+    section > ol,
+    section > ul {
+        width: 90%;
+    }
+
+    figure {
+        max-width: 90%;
+    }
+
+    figcaption,
+    figure.fullwidth figcaption {
+        margin-right: 0%;
+        max-width: none;
+    }
+
+    blockquote {
+        margin-left: 1.5em;
+        margin-right: 0em;
+    }
+
+    blockquote p,
+    blockquote footer {
+        width: 100%;
+    }
+
+    label.margin-toggle:not(.sidenote-number) {
+        display: inline;
+    }
+
+    .sidenote,
+    .marginnote {
+        display: none;
+    }
+
+    .margin-toggle:checked + .sidenote,
+    .margin-toggle:checked + .marginnote {
+        display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 95%;
+        margin: 1rem 2.5%;
+        vertical-align: baseline;
+        position: relative;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    div.table-wrapper,
+    table {
+        width: 85%;
+    }
+
+    img {
+        width: 100%;
+Text-align: center;
+    }
+}
+
+      body:hover {
+        border-image: 
+url("/hit/7550")
+;
+        border-width: 0;
+      }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <a class="title" href="/">
+      <h1>
+        
+MD_
+
+      </h1>
+    </a>
+    <nav>
+      
+<a href="/">
+<img alt="HTML tutorial" src="https://matteodimaio.xyz/logo.png" width="200">
+</a>
+
+
+    </nav>
+  </header>
+  <main>
+    
+
+
+<h1>
+    Principles of extropy (2003) / Max Moore
+</h1>
+
+<p>
+    <i>
+        <time datetime="2021-08-07" pubdate>
+            22 Aug, 2021
+        </time>
+    </i>
+</p>
+
+
+<content>
+
+
+<p class=“drop-cap”>The Principles of Extropy first took shape in the late 1980s to outline an alternative lens through which to view the emerging and unprecedented opportunities, challenges, and dangers. The goal was &ndash; and is &ndash; to use current scientific understanding along with critical and creative thinking to define a small set of principles or values that could help make sense of the confusing but potentially liberating and existentially enriching capabilities opening up to humanity.</p>
+<p align="justify">The Principles of Extropy do not specify particular beliefs, technologies, or policies. The Principles do not pretend to be a complete philosophy of life. The world does not need another totalistic dogma. The Principles of Extropy <em>do</em>consist of a handful of principles (or values or perspectives) that codify proactive, life-affirming and life-promoting ideals. Individuals who cannot comfortably adopt traditional value systems often find the Principles of Extropy useful as postulates to guide, inspire, and generate innovative thinking about existing and emerging fundamental personal, organizational, and social issues.</p>
+<p align="justify" style="-webkit-text-size-adjust: auto;">The Principles are intended to be enduring, underlying ideals and standards. At the same time, both in content and by being revised, the Principles do not claim to be eternal truths or certain truths. I invite other independent thinkers who share the agenda of acting as change agents for fostering better futures to consider the Principles of Extropy as an evolving framework of attitudes, values, and standards &ndash; and as a shared vocabulary &ndash; to make sense of our unconventional, secular, and life-promoting responses to the changing human condition. I also invite feedback to further refine these Principles.</p>
+<p align="justify" style="-webkit-text-size-adjust: auto;"><strong>The Principles of Extropy</strong> <strong>in Brief</strong></p>
+<p><b style="-webkit-text-size-adjust: auto;"></b></p>
+<p align="justify"><b style="-webkit-text-size-adjust: auto;"><a name="0"><img border="0" src="https://web.archive.org/web/20110806105153im_/http://www.extropy.org/images/arrow1.jpg" width="14" height="15"></a>Perpetual Progress</b></p>
+<p></p>
+<p align="justify">Extropy means seeking more intelligence, wisdom, and effectiveness, an open-ended lifespan, and the removal of political, cultural, biological, and psychological limits to continuing development. Perpetually overcoming constraints on our progress and possibilities as individuals, as organizations, and as a species. Growing in healthy directions without bound.</p>
+<p><strong></strong></p>
+<p align="justify"><strong><a name="0"><img border="0" src="https://web.archive.org/web/20110806105153im_/http://www.extropy.org/images/arrow1.jpg" width="14" height="15"></a>Self-Transformation</strong></p>
+<p></p>
+<p align="justify">Extropy means affirming continual ethical, intellectual, and physical self-improvement, through critical and creative thinking, perpetual learning, personal responsibility, proactivity, and experimentation. Using technology &mdash; in the widest sense to seek physiological and neurological augmentation along with emotional and psychological refinement.</p>
+<p><strong></strong></p>
+<p align="justify"><strong><a name="0"><img border="0" src="https://web.archive.org/web/20110806105153im_/http://www.extropy.org/images/arrow1.jpg" width="14" height="15"></a>Practical Optimism</strong></p>
+<p></p>
+<p align="justify">Extropy means fueling action with positive expectations &ndash; individuals and organizations being tirelessly proactive. Adopting a rational, action-based optimism or &quot;proaction&quot;, in place of both blind faith and stagnant pessimism.</p>
+<p><strong></strong></p>
+<p align="justify"><strong><a name="0"><img border="0" src="https://web.archive.org/web/20110806105153im_/http://www.extropy.org/images/arrow1.jpg" width="14" height="15"></a>Intelligent Technology</strong></p>
+<p></p>
+<p align="justify">Extropy means designing and managing technologies not as ends in themselves but as effective means for improving life. Applying science and technology creatively and courageously to transcend &quot;natural&quot; but harmful, confining qualities derived from our biological heritage, culture, and environment.</p>
+<p><strong></strong></p>
+<p align="justify"><strong><a name="0"><img border="0" src="https://web.archive.org/web/20110806105153im_/http://www.extropy.org/images/arrow1.jpg" width="14" height="15"></a>Open Society - information and democracy</strong></p>
+<p></p>
+<p align="justify">Extropy means supporting social orders that foster freedom of communication, freedom of action, experimentation, innovation, questioning, and learning. Opposing authoritarian social control and unnecessary hierarchy and favoring the rule of law and decentralization of power and responsibility. Preferring bargaining over battling, exchange over extortion, and communication over compulsion. Openness to improvement rather than a static utopia. Extropia (&quot;ever-receding stretch goals for society&quot;) over utopia (&quot;no place&quot;).</p>
+<p><strong></strong></p>
+<p align="justify"><strong><a name="0"><img border="0" src="https://web.archive.org/web/20110806105153im_/http://www.extropy.org/images/arrow1.jpg" width="14" height="15"></a>Self-Direction</strong></p>
+<p></p>
+<p align="justify">Extropy means valuing independent thinking, individual freedom, personal responsibility, self-direction, self-respect, and a parallel respect for others.</p>
+<p><strong></strong></p>
+<p align="justify"><strong><a name="0"><img border="0" src="https://web.archive.org/web/20110806105153im_/http://www.extropy.org/images/arrow1.jpg" width="14" height="15"></a>Rational Thinking</strong></p>
+<p></p>
+<p align="justify">Extropy means favoring reason over blind faith and questioning over dogma. It means understanding, experimenting, learning, challenging, and innovating rather than clinging to beliefs.</p>
+<p align="justify" style="-webkit-text-size-adjust: auto;"><strong>The Principles of Extropy Unfolded</strong></p>
+<p><b style="-webkit-text-size-adjust: auto;"></b></p>
+<p align="justify"><b style="-webkit-text-size-adjust: auto;"><a name="BoundlessImprovement"></a>1. <u>PERPETUAL PROGRESS</u></b></p>
+<p></p>
+<p align="justify">Pursuing extropy means seeking continual improvement in ourselves, our cultures, and our environments. Perpetual progress involves improving ourselves physically, intellectually, and psychologically. It means valuing the perpetual pursuit of knowledge and understanding. Perpetual progress calls for us to question traditional assertions that we should leave human nature fundamentally unchanged in order to conform to &quot;God&rsquo;s will&quot; or to what is considered &quot;natural&quot;. Achieving deep and sustained progress leads us to consider fundamental alterations in human nature. This pursuit of betterment stimulates questioning of the traditional, biological, genetic, and intellectual constraints on our progress and possibility.</p>
+<p align="justify">Extropy recognizes the unique conceptual abilities of our species, and our opportunity to advance nature&rsquo;s evolution to new peaks. Humans as we currently exist can be seen as a transitional stage between our animal heritage and our posthuman future. On the early Earth, mindless matter combined so as to form the first self-replicating molecules and life began. Nature&rsquo;s evolutionary processes generated increasingly complex organisms with ever-more intelligent brains. The direct chemical responses of single-celled creatures led to the emergence of sensation and perception, allowing more subtle and responsive behaviors. Finally, with the development of the neocortex, conscious learning and experimentation became possible.</p>
+<p align="justify">With the advent of the conceptual awareness of humankind, the rate of advancement sharply accelerated as we applied intelligence, technology, and the scientific method to our condition. Upholding perpetual progress means sustaining and quickening this evolutionary process, overcoming human biological and psychological limits.</p>
+<p align="justify">Valuing perpetual progress is incompatible with acquiescing in the undesirable aspects of the human condition. Continuing improvements means challenging natural and traditional limitations on human possibilities. Science and technology are essential to eradicate constraints on lifespan, intelligence, personal vitality, and freedom. It is absurd to meekly accept &quot;natural&quot; limits to our life spans. Life is likely to move beyond the confines of the Earth &mdash; the cradle of biological intelligence &mdash; to inhabit the cosmos.</p>
+<p align="justify">Continual improvement will involve economic growth. We can continue to find resources to enable growth, and we can combine mindful growth with environmental quality. This means affirming a rational, non-coercive environmentalism aimed at sustaining and enhancing the conditions for flourishing. Individuals enjoying vastly extended life spans and greater wealth will be better positioned to intelligently manage resources and environment. An effective economic system encourages conservation, substitution, and innovation, preventing any need for a brake on growth and progress. Migration into space will immensely enlarge the energy and resources accessible to civilization. Extended life spans may foster wisdom and foresight, while restraining recklessness and profligacy. We can pursue continued individual and social improvement carefully and intelligently.</p>
+<p align="justify">Embodying this principle implies valuing perpetual learning and exploration as individuals, and encouraging our cultures to experiment and evolve. Valuing perpetual progress entails neither universal conservatism nor radicalism: it entails conserving what works for as long as it works and altering that which can be improved. In searching for continual improvement we must steer carefully between complacency and recklessness.</p>
+<p align="justify">No mysteries are sacrosanct, no limits unquestionable; the unknown will yield to the ingenious mind. The practice of progress challenges us to understand the universe, not to cower before mystery. It invites us to learn and grow and enjoy our lives ever more.</p>
+<p><strong></strong></p>
+<p align="justify"><strong><a name="ST"></a>2. <u>SELF-TRANSFORMATION</u></strong></p>
+<p></p>
+<p align="justify">Extropy focuses on self-improvement physically, intellectually, psychologically, and ethically. Self-transformation involving becoming better than we are, while affirming our current worth. Perpetual self-improvement requires us to continually re-examine our lives. Self-esteem in the present cannot mean self-satisfaction, since a probing mind can always envisage a better self in the future. In pursing transformation we are committed to deepening our wisdom, honing our rationality, and augmenting our physical, intellectual, and emotional qualities. In choosing self-transformation we choose challenge over comfort, innovation over emulation, transformation over torpor.</p>
+<p align="justify" style="-webkit-text-size-adjust: auto;">Extropy emerges from&nbsp;neophiles and experimentalists who track new research for more efficient means of achieving goals and who are willing to explore novel technologies of self-transformation. In our mission of continual advancement, we rely on our own judgment, seek our own path, and reject both blind conformity and mindless rebellion. Self-transformation will frequently lead us to diverge from the mainstream because growth is not chained by any dogma, whether religious, political, or intellectual. The responsibility for self-transformation means choosing our values and behavior reflectively, standing firm when necessary but responding flexibly to new conditions.</p>
+<p align="justify">Advanced, emerging, and future technologies deserve close attention for their potential in supporting self-transformation. Valuing self-transformation entails supporting biomedical research to understand and control the aging process, and implementing effective means of extending vitality. It means practicing and planning for biological and neurological augmentation through means such as information technology, neurochemical enhancement, communications networks, critical and creative thinking skills, cognitive techniques and training, accelerated learning strategies, and applied cognitive psychology. We can shrug off the limits imposed by our natural heritage, applying the evolutionary gift of our rational, empirical intelligence as we strive to surpass the confines of our human limits.</p>
+<p align="justify">Since every individual lives with others, we need to continually improve our personal relationships. Our interests intertwine with those of others making acting for mutual benefit an effective strategy. Self-transformation implies not self-absorption but a continued attempt to understand others and to work toward optimal relationships based on mutual honesty, open communication, and benevolence. Evolution left us with animalistic urges and emotions that sometimes prompt us thoughtlessly into acts of hostility, conflict, fear, and domination. Through self-awareness and understanding of and respect for others we can rise above these urges.</p>
+<p align="justify">While valuing other people we will do better to focus primarily on self-transformation rather than trying to change others. Recognizing the dangers of controlling others suggests that we try to improve the world through setting an example and by communicating ideas. We may be intensely committed to the education and improvement of others, but only through voluntary means that respect the rationality, autonomy, and dignity of the individual.</p>
+<p><strong></strong></p>
+<p align="justify"><strong><a name="DO"></a>3. <u>PRACTICAL OPTIMISM</u></strong></p>
+<p></p>
+<p align="justify">Extropy entails espousing a positive, dynamic, empowering attitude. It means seeking to realize our ideals in <em>this</em> world, today and tomorrow. Rather than enduring an unfulfilling life sustained by fantasies of another life (whether in daydreams or in an &quot;afterlife&quot;), An extropic orientation implies directing our energies enthusiastically into moving toward an ever-evolving vision.</p>
+<p align="justify">Living vigorously, effectively, and joyfully, requires prevailing over gloom, defeatism, and negativism. We need to acknowledge problems, whether technical, social, psychological, or ecological, but we need not allow them to dominate our thinking and our direction. We can respond to gloom and defeatism by exploring and exploiting new possibilities. Practical optimism entails an optimistic view of the future, a commitment to discovering potent remedies to many ancient human ailments, and taking charge to <em>create</em> that future. Practical optimism disallows passively waiting and wishing for tomorrow; it propels us exuberantly into immediate activity, confidently confronting today&rsquo;s challenges while generating more potent solutions for our future. We take personal responsibility by taking charge and creating the conditions for success.</p>
+<p align="justify">Practical optimists question limits others take for granted. Observing accelerating scientific and technical learning, ascending standards of living, and evolving social and moral practices, we can project and encourage continuing progress. Today there are more researchers studying aging, medicine, computers, biotechnology, nanotechnology, and other enabling disciplines than in all of history. Technological and social development continue to accelerate. Practical optimists strive to maintain the pace of progress by encouraging support for crucial research, and pioneering the implementation of its results. As practical optimists we maintain a constructive skepticism to the limiting beliefs held by our associates, our society, and ourselves. We see past current obstacles by retaining a fundamental creative openness to possibilities.</p>
+<p align="justify">Adopting practical optimism means focusing on possibilities and opportunities, being alert to solutions and potentialities. It means refusing to moan about the unavoidable, accepting and learning from mistakes rather than staying in a loop of self-punishment. Practical optimists prefer to be for rather than against, to create solutions rather than to protest against what exists. This optimism is also realism in that we can take the world as it is and do not complain that life is not fair. Practical optimism requires us to take the initiative, to jump up and plow into our difficulties, our actions declaring that we <em>can</em> achieve our goals.</p>
+<p align="justify">By embodying practical optimism in our actions and words we can inspire others to excel. We are responsible for taking the initiative in spreading this invigorating optimism; sustaining and strengthening our own dynamism is more easily achieved in a mutually reinforcing environment. We stimulate optimism in others by communicating our extropic values and by living our ideals and standards.</p>
+<p align="justify">Practical optimism and passive faith are incompatible. Practical optimism means critical optimism. Faith in a better future is confidence that an external force, whether God, State, or even extraterrestrials, will solve our problems. Faith breeds passivity by promising progress as a gift bestowed on us by superior forces. But, in return for the gift, faith requires a fixed belief in and supplication to external forces, thereby creating dogmatic beliefs and irrational behavior. Practical optimism fosters initiative and intelligence, assuring us that we are capable of improving life through our own efforts. Opportunities and possibilities are everywhere, calling to us to seize them and to build upon them. Attaining our goals requires that we believe in ourselves, work diligently, and be willing to revise our strategies.</p>
+<p align="justify">Where others see difficulties, practical optimists see challenges. Where others give up, we move forward. Where others say <em>enough is enough</em>, we say <em>let&rsquo;s try again with a fresh approach</em>. Practical optimists espouse personal, social, and technological evolution into ever better forms. Rather than shrinking from future shock, practical optimists continue to advance the wave of evolutionary progress.</p>
+<p><strong></strong></p>
+<p align="justify"><strong>4. <u>INTELLIGENT TECHNOLOGY</u></strong></p>
+<p></p>
+<p align="justify">Extropy entails strongly affirming the value of science and technology. It means using practical methods to advance the goals of expanded intelligence, superior physical abilities, psychological refinement, social advance, and indefinite life spans. It means preferring science to mysticism, and technology to prayer. Science and technology are indispensable means to the achievement of our most noble values, ideals, and visions and to humanity&rsquo;s further evolution. We have a responsibility to foster these disciplined forms of intelligence, and to direct them toward eradicating the barriers to the unfolding of extropy, radically transforming both the internal and external conditions of existence.</p>
+<p align="justify">We can think of &quot;intelligent technology&quot; in a variety of useful ways. In one sense it refers to intelligently designed technology that well serves good human purposes. In a second sense it refers to technology with inherent intelligence or adaptability or possessed of an instinctual ability. In a third sense, it means using technology to enhance our intelligence &ndash; our abilities to learn, to discover, process, absorb, and inter-connect knowledge.</p>
+<p align="justify">Technology is a natural extension and expression of human intellect and will, of creativity, curiosity, and imagination. We can foresee and encourage the development of ever more flexible, smart, responsive technology. We will co-evolve with the products of our minds, integrating with them, finally integrating our intelligent technology into ourselves in a posthuman synthesis, amplifying our abilities and extending our freedom.</p>
+<p align="justify">Profound technological innovation should excite rather than frightens us. We would do well to welcome constructive change, expanding our horizons, exploring new territory boldly and inventively. Careful and cautious development of powerful technologies makes sense, but we should neither stifle evolutionary advancement nor cringe before the unfamiliar. Timidity and stagnation are ignoble, uninspiring responses. Humans can surge ahead &mdash; riding the waves of future shock &mdash; rather than stagnating or reverting to primitivism. Intelligent use of bio- nano- and information technologies and the opening of new frontiers in space, can remove resource constraints and discharge environmental pressures.</p>
+<p align="justify">The coming years and decades will bring enormous changes that will vastly expand our opportunities and abilities, transforming our lives for the better. This technological transformation will be accelerated by life extending biosciences, biochemical and genetic engineering, intelligence intensifiers, smarter interfaces to swifter computers, worldwide data networks, virtual reality, intelligent agents, pervasive, affective, and instinctual computing systems, neuroscience, artificial life, and molecular nanotechnologies.</p>
+<p align="justify"><strong><a name="SO"></a>5. <u>OPEN SOCIETY</u></strong></p>
+<p align="justify">Extropic societies are open societies that protect the free exchange of ideas, the freedom to criticize, and the liberty to experiment. Coercively suppressing bad ideas can be as dangerous as the bad ideas themselves. Better ideas must be allowed to emerge in our cultures through an evolutionary process of creation, mutation, and critical selection. The freedom of expression of an open society is best protected by a social order characterized by voluntary relationships and exchanges. In advocating open societies we oppose self-proclaimed and imposed &quot;authorities&quot;, and we are leery of coercive political solutions, unquestioning obedience to leaders, and inflexible, excessive hierarchies that smother initiative and intelligence.</p>
+<p align="justify">We can apply critical rationalism to society by holding all institutions and processes open to continued improvement. Sustained progress and effective, rational decision-making require the diverse sources of information and differing perspectives that flourish in open societies. Centralized command of behavior constrains exploration, diversity, and dissenting opinion. We can pursue extropic goals in numerous types of open social orders but not in theocracies or authoritarian or totalitarian systems.</p>
+<p align="justify">Societies with pervasive and coercively enforced centralized control cannot allow dissent and diversity. Yet open societies can allow institutions of all kinds to exist &mdash; whether participatory, autonomy-maximizing institutions or hierarchical, bureaucratic institutions. Within an open society individuals, through their voluntary consent, may choose to submit themselves to more restrictive arrangements in the form of clubs, private communities, or corporate entities. Open societies allow more rigidly organized social structures to exist so long as individuals are free to leave. By serving as a framework within which social experimentation can proceed, open societies encourage exploration, innovation, and progress.</p>
+<p align="justify">Open societies avoids utopian plans for &quot;the perfect society&quot;, instead appreciating the diversity in values, lifestyle preferences, and approaches to solving problems. In place of the static perfection of a utopia, we might imagine a dynamic &quot;extropia&quot; &mdash; an open, evolving framework allowing individuals and voluntary groupings to form the institutions and social forms they prefer. Even where we find some of those choices mistaken or foolish, open societies affirm the value of a system that allows all ideas to be tried with the consent of those involved.</p>
+<p align="justify">Extropic thinking conflicts with the technocratic idea of coercive central control by insular, self-proclaimed experts. No group of experts can understand and control the endless complexity of an economy and society composed of other individuals like themselves. Unlike utopians of all stripes, extropic individuals and institutions do not seek to control the details of people&rsquo;s lives or the forms and functions of institutions according to a grand over-arching plan.</p>
+<p align="justify">Since we all live in society, we are deeply concerned with its improvement. But that improvement must respect the individual. Social engineering should be piecemeal as we enhance institutions one by one on a voluntary basis, not through a centrally planned coercive implementation of a single vision. We are right to seek to continually improve social institutions and economic mechanisms. Yet we must recognize the difficulties in improving complex systems. We need to be radical in intent but cautious in approach, being aware that alterations to complex systems bring unintended consequences. Simultaneous experimentation with numerous possible solutions and improvements &mdash; social parallel processing &mdash; works better than utopian centrally administered technocracy.</p>
+<p align="justify">Law and government are not ends in themselves but means to happiness and progress. In advocating open societies we do not attach ourselves to any particular laws or economic structures as ultimate ends. We will favor those laws and policies which at any time seem most conducive to maintaining and expanding the openness and progress of society. Fostering open societies means opposing dangerous concentrations of coercive power and favoring the rule of law instead of the arbitrary rule of authorities. Because coercive power corrupts and leads to the suppression of alternative ideas and practices, we need to apply rules and laws equally to legislators and enforcers without exception. Open societies are frameworks for the peaceful, productive pursuit of individual and group goals.</p>
+<p align="justify">In open societies people seek neither to rule nor to be ruled. Individuals should be in charge of their own lives. Healthy societies require a combination of liberty and responsibility. For open societies to exist, individuals must be free to pursue their own interests in their own way. But for individuals and societies to flourish, liberty must come with personal responsibility. The demand for freedom without responsibility is an adolescent&rsquo;s demand for license.</p>
+<p><strong></strong></p>
+<p align="justify"><strong><a name="SelfOwnership"></a>6. <u>SELF-DIRECTION</u></strong></p>
+<p></p>
+<p align="justify">Extropy sees personal self-direction as a desirable counterpart to open societies. Self-direction increases in importance as culture and technology present us with an ever-expanding range of choice. Each individual should be free and responsible for deciding for themselves in what ways to change or to stay the same. Self-direction means being clear about our values and our purposes. Having clear purpose in life not only brings both practical and emotional rewards but also protects against manipulation and control by others. Freedom from others brings fulfillment and personal progress only when combined with self-direction.</p>
+<p align="justify">Successfully directing ourselves requires first creating a clear (yet developing) sense of self then implementing that vision by exercising self-control. The human self contains a bundle of desires and drives built into the biological organism through evolutionary processes and cultural influence. Taking charge of ourselves requires choosing from among competing desires and subpersonalities. While spontaneity plays an important role, creating and sustaining a healthy and successful self requires self-discipline and persistence.</p>
+<p align="justify">Personal responsibility and autonomy go hand-in-hand with self-experimentation. It is extropic to take responsibility for the consequences of our choices, refusing to blame others for the results of our own free actions. Experimentation and self-transformation require risks; individuals require the freedom to evaluate potential risks and benefits for themselves, applying their own judgment, and assuming responsibility for outcomes. Pursuing extropy means vigorously resisting coercion from those who try to impose their judgments of the safety and effectiveness of various means of self-experimentation. Personal responsibility and self-determination are incompatible with authoritarian centralized control, which stifles the choices and spontaneous ordering of autonomous persons.</p>
+<p align="justify">Coercion of mature, sound minds outside the realm of self-protection, whether for the purported &quot;good of the whole&quot; or for the paternalistic protection of the individual, is unacceptable. Compulsion breeds ignorance and weakens the connection between personal choice and personal outcome, thereby destroying personal responsibility. Extropy calls for rational individualism &ndash; or cognitive independence, living by our own judgment, making reflective, informed choices, profiting from both success and shortcoming.</p>
+<p align="justify">Since self-direction applies to everyone, this principle requires that we respect the self-direction of others. This means trade not domination, rational discussion not coercion or manipulation, and cooperation rather than conflict wherever feasible. Appreciating that other persons have their own lives, purposes, and values implies seeking win-win cooperative solutions rather than trying to force our interests at the expense of others. We respect the autonomy and rationality of others by learning to communicate effectively and working towards mutually beneficial solutions.</p>
+<p align="justify">The virtue of benevolence should guide our interactions with the self-directed lives of others. Benevolence naturally goes along with an appreciation of the value in other selves and with confidence in our own self. We act benevolently not by acting under obligation to sacrifice personal interests; we embody benevolence when we have a disposition to help others. Self-direction means approaching others as potential sources of value, friendship, cooperation, and pleasure. A benevolent disposition not only embodies more emotional stability, resilience, and vitality than cynicism, hostility, and meanness, it is also more likely to induce similar responses from others. Benevolence implies a presumption of common moral decencies including politeness, patience, and honesty. While self-direction cannot mean getting along with everyone at any cost, it does imply seeking to maximize the benefits of interactions with others.</p>
+<p align="justify">Self-direction means being in charge of our lives. This requires choosing actions intelligently. This in turn requires independent thinking. One of the less noble human qualities shows itself when anyone gives up intellectual control to others. Self-direction calls on us to rise above the surrender of independent judgement that we see &ndash; especially in religion, politics, morals, and relationships. Directing our lives asks us to determine for ourselves our values, purposes, and actions. New technologies offer more choices not only over what we do but also over who we are physically, intellectually, and psychologically. By taking charge of ourselves we can use these new means to advance ourselves according to our personal values.</p>
+<p align="justify"><strong><a name="RationalThinking"></a>7. <u>RATIONAL THINKING</u></strong></p>
+<p align="justify" style="-webkit-text-size-adjust: auto;">Extropy affirms reason, critical inquiry, intellectual independence, and honesty. Rational thinking means rejecting blind faith and the passive, comfortable thinking that leads to dogma, conformity, and stagnation. Commitment to positive self-transformation requires critically analyzing our current beliefs, behaviors, and strategies.&nbsp;To think rationally we will readily admit error and learn from it rather than professing infallibility. Embodying the disciple of rational thinking means preferring analytical thought to fuzzy but comfortable delusion, empiricism to mysticism, and independent evaluation to conformity. It means affirming values, standards, and principles but remaining distant from dogma &ndash; whether religious, political, or personal &ndash; because of its blind faith, debasement of human worth, and systematic irrationality.</p>
+<p align="justify">Rational people are not cynics who reject every new idea. Nor are they gullible people who accept every new idea without question. Rational thinkers employ critical and creative thinking to discover great new ideas while filtering out indefensible ideas whether new or old. Rational thinkers recognize that advancing individually and socially calls for critically challenging the dogmas and assumptions of the past while resisting the popular delusions of the present.</p>
+<p align="justify">Rational thinkers accept no final intellectual authorities. No individual, no institution, no book, and no single principle can serve as the source or standard of truth. All beliefs are fallible and must be open to testing and challenging. Rational thinkers do not accept revelation, authority, or emotion as reliable sources of knowledge. Rational thinkers place little weight on claims that cannot be checked. In thinking rationally, we rely on the judgement of our own minds while continually re-examining our own intellectual standards and skills. Emphasizing the primacy of reason should not be taken to imply a rejection of emotion or intuition. These can carry useful information and play a legitimate role in thinking. But rational thinkers do not take feelings and intuitions as irreducible, unquestionable authorities. Those processes can more productively be seen as unconscious information processing, the accuracy of which is uncertain.</p>
+<p align="justify">Extropy implies seeking objective knowledge and truth. We can know reality, and through science the human mind can progressively overcome its cognitive and sensory biases to comprehend the world as it really is. Humans deserve to be proud of what we have learned, yet should appreciate how much we have yet to learn. We should have confidence in our ability to advance our knowledge, yet remain wary of the human propensity to settle for and defend any comfortable explanation.</p>
+<p align="justify"><a name="0"><img border="0" src="https://web.archive.org/web/20110806105153im_/http://www.extropy.org/images/arrow1.jpg" width="14" height="15"></a><strong><u>FURTHER INFORMATION</u></strong></p>
+<p align="justify">Version 3.11 is the September 20, 2003 version with purely linguistic and formatting corrections to version 3.1. My thanks to Brett Paatsch for edits.</p>
+<p align="justify">More extended treatments of these principles can be found in essays, some of which have been published in <strong><em>EXTROPY&nbsp;</em>(</strong>now<strong><em>&nbsp;Extropy Online&nbsp;</em></strong>at<strong>www.extropy.org/eo/)</strong>. Practical Optimism was previously called Dynamic Optimism. The original (1990) version of &quot;Dynamic Optimism&quot; appeared in <em>Extropy</em> #8. A different, more practically-oriented version is available on the web. Self-Transformation was discussed in &quot;Technological Self-Transformation&quot; in <em>Extropy</em> #10. The principle of Self-Direction was developed in &quot;Self-Ownership: A Core Transhuman Virtue&quot; in <em>Extropy Online</em>. A pancritical rationalist understanding of rational thinking was presented in &quot;Pancritical Rationalism: An Extropic Metacontext for Memetic Rationalism&quot; at the EXTRO 1 conference in 1994. The original essay on transhumanism, &quot;Transhumanism: Toward a Futurist Philosophy&quot; was published in <em>Extropy</em>, and a later statement of transhumanism was published in <em>Free Inquiry</em> as &quot;On Becoming Posthuman&quot;. Answers to many questions arising from The Principles of Extropy are answered in the FAQ at <a href="https://web.archive.org/web/20110806105153/http://www.extropy.org/">www.extropy.org</a>.</p>
+<p align="justify"><strong><a name="0"><img border="0" src="https://web.archive.org/web/20110806105153im_/http://www.extropy.org/images/arrow1.jpg" width="14" height="15"></a><u>COPYRIGHT POLICY</u></strong></p>
+<p align="justify" style="-webkit-text-size-adjust: auto;">The Principles of Extropy 3.11 may be reproduced in any publication, private or public, physical or electronic, without need for further authorization, so long as the document appears unedited, in its entirety and with this notice. Notification of publication or distribution would be appreciated. The Principles of Extropy 3.1 are copyright &copy;2003 by Max More. Contact: more@extropy.org or max@maxmore.com.</p>
+
+</content>
+
+
+<p>
+
+</p>
+
+
+
+  </main>
+  <footer>
+    
+  </footer>
+</body>
+
+</html>
