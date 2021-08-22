@@ -858,24 +858,87 @@ url("/hit/7550")
 <body>
   <header>
     <a class="title" href="/">
-      <h1>
-        
-MD_
 
-      </h1>
-    </a>
-    <nav>
-      
-<a href="/">
-<img alt="HTML tutorial" src="https://matteodimaio.xyz/logo.png" width="200">
+<h1>
+    Typography, tYpOgRaPhY and tpygoarhpy
+</h1>
+
+<p>
+    <i>
+        <time datetime="2021-08-19" pubdate>
+            19 Aug, 2021
+        </time>
+    </i>
+</p>
+
+
+<content>
+<div><a href="/">
+<img align="Right" src="https://matteodimaio.xyz/Ornate.png" width="200"/>
 </a>
+<p><em>A shallow-dive into word recognition models</em></p>
+<p>| <em>meta</em> <br/>
+|  <em>In progress • Psychology</em>  |</p>
+<hr/>
+<h3 id="one-of-the-things-that-has-always-fascinated-me-as-a-typography-geek-apart-from-whether-the-use-of-comic-sans-in-my-english-speech-presentation-class-s-powerpoints-knocked-a-standard-deviation-of-one-s-average-grades-is-how-little-of-a-letter-you-actually-have-to-see-to-identity-it">One of the things that has always fascinated me as a typography geek (apart from whether the use of comic sans in my English speech presentation class's PowerPoints knocked a standard deviation of one's average grades) is how little of a letter you actually have to see to identity it.</h3>
+<p>I've tested myself with several of the PDFs loaded onto my kindle, which when rotated into landscape mode have the majority of the top line cut off, like so:</p>
+<p><img alt="" src="https://matteodimaio.xyz/kindle.JPG"/></p>
+<p>I am, surprisingly, able to read this line with ease, however. ("The adoption of certain practices can be understood as an attempt at...").</p>
+<p>This appears to be applicable across other languages, as well. In 2012, the Israeli typographer Liron Lavi Turkenich created a hybrid typography between Hebrew and Arabic, dubbed "Aravrit", a mash between "evrit" and "arabit". From her <a href="https://www.lironlavi.com/2012/08/06/aravrit/">blog</a>:</p>
+<blockquote>
+<p>Aravrit is an experimental writing system presenting a set of hybrid letters merging Hebrew and Arabic. Each new letter is composed of the top half of an Arabic letter and the bottom half of a Hebrew letter so in In order to read it- any Hebrew reader would look at the bottom half of the letters, and an Arabic reader would look at the top half. The identifying features of each letter were retained, however, in both languages, the fusion required some compromises. It was crucial to maintain readability and have a minimal detriment to the original script.</p>
+</blockquote>
+<p><img alt="" src="https://matteodimaio.xyz/aravit.PNG"/></p>
+<p>So why can humans do this?</p>
+<p>Well, some letters certainly have distinctive bottom shapes, like "g", "y", "p", etc. Others, however, like "n", "m", "i", "r" are nearly indistinguishable when placed close together in a sentence, thus something more general like their collective shape or relationship to other letters could be important.</p>
+<p>Is one's brain reading each individual letter, or simply recognizing combinations of parts of letters? As the mischievous condition <a href="https://www.dictionary.com/e/typoglycemia/">typoglycemia</a> makes clear, the actual order of letters doesn't matter that much in decoding English. So one can read, for example:</p>
+<blockquote>
+<p>Aoccdrnig to a rscheearch at Cmabrigde Uinervtisy, it deosn’t mttaer in waht oredr the ltteers in a wrod are, the olny iprmoetnt tihng is taht the frist and lsat ltteer be at the rghit pclae. The rset can be a toatl mses and you can sitll raed it wouthit porbelm. Tihs is bcuseae the huamn mnid deos not raed ervey lteter by istlef, but the wrod as a wlohe.</p>
+</blockquote>
+<p>There are some terms and conditions to this. The words need to be pretty short, the "a", "be", "the", "or" words can't be scrambled, and it's a lot easier to read a word if adjacent letters are simply swapped ("ahtelitc" vs "alhiettc", for "athletic"), and, of course, if the combination of words is unoriginal.</p>
+<p>The reason I bring this "bottom-reading"  phenomena up is that it seems to contradict several of the existing word recognition models in psycholinguistics.</p>
+<p>There's a lively academic study of word recognition models (recently revived, of course, by the boom in image recognition Neural Networks). Essentially, there are three main possible models of word recognition: the word shape model, and the serial and parallel models. Kevin Larson, a Microsoft psychologist, <a href="https://docs.microsoft.com/en-us/typography/develop/word-recognition">does a meta-review</a> of all three in depth; I'll try to give a summary of his article here.</p>
+<p>The word shape model claims that word recognition comes from the pattern of "ascending, descending, and neutral characters." This model is by far the oldest of the three, proposed first by James Cattell in 1886. Cattell discovered the "Word Superiorty Effect":</p>
+<blockquote>
+<p>He presented letter and word stimuli to subjects for a very brief period of time (5-10ms), and found that subjects were more accurate at recognizing the words than the letters. He concluded that subjects were more accurate at recognizing words in a short period of time because whole words are the units that we recognize.</p>
+</blockquote>
+<p>This finding was backed by Reicher 1969. He presented subjects with strings of letters--half the time the real words, half the time not. Subjects were asked if one of two letters were contained in the string, for example D or K. "Reicher found that subjects were more accurate at recognizing D when it was in the context of WORD than when in the context of ORWD." But more recent studies are not so kind to the word shape model. Letters tend to be recognized faster in the context of pseudo words--"mave"--than in the context of nonwords--"amve."  And yet, pseudowords do not have a familiar shape. This seems to suggest the word superiority effect is the result of letter combinations and phonetics, rather than word shape. (We can remember the M in mave because reading it causes us to mentally vocalize the "m" sound.) So why is "ahtelitc" recognizable but "alhiettc" not, for "athletic"? They generally have the same shape, so that writes off the shape model. It seems to be that some of the key phonetics of "athletic" are preserved from a simple adjacent letter reorganization--"eh-lee-tc".</p>
+<p>We can test the word shape model ourselves. Compare your speed when reading the following two passages:</p>
+<ul>
+<li><p>Assuming the chimpanzee jaw is similar in structure to that of our last common ancestor...</p>
+</li>
+<li><p>AsSUmINg tHe cHIMpAnZeE JAw Is SiMiLAr iN sTRuCtUre tO tHAt of OuR lAsT cOmMoN AnCeStOr.</p>
+</li>
+</ul>
+<p>The second should be slower if word shape if important; studies find this very thing. So what's wrong here? The reading of pseudo words is also impacted by alternating cases; thus the effect is not caused by word shape, just by alternating letters being, well, harder to read.</p>
+<p>The serialization model holds that we read words left to right, one letter at a time. This seems convincing at first; we definitely read shorter words faster than long words. However, we can disprove the central assumptions ourselves. Compare the time it takes you to read:</p>
+<ul>
+<li>c     o.   v     e     r     s        n      i      n       e     a     c     h.   i.   e    v    e    m     e     n.     t.    s    t.    a.   n.    d.    a.    r.   d      s</li>
+</ul>
+<p>With:</p>
+<ul>
+<li>covers nine achievement standards</li>
+</ul>
+<p>The most commonly accepted model today is thus the parallel model. This model says that "the letters within a word are recognized simultaneously, and the letter information is used to recognize the words." This model is based on modern eye capture technology; for example, we read not by smoothly skimming a line but by jumping between key points in each word--movements called "saccades." 10-15% of saccades are actually backwards moving.</p>
+<p>Basically:</p>
+<blockquote>
+<p>The eye movement literature demonstrates that we are using letter information to recognize words, as we are better able to read when more letters are available to us. We combine abstracted letter information across saccades to help facilitate word recognition, so it is letter information that we are gathering in the periphery. And finally we are using word space information to program the location of our next saccade.</p>
+</blockquote>
+<p>Haber & Schindler 1981 found that readers were twice as likely to fail to notice a misspelling in a proofreading task when the misspelling was consistent with word shape (tesf, 13% missed) than when it was inconsistent with word shape (tesc, 7% missed). This however, could simply be an issue of letter shape--"f" looks similar to "t", which doesn't necessarily mean the issue is that the whole word shape is changed. Likewise, in another study, "tban" was 15% missed and "tnan" was 19% missed, while "tdan" was only 8% missed and "tman" 10% missed. Thus, having a similar letter shape--b and n--is more important than a similar word shape "d" but different letter shape, or a different word and letter shape "m".</p>
+<p>So the tldr from all this is that it probably is letter shape and order we're looking at, not word shape. We recognize individual letters in parallel and use that accrued information to recognize words; we don't read serially.</p>
+<p>But the ability of humans to read only the bottom 1/4 of text and still get the right words seems to invalidate this. Neither a consistent letter or word shape is needed for reading--the shape of "biscuit" as a whole is obviously different when the top is chopped off and yet we can read it. Likewise, the same ease is possible with only the top 1/4 of text. Interestingly, a word like "think" can't be read from the bottom 1/4 as serial phonetic letters, given the middle chunk are indistinguishable from each other; it's impossible to identity "i", "h", and "n" from each other when the top is chopped off and they are isolated.</p>
+<p>So this is definitely another nail in the coffin of the word shape model, and it complicates the parallel model. We can certainly be sure we haven’t got everything.</p>
+<p>When it comes to bottom reading, a key thing to note is that it’s easy to read words in sentences, but not in isolation, despite both examples containing only the bottoms of words. This supports a more heavily contextual model of reading; when we have the general gist, we can run a mental ‘autocorrect’ model of what the next word is likely to be, cross-referencing this with the forms we actually see. For example:</p>
+<p><img alt="" src="https://matteodimaio.xyz/thinkshort.PNG"/></p>
+<p>Is harder to comprehend than:</p>
+<p><img alt="" src="https://matteodimaio.xyz/thinklong.JPG"/></p>
+</div>
+</content>
 
 
-    </nav>
-  </header>
-  <main>
-    
-Typography, tYpOgRaPhY and tpygoarhpy
+<p>
+
+</p>
 
 
   </main>
