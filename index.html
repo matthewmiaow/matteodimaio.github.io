@@ -943,7 +943,7 @@ url("/hit/7550")
     var t = setInterval(function() {
         if (window.goatcounter && window.goatcounter.visit_count) {
             clearInterval(t)
-            window.goatcounter.visit_count({append: 'body'})
+            window.goatcounter.visit_count({append: 'body', style: 'div {border-color: #f4f7f6; background-color: #f4f7f6;}})
         }
     }, 100)
 </script>
