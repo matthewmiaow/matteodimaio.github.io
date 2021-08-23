@@ -1,0 +1,933 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>
+📜
+</text></svg>">
+  <title>
+Just a little fable with a moral’: Philocleon and the comic spirit in the Wasps
+  </title>
+  
+
+
+  <meta property="og:image" content="https://matteodimaio.xyz/6526D03A-E91B-4811-944F-29D1539DB204.PNG">
+
+  <meta property="twitter:image" content="https://matteodimaio.xyz/6526D03A-E91B-4811-944F-29D1539DB204.PNG">
+
+  
+<link rel="preload" href="/SourceSansPro-BASIC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/SourceSerifPro-BASIC-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/SourceSerifPro-BASIC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/SourceSerifPro-BASIC-RegularItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/FancyEnglish.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
+<style>
+    @font-face {
+        font-family: 'Source Serif Pro';
+        font-weight: 400;
+        font-style: normal;
+        src: url('/SourceSerifPro-BASIC-Regular.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+    @font-face {
+        font-family: 'Source Serif Pro';
+        font-weight: 400;
+        font-style: italic;
+        src: url('/SourceSerifPro-BASIC-RegularItalic.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Source Serif Pro';
+        font-weight: 600;
+        font-style: normal;
+        src: url('/SourceSerifPro-BASIC-Semibold.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+    @font-face {
+        font-family: 'Source Serif Pro';
+        font-weight: 700;
+        font-style: normal;
+        src: url('/SourceSerifPro-BASIC-Bold.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-weight: 400;
+        font-style: normal;
+        src: url('/SourceSansPro-BASIC-Regular.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-weight: 400;
+        font-style: italic;
+        src: url('/SourceSansPro-BASIC-RegularItalic.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-weight: 700;
+        font-style: normal;
+        src: url('/SourceSansPro-BASIC-Bold.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+
+@font-face {
+        font-family: 'Romantique Initials';
+        font-weight: 400;
+        font-style: normal;
+        src: url('/Romantiqueinitials.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+ 
+    body {
+    font-family: "Source Serif Pro", "Intellecta Monograms Random Samples Eleven", "Romantique Initials", "Apple Garamond", "Baskerville", "Libre Baskerville", "Times New Roman", "Droid Serif", "Times", serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6,
+strong,
+b {
+    color: #222;
+}
+
+a {
+    color: #3273dc;
+    /*color: #ff5e6c;*/
+}
+
+.title {
+    text-decoration: none;
+    border: 0;
+}
+
+.title h1 {
+    font-size: 1.5em;
+}
+
+.title span {
+    font-weight: 400;
+}
+
+.bear::before {
+    content: "ᕦʕ •ᴥ•ʔᕤ";
+    font-weight: 400;
+}
+.bear:hover::before {
+    content: "ᕙʕ ಠᴥಠʔᕗ";
+    font-weight: 400;
+}
+
+nav a {
+    margin-right: 10px;
+}
+
+textarea,
+input:not([type="submit"]) {
+    background-color: inherit;
+    color: inherit;
+    border: 1px dashed;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.full-width textarea,
+.full-width input:not([type="submit"], [type="checkbox"]) {
+    width: 100%;
+}
+
+.inline {
+    width: auto !important;
+}
+
+textarea:required,
+input:required:not([type="submit"]){
+    border: 1px solid;
+}
+
+
+content {
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+code{
+    font-family: monospace;
+    padding: 2px;
+    background-color: #f2f2f2;
+    color: #222;
+    border-radius: 3px;
+}
+
+.highlight,
+.code {
+    padding: 1px 15px;
+    background-color: #f2f2f2;
+    color: #222;
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+}
+
+.helptext {
+    color: #777;
+    font-size: small;
+}
+
+.errorlist {
+    color: #eba613;
+    font-size: small;
+}
+
+#id_favicon {
+    width: 20px;
+    text-align: center;
+}
+
+#date-range,
+#initial-values,
+#import-contacts {
+    display: none;
+}
+
+#date-range:target,
+#initial-values:target,
+#import-contacts:target {
+    display: block;
+}
+
+/* dashboard post list and analytics */
+ul.post-list {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.post-list li {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px dashed;
+}
+
+ul.post-list li span {
+    flex: 0 0 130px;
+}
+
+ul.post-list li span.number {
+    flex: 0 0 50px;
+}
+
+ul.post-list li a {
+    flex: max-content;
+}
+
+ul.post-list li small {
+    text-align: right;
+    flex: 0 0 115px;
+}
+
+/* blog posts */
+ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.blog-posts li {
+    display: flex;
+}
+
+ul.blog-posts li span {
+    flex: 0 0 130px;
+}
+
+ul.blog-posts li a:visited {
+  color: #8b6fcb;
+}
+
+/* discovery feed */
+ul.discover-posts {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.discover-posts li {
+    display: flex;
+    line-height: 1.2;
+}
+
+ul.discover-posts li span {
+    flex: 0 0 40px;
+}
+
+ul.discover-posts li a:visited {
+  color: #8b6fcb;
+}
+
+ul.discover-posts li div {
+    padding-bottom: 8px;
+}
+
+ul.discover-posts li small {
+    color: #777 !important;
+}
+
+ul.discover-posts li small a {
+    color: #777 !important;
+}
+
+
+    @media (prefers-color-scheme: dark) {
+    body {
+        background-color:#01242e;
+        color: #ddd;
+    }
+
+    h1,
+    h2,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+        color: #eee;
+    }
+
+    a {
+        color: #8cc2dd;
+    }
+
+    code {
+        background-color: #777;
+    }
+
+    pre code {
+        color: #ddd;
+    }
+
+    blockquote {
+        color: #ccc;
+    }
+
+    .helptext {
+        color: #aaa;
+    }
+}
+
+
+/* Tufte CSS styles */
+html {
+    font-size: 15px;
+}
+
+body {
+    margin-left: 15%;
+    margin-right: 4%;
+    padding-left: 4%;
+    background-color: #f4f7f6;
+    color: #111;
+    max-width: 1400px;
+    counter-reset: sidenote-counter;
+}
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #151515;
+        color: #ddd;
+    }
+}
+
+h1 {
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    font-size: 3.2rem;
+    line-height: 1;
+Text-align: center;
+font-variant: small-caps;
+Font-family: "Source Serif Pro";
+
+}
+
+.drop-cap:first-letter {
+  float: left;
+  font-size: 10em;
+  line-height: 1.2em;
+margin: 0;
+Font-family: "Romantique Initials";
+}
+
+.title {
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    font-size: 0rem;
+    line-height: 1;
+color: #fffff8;
+
+}
+
+h2 {
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 2.1rem;
+    margin-bottom: 1.4rem;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+h3 {
+   font-size: 1.4rem;
+   line-height: 2rem;
+margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding-right: 1;
+    vertical-align: baseline;
+font-style: normal;
+Text-align: justify;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 55%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+p.subtitle {
+    font-style: italic;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    display: block;
+    line-height: 1;
+}
+
+
+th {
+font-weight: 400;
+margin-top: 2.1rem;
+margin-bottom: 1.4rem;
+font-size: 1.6rem;
+line-height: 1;
+font-style: normal;
+font-variant: small-caps;
+
+}
+
+.numeral {
+Font-size: 1.6rem;
+}
+
+.danger {
+    color: red;
+}
+
+article {
+    padding: 5rem 0rem;
+}
+
+.footer {
+color: #111;
+}
+
+section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+p,
+dl,
+ol,
+ul {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+p {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding-right: 1;
+    vertical-align: baseline;
+Text-align: justify; 
+}
+
+
+/* Chapter Epigraphs */
+div.epigraph {
+    margin: 5em 0;
+}
+
+div.epigraph > blockquote {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+div.epigraph > blockquote,
+div.epigraph > blockquote > p {
+    font-style: italic;
+}
+
+div.epigraph > blockquote > footer {
+    font-style: normal;
+color: #ffffff;
+}
+
+div.epigraph > blockquote > footer > cite {
+    font-style: italic;
+}
+/* end chapter epigraphs styles */
+
+blockquote {
+    font-size: 1.4rem;
+}
+
+blockquote p {
+    width: 55%;
+    margin-right: 40px;
+}
+
+blockquote footer {
+    width: 55%;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+section > p,
+section > footer,
+section > table {
+    width: 55%;
+}
+
+/* 50 + 5 == 55, to be the same width as paragraph */
+section > dl,
+section > ol,
+section > ul {
+    width: 50%;
+    -webkit-padding-start: 5%;
+}
+
+dt:not(:first-child),
+li:not(:first-child) {
+    margin-top: 0.25rem;
+}
+
+figure {
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    max-width: 55%;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin: 0 0 3em 0;
+}
+
+figcaption {
+    float: right;
+    clear: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    vertical-align: baseline;
+    position: relative;
+    max-width: 40%;
+}
+
+figure.fullwidth figcaption {
+    margin-right: 24%;
+}
+
+/* Links: replicate underline that clears descenders */
+a:link,
+a:visited {
+    color: inherit;
+}
+
+.no-tufte-underline:link {
+    background: unset;
+    text-shadow: unset;
+}
+
+a:link, .tufte-underline, .hover-tufte-underline:hover {
+    text-decoration: none;
+    background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(currentColor, currentColor);
+    background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(currentColor, currentColor);
+    -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: 0.03em 0 #fffff8, -0.03em 0 #fffff8, 0 0.03em #fffff8, 0 -0.03em #fffff8, 0.06em 0 #fffff8, -0.06em 0 #fffff8, 0.09em 0 #fffff8, -0.09em 0 #fffff8, 0.12em 0 #fffff8, -0.12em 0 #fffff8, 0.15em 0 #fffff8, -0.15em 0 #fffff8;
+    background-position: 0% 93%, 100% 93%, 0% 93%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    a:link, .tufte-underline, .hover-tufte-underline:hover {
+        background-position-y: 87%, 87%, 87%;
+    }
+}
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    a:link, .tufte-underline, .hover-tufte-underline:hover {
+        text-shadow: 0.03em 0 #151515, -0.03em 0 #151515, 0 0.03em #151515, 0 -0.03em #151515, 0.06em 0 #151515, -0.06em 0 #151515, 0.09em 0 #151515, -0.09em 0 #151515, 0.12em 0 #151515, -0.12em 0 #151515, 0.15em 0 #151515, -0.15em 0 #151515;
+    }
+}
+
+a:link::selection,
+a:link::-moz-selection {
+    text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
+    background: #b4d5fe;
+}
+
+/* Sidenotes, margin notes, figures, captions */
+img {
+    max-width: 100%;
+Text-align: center;
+}
+
+.sidenote, 
+.marginnote {
+    float: right;
+    clear: right;
+    margin-right: -30%;
+    width: 20%;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.3;
+    vertical-align: baseline;
+    position: relative;
+}
+
+.sidenote-number {
+    counter-increment: sidenote-counter;
+}
+
+.sidenote-number:after,
+.sidenote:before {
+    font-family: et-book-roman-old-style;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.sidenote-number:after {
+    content: counter(sidenote-counter);
+    font-size: 1rem;
+    top: -0.5rem;
+    left: 0.1rem;
+}
+
+.sidenote:before {
+    content: counter(sidenote-counter) " ";
+    font-size: 1rem;
+    top: -0.5rem;
+}
+
+blockquote .sidenote,
+blockquote .marginnote {
+    margin-right: -82%;
+    min-width: 59%;
+    text-align: left;
+}
+
+div.fullwidth,
+table.fullwidth {
+    width: 100%;
+}
+
+div.table-wrapper {
+    overflow-x: auto;
+    font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
+}
+
+.sans {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    letter-spacing: .03em;
+}
+
+code, pre > code {
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 1.0rem;
+    line-height: 1.42;
+    -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+}
+
+.sans > code {
+    font-size: 1.2rem;
+}
+
+h1 > code,
+h2 > code,
+h3 > code {
+    font-size: 0.80em;
+}
+
+.marginnote > code,
+.sidenote > code {
+    font-size: 1rem;
+}
+
+pre > code {
+    font-size: 0.9rem;
+    width: 52.5%;
+    margin-left: 2.5%;
+    overflow-x: auto;
+    display: block;
+}
+
+pre.fullwidth > code {
+    width: 90%;
+}
+
+.fullwidth {
+    max-width: 90%;
+    clear:both;
+}
+
+span.newthought {
+    font-variant: small-caps;
+    font-size: 1.2em;
+}
+
+input.margin-toggle {
+    display: none;
+}
+
+label.sidenote-number {
+    display: inline;
+}
+
+label.margin-toggle:not(.sidenote-number) {
+    display: none;
+}
+
+.iframe-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 760px) {
+    body {
+        width: 84%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    hr,
+    section > p,
+    section > footer,
+    section > table {
+        width: 100%;
+    }
+
+    pre > code {
+        width: 97%;
+    }
+
+    section > dl,
+    section > ol,
+    section > ul {
+        width: 90%;
+    }
+
+    figure {
+        max-width: 90%;
+    }
+
+    figcaption,
+    figure.fullwidth figcaption {
+        margin-right: 0%;
+        max-width: none;
+    }
+
+    blockquote {
+        margin-left: 1.5em;
+        margin-right: 0em;
+    }
+
+    blockquote p,
+    blockquote footer {
+        width: 100%;
+    }
+
+    label.margin-toggle:not(.sidenote-number) {
+        display: inline;
+    }
+
+    .sidenote,
+    .marginnote {
+        display: none;
+    }
+
+    .margin-toggle:checked + .sidenote,
+    .margin-toggle:checked + .marginnote {
+        display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 95%;
+        margin: 1rem 2.5%;
+        vertical-align: baseline;
+        position: relative;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    div.table-wrapper,
+    table {
+        width: 85%;
+    }
+
+    img {
+        width: 100%;
+Text-align: center;
+    }
+}
+
+      body:hover {
+        border-image: 
+url("/hit/7550")
+;
+        border-width: 0;
+      }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <a class="title" href="/">
+      <h1>
+        
+MD_
+
+      </h1>
+    </a>
+    <nav>
+      
+<a href="/">
+<img alt="HTML tutorial" src="https://matteodimaio.xyz/logo.png" width="200">
+</a>
+
+
+    </nav>
+  </header>
+  <main>
+    
+
+
+<h1>
+    Just a little fable with a moral’: Philocleon and the comic spirit in the Wasps
+</h1>
+
+<p>
+    <i>
+        <time datetime="2021-08-07" pubdate>
+            23 Aug, 2021
+        </time>
+    </i>
+</p>
+
+<content>
+<div><p><em> Discuss the extent to which a classical author uses character(s) to educate others </em></p>
+<p>| <em>meta</em> <br/>
+|  <em>In progress • School • Classical Studies</em>  |</p>
+<p class="drop-cap">
+Just a little fable with a moral -- nothing too highbrow". That is how the Attic comic Aristophanes introduces his play 'the Wasps'. And this is largely true: Philocleon—the incorrigible comic hero of Aristophanes' play—is first and foremost a people’s slapstick; he is designed to entertain. But his characterization, through the literary techniques of satire, metaphor and humour, conveys an educational message to the Athenian demos of the 4th century BC: they are being deluded by the city state's raging demagogues on the matter of the law courts. Against the backdrop of the ongoing Pleponesian war, Aristophanes constructs a dichotomy between Philocleon and his antithesis Bdelycleon—pro-Cleon and anti-Cleon, old and new, father and son—to gently chide the Athenian people on their tribal politics. 
+</p>
+
+<p>In popular comedy, engagement must come before education. Thus our introduction to the character of Philocleon in the prologue of the play is through comic misdirection. Xanthias and Sosias, slaves of the Bdelycleon household, speak of a 'wild animal' with a mysterious affliction (noson allokoton nosei) that they are guarding for their master. They then lead the audience of topical Athenian figures in a wild guessing game—is the disease of the ‘wild animal’ (Philocleon the old man) alcoholism? Xenophilia? No—it is "trial-ophillia", an addiction to attending the 'Heliaia' or Supreme Court of Athens. The resulting comic episode expands on this initial characterisation of Philocleon as a manic agent. He attempts to break out of the house through a bizarre set of animalistic schemes—scurrying up the waste pipe like a rat, or clinging to the underside of a donkey in a reference to the Odyssey. What is obviously an episode of physical, exaggerated comedy introduces the main educational theme of the play: that the people of Athens are almost humorously addicted to the law courts. The political backdrop to the Wasps is the war with Sparta, and the numerous divisions that conflict has revealed within Athens. The city’s assembly is at the will of Nicias and Cleon, both powerful orators, each on opposing sides of the debate raging over whether to “seek honorable peace” with Sparta, or to push forward with the war. The sway of these demagogues is, according to Bdelycleon, who can be considered to present Aristophanes’ view, enabled by the band of elderly men who frequent the courts, invariably calling guilty verdicts on the defendants. Raised in a time before Sophism was in vogue, men of Philocleon’s generation are easily swayed by speeches. They are, as Bdelycleon says, being trained by the demagogues to ‘know the hand that feeds [them]”. When someone is sent to the courts of charges of slander directed by Cleon and his circle at anyone who poses an inconvenience, it is the demagogues who say: “Go on, good dog, bit him! That’s the way!”</p>
+
+<p>The rising absurdist melodrama of the post-Agon ‘trial of the dogs’ paints Philocleon as increasingly irrational; it is here that Aristophanes lectures the audience on the moral corruption of the law courts. The ‘trial of the dogs’ is the comic heart of the play—wonderfully silly. After the Agon, Philocleon is desolate, convinced by his son that he is really a slave to the demagogues. Bdelycleon suggests the family put the kitchen mutt “the dog of Laches” on trial, so that his father can scratch his itch to convict. The mock-trial is really another way of presenting the same message as the Agon. In Philocleon’s pleasure at the concept of a mock trial, Aristophanes communicates the moral irrelevance of the law courts; it is just a game, a show. Philocleon is not a juror for matters of judicial principle. As Bdelycleon notes in the Agon: “If a defendant comes up with a bribe, the prosecution and defense will share it, and they’ll play up each other convincingly.” This moral point—that the law courts are a farce—is supported by the characterisation of Philocleon as irrational and vindictive. After being tricked by his son into voting to acquit the accused dog, Philocleon cries in tragicomic despair: “I've let an accused man escape? You gods forgive me, I was not myself!” This character trait of irrational obsession is careful contrasted with the thoughtfulness of Bdelycleon—who spends Philocleon's portion of the Agon judiciously taking notes. Of course, there is an irony to this debate—the skeptic of rhetoric winning at rhetoric. Likewise, in the aftermath of the Agon, the now-persuaded chorus remarks of the son that: "he seems to treat others with a deep consideration / not often found in those of the younger generation." </p>
+
+<p>The dichotomy that begins in the names of Aristophanes’ two protagonists—Philo/for, Bdely/against— is reflective of a broader socio-political and cultural class division in Athens, in which opposing sides of the debate on the war, of the debate on the demagogues, and of the cultural life of the city, are unable to reconcile. Subtle hints of this kind of political tribalism are littered throughout the play. Towards the end of the Agon, Bdelycleon despairs at the shallowness of civic discourse in Athens, which is reduced to the act of slinging epithets at fellow citizens: “You monarchist, you pro-spartan, you long haired Amynias -- I can't go down to the market without this kind of civic slander." Likewise, the chorus leader in the Parabasis talks of the days in which “men were men / and you should have seen us then” as opposed to the “namby-pamby youngsters of today.” After his rhetorical defeat in the Agon, and his swindling in the Trial of the Dogs, Philocleon resolves to learn the refined ways of modern citizens from his son. The humour here largely derives from what is a reversal of the traditional paternal paradigm, in which the father would educate the son in the ways of society. This reversal is played to comic effect in the dialogue of Philocleon; “I’m his only father, you know. He has trouble letting go of me.” Despite Bdelycleon’s efforts, Philocleon is unable to assimilate to high society; this is a parallel to the seemingly incurable divisions of Athens as a whole. Apparently cured of his ‘trilophillia’, Philocleon leaves the party of the second half of the play in a bundle of comic energy, having stolen a concubine and assaulted a citizen. Threatened with legal action by the bereaved of the city, Philocleon tries and fails to tell the refined anecdotes his son says are the mark of the civilized nouveaux-riche: “Did you hear the one about Sybaris who fell out of a chariot? … [what about the one] where the Delphians accused Aesop…” In the end, the unquenched spirit of Philocleon is unable to reconcile with contemporary society. </p>
+
+<p>These later scenes are telling of the exact nature of Aristophanes' educational message. It was not in vogue for poets of Aristophanes' social caliber to propose political reform. As Lateiner 1982 has pointed out, Aristophanes and his contemporary Euripides "represent an important, if controversial, disinclination for politics that is clearly evident by the beginning of the Pleponesian War … Most rich men, rarely known as active democrats, find it useful to assert this quiet lack of involvement." In this vein, Aristophanes does not quell the manic energy of Philocleon to lecture about the importance of restraint in politics, he merely redirects it from the courts to the bedroom. (Consider the scene in which he kidnaps a concubine…) Until the very end, Philocleon retains the vigor of the "Attic wasp".</p>
+
+<p>So in this sense the poet is presenting to the Athenian people a civic dilemma, but also an emotional dilemma; a generational and cultural divide, in which the spirit of the elderly is fundamentally incompatible with the high and refined life Bdelycleon would have them lead. This is in line with the reading proposed by Dover: that the Wasps is "within the tradition of didacticism directed not towards structural changes but upon human attitudes and patterns of behaviour." This seems to be the larger truth, though not the whole truth, given a general conservatism and a disdain for the popular tyranny of the courts inspires the construction of Philocleon's persona in the first place. A suggestion is perhaps also made that the poor elderly have no other choice for achieving financial dignity than the three obols of jury pay—a sad, De facto old age pension. Ultimately, the epilogue of the play consists not of the concession of the father, or a suggestion to the audience of a system to replace the law courts, once the old Attic wasps have learnt to resist their 'trilophillic' tendencies. Instead it is the old man, as incorrigible as ever, triumphing over the young in a manic dance, as Aristophanes's chorus leader, in self-congratulation, asks whether the audience has ever seen "a cleverer way of leading off a play?" </p>
+</div>
+</content>
+
+
+<p>
+
+</p>
+
+
+
+  </main>
+  <footer>
+    
+  </footer>
+</body>
+
+</html>
