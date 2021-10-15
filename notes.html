@@ -903,25 +903,39 @@ MD_
 	<hr>
 <h2 id="paying-people-to-vote-wisely"> Paying people to vote for good policies.</h2>
 <hr>
-<p>A possibly workable idea to improve the quality of our politics, based off the fundamental premise that we are better at deciding as a <em>demos</em> whether a policy was good or not in retrospect than we are at deciding whether a policy will be good in the future. Thus, every five to ten years after a government institutes a policy/set of policies, everyone in the country votes on whether they were good or not. If they are found “good” with a high majority—say 70%—everyone who voted for them gets paid. We could fund this with a prediction market, whereby the government sells shares in whether or not the policy will be found good, and uses the returns to reward the voters in five/ten years. This should have the intended effect of making everyone do a bit more research into the policies they are voting for.
+*Confidence level/s: very speculative, low*
+
+
+<p>It seems that one of the key optimization problems in democratic decision making is that we often have little incentive to vote for policies that we truly think will increase the public utility. </p>
+
+<p>As per <a href=“https://www.vox.com/2015/9/10/9188517/political-bias“>Jess Whittlestone</a> at Vox:</p>
+
+<blockquote>While we have strong social incentives to defend our groups' political beliefs, we have very little incentive to form _accurate_ political beliefs. Most people acknowledge that political issues are incredibly important for society as a whole, but as individuals we’re not necessarily rewarded for how rational and truth-seeking we are about politics.<br>
+
+Consider the contrast between our beliefs about politics and our beliefs about the physical environment immediately around us. If I believe that the pavement ahead of me is clear and I’m wrong — there’s actually a lamppost in my path, say — I’m going to quickly suffer as a result of my false belief. This gives me a clear incentive to form accurate beliefs about the physical environment immediately around me.<br>
+
+The same logic doesn’t apply in politics. If I believe that immigration to my country from other countries is harmful, that false belief doesn’t harm me directly. Even if I vote in an election based on that belief, the chances of my belief actually affecting the outcome of the election are so slim that a poorly chosen vote is unlikely to hurt me personally. </blockquote>
+
+<p>A possibly workable idea to improve the utility-maximizing effectiveness of our politics is based on the premise that we might better at deciding as a *demos* whether a policy was good or not in retrospect than we are at deciding whether a policy will be good in the future. </p>
+
+<p>Thus, imagine a political economy in which every five to ten years after a government institutes a policy/set of policies, a decision oracle (everyone in the country) votes on whether they were good or not. If they are found “good” with a high majority—say 70%—everyone who voted for them gets paid; if they are indecisive (i.e. 50-50) no one gets paid.  If they are found “bad”, everyone who voted *against* them gets paid. We could fund this with a zero-sum prediction market, in which citizens could optionally bet on whether the policy would eventually become to be considered successful. Or, we could set up the system as a way to distribute “social dividends/UBI”, which everyone seems to agree are soon coming.  Either way, this should have the intended effect of encouraging everyone do a bit more research into the policies they are voting for; voting for the “right” policy is a money-making opportunity. Likewise, there is an additional incentive for a government to make their policy decisively work, as once initially voted for, if the benefit of a given policy is unclear in retrospect (that 50-50 situation), then no one gets to make any money. 
 <label class="margin-toggle sidenote-number" for=sn-reviewing></label>
 <input id=sn-reviewing class="margin-toggle sf-hidden" type=checkbox>
 <span class=sidenote>
 How do we manage this without giving up voter anonymity? Probably cryptographic digital voting, something along the lines of what <a href=“https://www.proquest.com/openview/05248eca4597fec343d8b46cb2bef724/1?pq-origsite=gscholar&cbl=18750&diss=y“>Benaloh 1987</a> proposed. Five years after the fact, you cryptographically sign a message confirming you own the key that, according to the public anonymous voting ledger, originally authorized the favorable policy. 
 </span>
-</p>
-  <p>Per Jess Whittlestone at <a href="https://www.vox.com/2015/9/10/9188517/political-bias">Vox</a>:</p>
-<blockquote>
-<p>While we have strong social incentives to defend our groups' political beliefs, we have very little incentive to form _accurate_ political beliefs. Most people acknowledge that political issues are incredibly important for society as a whole, but as individuals we’re not necessarily rewarded for how rational and truth-seeking we are about politics.</p>
-</blockquote>
-<blockquote>
-<p>Consider the contrast between our beliefs about politics and our beliefs about the physical environment immediately around us. If I believe that the pavement ahead of me is clear and I’m wrong — there’s actually a lamppost in my path, say — I’m going to quickly suffer as a result of my false belief. This gives me a clear incentive to form accurate beliefs about the physical environment immediately around me.</p>
-</blockquote>
-<blockquote>
-<p>The same logic doesn’t apply in politics. If I believe that immigration to my country from other countries is harmful, that false belief doesn’t harm me directly. Even if I vote in an election based on that belief, the chances of my belief actually affecting the outcome of the election are so slim that a poorly chosen vote is unlikely to hurt me personally.</p>
-</blockquote>
-<p>But perhaps there is a better way, incorporating my feedback system with Eric Posner and E. Glen Weyl's "Quadratic voting system," in which citizens are distributed a yearly budget (or per referenda) of "voting credits" that they can spend or save. If a citizen doesn't feel strongly about a given vote (providing they only consider its effect on them personally), they can save their votes for a future election in which they do feel strongly; the power of their voting credits decreases with a quadratic penatly, however. What if we ran the same feedback system, citizens retrospectively judged the success of policies--except this time, citiens who voted wisely are rewarded with more voting credits? Thus, we may have a sort-of solution to John Stuart Mill's quandry over how to assign more voting power to wiser voters, which ultimately failed as their is hardly an objective metric by which to sum up "wisdom"; the system would be aristocratic. This way, however, a democracy restrospectively decides its most prudent voters in a decentralised and anonymous fashion.</p>
-	
+
+<p>But perhaps there is a better way, incorporating my feedback system with Eric Posner and E. Glen Weyl's <a href=“https://www.radicalxchange.org/concepts/quadratic-voting/”>Quadratic voting system</a> in which citizens are distributed a yearly budget (or per referenda) of "voting credits" that they can spend or save. If a citizen doesn't feel strongly about a given vote (providing they only consider its effect on them personally), they can save their votes for a future election in which they do feel strongly; the power of their voting credits decreases with a quadratic penalty, however. That means that 1 vote credit will buy you 1 vote, 2 vote credits 1.4142… votes, 100 vote credits 10 votes and 150 vote credits 12.247 votes, etc. </p>
+
+<p>What if we ran the same feedback system as above, with citizens retrospectively judging the success of policies—except this time, citiens who voted wisely are rewarded with more voting credits, and vice versa. With this system, we could also better apply the “negative feedback” aspect of the process, penalizing citizens for voting unwisely. How do we do this? Well, we could alter the square by which someone is penalized for committing additional vote credits to a particular referenda. For example, if you voted more frequently in favor of “good” policies than in favor of “bad” policies over a period of ten years, you find your votes per policies decreased by:</p>
+
+$${\sqrt[1.5]{n}}$$ 
+
+<p>While if the opposite happens, your next ten years have the greater penalty:</p> 
+
+$${\sqrt[2.5]{n}}$$
+
+<p>Thus, we may have a sort-of solution to John Stuart Mill's quandry over how to assign more voting power to wiser voters, an idea which he ultimately rejected as there is hardly an objective metric by which to sum up "wisdom"; the system would become aristocratic. This way, however, a democracy restrospectively decides its most prudent voters in a decentralised and anonymous fashion. </p>
 	
 <h1 id="tea">Tea</h1>
 <hr/>
