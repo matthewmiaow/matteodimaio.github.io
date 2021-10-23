@@ -1,0 +1,1055 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>
+📜
+</text></svg>">
+  <title>
+How long will I live?
+</title>
+ 
+  
+<link rel="preload" href="/SourceSansPro-BASIC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/SourceSerifPro-BASIC-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/SourceSerifPro-BASIC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/SourceSerifPro-BASIC-RegularItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/FancyEnglish.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
+<style>
+    @font-face {
+        font-family: 'Source Serif Pro';
+        font-weight: 400;
+        font-style: normal;
+        src: url('/SourceSerifPro-BASIC-Regular.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+    @font-face {
+        font-family: 'Source Serif Pro';
+        font-weight: 400;
+        font-style: italic;
+        src: url('/SourceSerifPro-BASIC-RegularItalic.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Source Serif Pro';
+        font-weight: 600;
+        font-style: normal;
+        src: url('/SourceSerifPro-BASIC-Semibold.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+    @font-face {
+        font-family: 'Source Serif Pro';
+        font-weight: 700;
+        font-style: normal;
+        src: url('/SourceSerifPro-BASIC-Bold.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-weight: 400;
+        font-style: normal;
+        src: url('/SourceSansPro-BASIC-Regular.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-weight: 400;
+        font-style: italic;
+        src: url('/SourceSansPro-BASIC-RegularItalic.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-weight: 700;
+        font-style: normal;
+        src: url('/SourceSansPro-BASIC-Bold.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+
+@font-face {
+        font-family: 'Romantique Initials';
+        font-weight: 400;
+        font-style: normal;
+        src: url('/Romantiqueinitials.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+ 
+    body {
+    font-family: "Source Serif Pro", "Intellecta Monograms Random Samples Eleven", "Romantique Initials", "Apple Garamond", "Baskerville", "Libre Baskerville", "Times New Roman", "Droid Serif", "Times", serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6,
+strong,
+b {
+    color: #222;
+}
+
+a {
+    color: #3273dc;
+    /*color: #ff5e6c;*/
+}
+
+.title {
+    text-decoration: none;
+    border: 0;
+}
+
+.title h1 {
+    font-size: 1.5em;
+}
+
+.title span {
+    font-weight: 400;
+}
+
+.bear::before {
+    content: "ᕦʕ •ᴥ•ʔᕤ";
+    font-weight: 400;
+}
+.bear:hover::before {
+    content: "ᕙʕ ಠᴥಠʔᕗ";
+    font-weight: 400;
+}
+
+nav a {
+    margin-right: 10px;
+}
+
+textarea,
+input:not([type="submit"]) {
+    background-color: inherit;
+    color: inherit;
+    border: 1px dashed;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.full-width textarea,
+.full-width input:not([type="submit"], [type="checkbox"]) {
+    width: 100%;
+}
+
+.inline {
+    width: auto !important;
+}
+
+textarea:required,
+input:required:not([type="submit"]){
+    border: 1px solid;
+}
+
+
+content {
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+code{
+    font-family: monospace;
+    padding: 2px;
+    background-color: #f2f2f2;
+    color: #222;
+    border-radius: 3px;
+}
+
+.highlight,
+.code {
+    padding: 1px 15px;
+    background-color: #f2f2f2;
+    color: #222;
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+}
+
+.helptext {
+    color: #777;
+    font-size: small;
+}
+
+.errorlist {
+    color: #eba613;
+    font-size: small;
+}
+
+#id_favicon {
+    width: 20px;
+    text-align: center;
+}
+
+#date-range,
+#initial-values,
+#import-contacts {
+    display: none;
+}
+
+#date-range:target,
+#initial-values:target,
+#import-contacts:target {
+    display: block;
+}
+
+/* dashboard post list and analytics */
+ul.post-list {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.post-list li {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px dashed;
+}
+
+ul.post-list li span {
+    flex: 0 0 130px;
+}
+
+ul.post-list li span.number {
+    flex: 0 0 50px;
+}
+
+ul.post-list li a {
+    flex: max-content;
+}
+
+ul.post-list li small {
+    text-align: right;
+    flex: 0 0 115px;
+}
+
+/* blog posts */
+ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.blog-posts li {
+    display: flex;
+}
+
+ul.blog-posts li span {
+    flex: 0 0 130px;
+}
+
+ul.blog-posts li a:visited {
+  color: #8b6fcb;
+}
+
+/* discovery feed */
+ul.discover-posts {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.discover-posts li {
+    display: flex;
+    line-height: 1.2;
+}
+
+ul.discover-posts li span {
+    flex: 0 0 40px;
+}
+
+ul.discover-posts li a:visited {
+  color: #8b6fcb;
+}
+
+ul.discover-posts li div {
+    padding-bottom: 8px;
+}
+
+ul.discover-posts li small {
+    color: #777 !important;
+}
+
+ul.discover-posts li small a {
+    color: #777 !important;
+}
+
+
+    @media (prefers-color-scheme: dark) {
+    body {
+        background-color:#01242e;
+        color: #ddd;
+    }
+
+    h1,
+    h2,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+        color: #eee;
+    }
+
+    a {
+        color: #8cc2dd;
+    }
+
+    code {
+        background-color: #777;
+    }
+
+    pre code {
+        color: #ddd;
+    }
+
+    blockquote {
+        color: #ccc;
+    }
+
+    .helptext {
+        color: #aaa;
+    }
+}
+
+
+/* Tufte CSS styles */
+html {
+    font-size: 15px;
+}
+
+body {
+    margin-left: 15%;
+    margin-right: 4%;
+    padding-left: 4%;
+  padding-right: 20%;
+    background-color: #f4f7f6;
+    color: #111;
+    max-width: 1400px;
+    counter-reset: sidenote-counter;
+}
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #151515;
+        color: #ddd;
+    }
+}
+
+h1 {
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    font-size: 3.2rem;
+    line-height: 1;
+Text-align: center;
+font-variant: small-caps;
+Font-family: "Source Serif Pro";
+
+}
+
+.drop-cap:first-letter {
+  float: left;
+  font-size: 10em;
+  line-height: 1.2em;
+margin: 0;
+Font-family: "Romantique Initials";
+}
+
+.title {
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    font-size: 0rem;
+    line-height: 1;
+color: #fffff8;
+
+}
+
+h2 {
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 2.1rem;
+    margin-bottom: 1.4rem;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+h3 {
+   font-size: 1.4rem;
+   line-height: 2rem;
+margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding-right: 1;
+    vertical-align: baseline;
+font-style: normal;
+Text-align: justify;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 55%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+p.subtitle {
+    font-style: italic;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    display: block;
+    line-height: 1;
+}
+
+
+th {
+font-weight: 400;
+margin-top: 2.1rem;
+margin-bottom: 1.4rem;
+font-size: 1.6rem;
+line-height: 1;
+font-style: normal;
+font-variant: small-caps;
+
+}
+
+.numeral {
+Font-size: 1.6rem;
+}
+
+.danger {
+    color: red;
+}
+
+article {
+    padding: 5rem 0rem;
+}
+
+.footer {
+color: #111;
+}
+
+section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+p,
+dl,
+ol,
+ul {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+p {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding-right: 1;
+    vertical-align: baseline;
+Text-align: justify; 
+}
+
+
+/* Chapter Epigraphs */
+div.epigraph {
+    margin: 5em 0;
+}
+
+div.epigraph > blockquote {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+div.epigraph > blockquote,
+div.epigraph > blockquote > p {
+    font-style: italic;
+}
+
+div.epigraph > blockquote > footer {
+    font-style: normal;
+color: #ffffff;
+}
+
+div.epigraph > blockquote > footer > cite {
+    font-style: italic;
+}
+/* end chapter epigraphs styles */
+
+blockquote {
+    font-size: 1.4rem;
+}
+
+blockquote p {
+    width: 55%;
+    margin-right: 40px;
+}
+
+blockquote footer {
+    width: 55%;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+section > p,
+section > footer,
+section > table {
+    width: 55%;
+}
+
+/* 50 + 5 == 55, to be the same width as paragraph */
+section > dl,
+section > ol,
+section > ul {
+    width: 50%;
+    -webkit-padding-start: 5%;
+}
+
+dt:not(:first-child),
+li:not(:first-child) {
+    margin-top: 0.25rem;
+}
+
+figure {
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    max-width: 55%;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin: 0 0 3em 0;
+}
+
+figcaption {
+    float: right;
+    clear: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    vertical-align: baseline;
+    position: relative;
+    max-width: 40%;
+}
+
+figure.fullwidth figcaption {
+    margin-right: 24%;
+}
+
+/* Links: replicate underline that clears descenders */
+a:link,
+a:visited {
+    color: inherit;
+}
+
+.no-tufte-underline:link {
+    background: unset;
+    text-shadow: unset;
+}
+
+a:link, .tufte-underline, .hover-tufte-underline:hover {
+    text-decoration: none;
+    background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(currentColor, currentColor);
+    background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(currentColor, currentColor);
+    -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: 0.03em 0 #fffff8, -0.03em 0 #fffff8, 0 0.03em #fffff8, 0 -0.03em #fffff8, 0.06em 0 #fffff8, -0.06em 0 #fffff8, 0.09em 0 #fffff8, -0.09em 0 #fffff8, 0.12em 0 #fffff8, -0.12em 0 #fffff8, 0.15em 0 #fffff8, -0.15em 0 #fffff8;
+    background-position: 0% 93%, 100% 93%, 0% 93%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    a:link, .tufte-underline, .hover-tufte-underline:hover {
+        background-position-y: 87%, 87%, 87%;
+    }
+}
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    a:link, .tufte-underline, .hover-tufte-underline:hover {
+        text-shadow: 0.03em 0 #151515, -0.03em 0 #151515, 0 0.03em #151515, 0 -0.03em #151515, 0.06em 0 #151515, -0.06em 0 #151515, 0.09em 0 #151515, -0.09em 0 #151515, 0.12em 0 #151515, -0.12em 0 #151515, 0.15em 0 #151515, -0.15em 0 #151515;
+    }
+}
+
+a:link::selection,
+a:link::-moz-selection {
+    text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
+    background: #b4d5fe;
+}
+
+/* Sidenotes, margin notes, figures, captions */
+img {
+    max-width: 100%;
+Text-align: center;
+}
+
+.sidenote, 
+.marginnote {
+    float: right;
+    clear: right;
+    margin-right: -30%;
+    width: 20%;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.3;
+    vertical-align: baseline;
+    position: relative;
+}
+
+.sidenote-number {
+    counter-increment: sidenote-counter;
+}
+
+.sidenote-number:after,
+.sidenote:before {
+    font-family: et-book-roman-old-style;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.sidenote-number:after {
+    content: counter(sidenote-counter);
+    font-size: 1rem;
+    top: -0.5rem;
+    left: 0.1rem;
+}
+
+.sidenote:before {
+    content: counter(sidenote-counter) " ";
+    font-size: 1rem;
+    top: -0.5rem;
+}
+
+blockquote .sidenote,
+blockquote .marginnote {
+    margin-right: -82%;
+    min-width: 59%;
+    text-align: left;
+}
+
+div.fullwidth,
+table.fullwidth {
+    width: 100%;
+}
+
+div.table-wrapper {
+    overflow-x: auto;
+    font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
+}
+
+.sans {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    letter-spacing: .03em;
+}
+
+code, pre > code {
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 1.0rem;
+    line-height: 1.42;
+    -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+}
+
+.sans > code {
+    font-size: 1.2rem;
+}
+
+h1 > code,
+h2 > code,
+h3 > code {
+    font-size: 0.80em;
+}
+
+.marginnote > code,
+.sidenote > code {
+    font-size: 1rem;
+}
+
+pre > code {
+    font-size: 0.9rem;
+    width: 52.5%;
+    margin-left: 2.5%;
+    overflow-x: auto;
+    display: block;
+}
+
+pre.fullwidth > code {
+    width: 90%;
+}
+
+.fullwidth {
+    max-width: 90%;
+    clear:both;
+}
+
+span.newthought {
+    font-variant: small-caps;
+    font-size: 1.2em;
+}
+
+input.margin-toggle {
+    display: none;
+}
+
+label.sidenote-number {
+    display: inline;
+}
+
+label.margin-toggle:not(.sidenote-number) {
+    display: none;
+}
+
+.iframe-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 760px) {
+    body {
+        width: 84%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    hr,
+    section > p,
+    section > footer,
+    section > table {
+        width: 100%;
+    }
+
+    pre > code {
+        width: 97%;
+    }
+
+    section > dl,
+    section > ol,
+    section > ul {
+        width: 90%;
+    }
+
+    figure {
+        max-width: 90%;
+    }
+
+    figcaption,
+    figure.fullwidth figcaption {
+        margin-right: 0%;
+        max-width: none;
+    }
+
+    blockquote {
+        margin-left: 1.5em;
+        margin-right: 0em;
+    }
+
+    blockquote p,
+    blockquote footer {
+        width: 100%;
+    }
+
+    label.margin-toggle:not(.sidenote-number) {
+        display: inline;
+    }
+
+    .sidenote,
+    .marginnote {
+        display: none;
+    }
+
+    .margin-toggle:checked + .sidenote,
+    .margin-toggle:checked + .marginnote {
+        display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 95%;
+        margin: 1rem 2.5%;
+        vertical-align: baseline;
+        position: relative;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    div.table-wrapper,
+    table {
+        width: 85%;
+    }
+
+    img {
+        width: 100%;
+Text-align: center;
+    }
+}
+
+      body:hover {
+        border-image: 
+url("/hit/7550")
+;
+        border-width: 0;
+      }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="title" href="/">
+      <h1>
+        
+MD_
+
+      </h1>
+    </a>
+    <nav>
+      
+<a href="/">
+<img alt="HTML tutorial" src="https://matteodimaio.xyz/logo.png" width="200">
+</a>
+
+
+    </nav>
+  </header>
+  <main>
+    
+
+<h1>
+    How long I will live?
+</h1>
+
+<p>
+    <i>
+        <time datetime="2021-08-11" pubdate>
+            11 Aug, 2021
+        </time>
+    </i>
+</p>
+
+
+<content>
+<div><p><em>On the impossibility of ever reading all you want….</em></p>
+<p>| <em>meta</em> <br/>
+|  <em>In progress • Personal</em>  |</p>
+<p class="drop-cap">
+  DISREGARDING TRANSHUMANIST DEVELOPMENTS, how long will I live? Bar the risk of accidentally prompting an existential crisis, I set about finding out.
+  </p>
+  <p>There are numerous calculators out there, that take current life-span trends and extrapolate based on sex and other factors. I chose a local one—<a href="https://www.stats.govt.nz/tools/how-long-will-i-live">Stats NZ</a>—which draws on data on Kiwi lives from 1876. Their model takes into account:</p>
+<blockquote>
+<p>… the actual death rates of New Zealanders (from cohort life tables since 1876). 
+… the latest national population projections (2016-base released in October 2016).</p>
+</blockquote>
+<p>Also of note:</p>
+<blockquote>
+<p>The medium death rates relate to the 50th percentile (median) of the cohort life expectancy assumptions. These indicate a 50 percent chance that the given population will have an average length of life above the specified age.</p>
+</blockquote>
+<blockquote>
+<p>The low death rates relate to the 95th percentile of the cohort life expectancy assumptions. These indicate a 95 percent chance that the given population will have an average length of life above the specified age.</p>
+</blockquote>
+<blockquote>
+<p>The high death rates relate to the 5th percentile of the cohort life expectancy assumptions. These indicate a 5 percent chance that the given population will have an average length of life above the specified age.</p>
+</blockquote>
+<p>So what do I get?</p>
+<table>
+<thead>
+<tr>
+<th>Expected lifespan</th>
+<th>Percentile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>92.5 years</td>
+<td>assuming low death rates)</td>
+</tr>
+<tr>
+<td>90.1	years</td>
+<td>assuming medium death rates</td>
+</tr>
+<tr>
+<td>87.4	years</td>
+<td>assuming high death rates</td>
+</tr>
+</tbody>
+</table>
+<p>Taking the 95th percentile and subtracting my current age gives me about 73.43 years left to live. That’s 881.16 months, 3524.64 weeks, 24672.48 days or 592139.52 hours.
+<label class="margin-toggle sidenote-number" for=sn-reviewing></label>
+<input id=sn-reviewing class="margin-toggle sf-hidden" type=checkbox>
+<span class=sidenote>
+To put this (out of) perspective, I could spend the entire rest of my life walking around the globe 71.33 ish times. [592139.52 divided by 8300.487 = 71.33 ish], globe-circunavigating numbers from https://www.thecalculatorsite.com/articles/health/how-long-to-walk-around-the-world.php.
+</span>
+</p>
+<p>This has several implications.</p>
+<p>I’m very interested and slightly disheartened by the sheer impossibility of ever reading all the books I want to, watching all the movies, reading all the encyclopedic entries etc etc.</p>
+<p>As Gwern notes:</p>
+<blockquote>
+<p>[Suppose I had 100 novels.] Not any novels, but science fiction novels. Nor any 100 Sci-Fi novels, but the winners of the 2 most prestigious SF awards for the last 50 years: the Hugo and Nebula Awards. Suppose I read the 100 at the rate of 1 a week, or 52 a year. I will finish them in ~2 years. It will take an appreciable fraction of my life to read a vanishingly small fraction of one small fiction genre, that itself has existed for less than 2 centuries and been written almost exclusively in 2 countries.</p>
+</blockquote>
+<p>Lets apply this to the 881.16 months I have left to live. I can read maybe 1 hour every day for the rest of my life. 592139.52 &div; 24 = 24672.48, or around 25000 hours I could reasonably spend enjoying content. My comprehension is good, but I’m generally a pretty slow reader. A quick <a href="http://www.freereadingtest.com/">online test</a> gives me 377 words per minute or 22620 words an hour. The average length of a novel is 90,000 words.<sup class="footnote-ref" id="fnref-1"><a href="#fn-1">1</a></sup> At my speed, that’s about 4 hours per book or a grand total of 6250 books I can optimally expect to read with the rest of my life.</p>
+<p>According to Google books, about 130+ million books are currently in existence. As of 2018, per Wikipedia, there were 3,485,322 ISBNs registered in the US alone; I can only read less than a 500th of that.<sup class="footnote-ref" id="fnref-2"><a href="#fn-2">2</a></sup></p>
+<p>Surely the rational response to all this is:</p>
+<ol>
+<li>To start reading!</li>
+<li>To decide what one actually wants to read, given a possible sliver of all of human literature.</li>
+</ol>
+<p>This is tricky because, for one, upwards of 300,000 books are registered in the US every year, meaning so many new possibilities for “the best 6250 books ever” arise. Should I discount new works from now onwards completely? A hard fast rule like that would mean I might miss something groundbreaking. Should I prioritize non fiction or fiction? Too much fiction might rob my precious reading time of important, interesting facts and theories. But then again, such a short life should probably be spent enjoying myself… At the risk of sounding too pretentious, I’ll stop here.</p>
+<p>I only have 37 books on my Goodreads “want to read” list, plus the five or so I’m currently reading. I’ve got 148 days before I have to decide what’s next.</p>
+<p>I shall give this one some thought and come up with a reading plan before too long. Stay tuned.</p>
+
+
+
+<h2> Solutions? </h2>
+<p>As of October 02021, I have made some progress. What books, of the small fraction of the whole you can read, should you? It might help to make the question more pertinent. What human books would you save from destruction, if you could only save 3,000? </p>
+
+<p>Thankfully, the Long Now foundation has already put some thought into it, constructing a “Manual for Civilisation”—3,500 books they deem would be the best starting point should one be tasked with rebuilding civilisation after its fall. It is, in a sense, a kind of <a href=“https://en.wikipedia.org/wiki/Encyclopedia_Galactica”>Encyclopaedia Galactica</a>—after the “compendium of all the galaxy’s knowledge” from Isaac Asimov’s Foundation series. In the series, the mathematician Hari Seldon—after predicting the fall of the Galactic Empire through advanced probability theory—tasks a small number of scientists with the collection and publication of all the universe’s knowledge, in order to ease the rebuilding of civilisation, and reduce the coming chaos from 30,000 years to a mere millennium. </p>
+
+<p>You can find their Manual <a href=“https://longnow.libib.com/“>here</a>.</p>
+
+<p>My progress on a compressed version of the list is tracked below:</p>
+
+
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Aleph and Other Stories, The <br>
+&#x25A7;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Meditations <br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Discourse on the two new sciences<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Biopunk: Solving Biotech's Biggest <br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Problems in Kitchens and Garages<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Do Androids Dream of Electric Sheep<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Brave New World<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;A Brief History of Time<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Building Scientific Apparatus: A <br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Practical Guide To Design And Construction, Second Edition<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Calendar: Humanity's Epic Struggle to Determine a True and Accurate Year<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Character of Physical Law, The<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Collected Erotica, The: An Illustrated Celebration of Human Sexuality Through the Ages<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Communist Manifesto, The<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Conceptual Physics (9th edition)<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Critique of Pure Reason<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Creating Better Futures: Scenario Planning as a Tool for a Better Tomorrow<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Darwin Among the Machines: The Evolution of Global Intelligence<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Dead Sea Scrolls: A New Translation, The<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Deep Future: The Next 100,000 Years of Life on Earth<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Debt: The First 5,000 Years<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Design of Everyday Things, The<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Encyclopedia of Time<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Evolution of Civilizations, The<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Evolution: Society, Science and the Universe<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Governing the Commons<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Guns, germs and steel<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Hero with a Thousand Faces, The<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;History of Mechanical Inventions, A<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Knowledge: How to Rebuild Our World from Scratch, The<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Lao Tzu: Te-Tao Ching - A New Translation Based on the Recently Discovered Ma-wang-tui Texts<br>
+&#x25A7;&#x25A7;&#x25A7;&#x25A7;&#x25A7;&#x25A7;&#x25A7;&#x25A7;&#x25A7;&#x25A7;
+Life of Galileo, The<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Millennium Whole Earth Catalog, The<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Nature of Space and Time (Princeton Science Library), The<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Norton History of Technology, The<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;One True God: Historical Consequences of Monotheism.<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Principles of Uncertainty, The<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Path to the Double Helix: The Discovery of DNA, The<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Science: A Four Thousand Year History<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Scientific Method: A Historical and Philosophical Introduction<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Selfish Gene: 30th Anniversary Edition--with a new Introduction by the Author, The<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Short History of Nearly Everything, A
+Story of Art, The<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Superforecasting: The Art and Science of Prediction<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Thinking, Fast and Slow<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Time and Bits: Managing Digital Continuity<br>
+&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;&#x25A1;Western Canon: The Books and School of the Ages, The<br>
+<hr>
+
+  <p><em> Extending this line of thought, I decided to do some graphing. You can find my Life Calendar <a href="https://matteodimaio.xyz/lifecalendarcopy">here.</a></em></p>
+<p>(Of course, I could just spend those 24672.48 content hours watching Parry Gripp’s <a href="https://www.youtube.com/watch?v=bq9ghmgqoyc">Guinea Pig Bridge</a> song 1.6 million times.)</p>
+<section class="footnotes">
+<ol>
+<li id="fn-1"><p>https://prowritingaid.com/art/1243/genre-book-length-.aspx<a class="footnote" href="#fnref-1">↩</a></p></li>
+<li id="fn-2"><p>https://en.wikipedia.org/wiki/Books_published_per_country_per_year<a class="footnote" href="#fnref-2">↩</a></p></li>
+</ol>
+</section>
+</div>
+</content>
+
+
+<p>
+
+</p>
+
+
+
+  </main>
+  <footer>
+    
+  </footer>
+</body>
+
+</html>
+
+
+
+
+
+
