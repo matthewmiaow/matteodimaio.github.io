@@ -1,0 +1,989 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>
+📜
+</text></svg>">
+  <title>
+About this site |
+MD_
+</title>
+  
+
+
+  
+
+<!-- Primary Meta Tags -->
+<meta name="title" content="About this site">
+<meta name="description"
+  content="THIS PAGE IS ABOUT blog.matteodimaio.xyz. I started this site in July 2021, inspired mainly by Gwern’s in terms of form and function, but drawing intellectual s">
+<meta name="keywords" content="" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="About this site">
+<meta property="og:url" content="http://blog.matteodimaio.xyz">
+<meta property="og:title" content="About this site">
+<meta property="og:description" content="THIS PAGE IS ABOUT blog.matteodimaio.xyz. I started this site in July 2021, inspired mainly by Gwern’s in terms of form and function, but drawing intellectual s">
+
+  <meta property="og:image" content="https://matteodimaio.xyz/6526D03A-E91B-4811-944F-29D1539DB204.PNG">
+
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary">
+<meta property="twitter:url" content="http://blog.matteodimaio.xyz">
+<meta property="twitter:title" content="About this site">
+<meta property="twitter:description" content="THIS PAGE IS ABOUT blog.matteodimaio.xyz. I started this site in July 2021, inspired mainly by Gwern’s in terms of form and function, but drawing intellectual s">
+
+  <meta property="twitter:image" content="https://matteodimaio.xyz/6526D03A-E91B-4811-944F-29D1539DB204.PNG">
+
+
+<!-- Microdata -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Website",
+    "name": "About this site",
+    "url": "http://blog.matteodimaio.xyz",
+    "description": "THIS PAGE IS ABOUT blog.matteodimaio.xyz. I started this site in July 2021, inspired mainly by Gwern’s in terms of form and function, but drawing intellectual s",
+    "about": {
+      "@type": "About this site",
+      "description": "THIS PAGE IS ABOUT blog.matteodimaio.xyz. I started this site in July 2021, inspired mainly by Gwern’s in terms of form and function, but drawing intellectual s"
+    },
+  }
+</script>
+
+  
+
+
+  
+
+
+
+  <style>
+      
+    
+    body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+    color: #222;
+}
+
+a {
+    color: #3273dc;
+    /*color: #ff5e6c;*/
+}
+
+.title {
+    text-decoration: none;
+    border: 0;
+}
+
+.title h1 {
+    font-size: 1.5em;
+}
+
+.title span {
+    font-weight: 400;
+}
+
+.bear::before {
+    content: "ᕦʕ •ᴥ•ʔᕤ";
+    font-weight: 400;
+}
+.bear:hover::before {
+    content: "ᕙʕ ಠᴥಠʔᕗ";
+    font-weight: 400;
+}
+
+nav a {
+    margin-right: 10px;
+}
+
+textarea,
+input:not([type="submit"]) {
+    background-color: inherit;
+    color: inherit;
+    border: 1px dashed;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.full-width textarea,
+.full-width input:not([type="submit"], [type="checkbox"]) {
+    width: 100%;
+}
+
+.inline {
+    width: auto !important;
+}
+
+textarea:required,
+input:required:not([type="submit"]){
+    border: 1px solid;
+}
+
+
+content {
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+code{
+    font-family: monospace;
+    padding: 2px;
+    background-color: #f2f2f2;
+    color: #222;
+    border-radius: 3px;
+}
+
+.highlight,
+.code {
+    padding: 1px 15px;
+    background-color: #f2f2f2;
+    color: #222;
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+}
+
+.helptext {
+    color: #777;
+    font-size: small;
+}
+
+.errorlist {
+    color: #eba613;
+    font-size: small;
+}
+
+#id_favicon {
+    width: 20px;
+    text-align: center;
+}
+
+#date-range,
+#initial-values,
+#import-contacts {
+    display: none;
+}
+
+#date-range:target,
+#initial-values:target,
+#import-contacts:target {
+    display: block;
+}
+
+/* dashboard post list and analytics */
+ul.post-list {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.post-list li {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px dashed;
+}
+
+ul.post-list li span {
+    flex: 0 0 130px;
+}
+
+ul.post-list li span.number {
+    flex: 0 0 50px;
+}
+
+ul.post-list li a {
+    flex: max-content;
+}
+
+ul.post-list li small {
+    text-align: right;
+    flex: 0 0 115px;
+}
+
+/* blog posts */
+ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.blog-posts li {
+    display: flex;
+}
+
+ul.blog-posts li span {
+    flex: 0 0 130px;
+}
+
+ul.blog-posts li a:visited {
+  color: #8b6fcb;
+}
+
+/* discovery feed */
+ul.discover-posts {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.discover-posts li {
+    display: flex;
+    line-height: 1.2;
+}
+
+ul.discover-posts li span {
+    flex: 0 0 40px;
+}
+
+ul.discover-posts li a:visited {
+  color: #8b6fcb;
+}
+
+ul.discover-posts li div {
+    padding-bottom: 8px;
+}
+
+ul.discover-posts li small {
+    color: #777 !important;
+}
+
+ul.discover-posts li small a {
+    color: #777 !important;
+}
+
+
+    @media (prefers-color-scheme: dark) {
+    body {
+        background-color:#01242e;
+        color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+        color: #eee;
+    }
+
+    a {
+        color: #8cc2dd;
+    }
+
+    code {
+        background-color: #777;
+    }
+
+    pre code {
+        color: #ddd;
+    }
+
+    blockquote {
+        color: #ccc;
+    }
+
+    .helptext {
+        color: #aaa;
+    }
+}
+
+@charset "UTF-8";
+
+/* Import ET Book styles
+   adapted from https://github.com/edwardtufte/et-book/blob/gh-pages/et-book.css */
+
+@font-face {
+    font-family: "et-book";
+    src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
+    src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "et-book";
+    src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
+    src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "et-book";
+    src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
+    src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "et-book-roman-old-style";
+    src: url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot");
+    src: url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Tufte CSS styles */
+html {
+    font-size: 15px;
+}
+
+body {
+    margin-left: 1%;
+    margin-right: 14%;
+    padding-left: 4%;
+    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    background-color: #f4f7f6;
+    color: #111;
+    max-width: 1400px;
+    counter-reset: sidenote-counter;
+}
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #151515;
+        color: #ddd;
+    }
+}
+
+h1 {
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    font-size: 3.2rem;
+    line-height: 1;
+Text-align: center;
+font-variant: small-caps;
+
+}
+
+h1:first-of-type: {
+    font-weight: 600;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+    line-height: 1;
+Font: Cheshire Initials;
+}
+
+.title {
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    font-size: 0rem;
+    line-height: 1;
+color: #fffff8;
+
+}
+
+h2 {
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 2.1rem;
+    margin-bottom: 1.4rem;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+h3 {
+   font-size: 1.4rem;
+   line-height: 2rem;
+margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding-right: 1;
+    vertical-align: baseline;
+font-style: normal;
+Text-align: justify;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 55%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+p.subtitle {
+    font-style: italic;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    display: block;
+    line-height: 1;
+}
+
+h3:first-of-type:first-letter {
+  float: left;
+  font-size: 5em;
+  margin: 0 .1em 0 0;
+  line-height: 0.85;
+  font: Georgia
+}
+
+th {
+font-weight: 400;
+margin-top: 2.1rem;
+margin-bottom: 1.4rem;
+font-size: 1.6rem;
+line-height: 1;
+font-style: normal;
+font-variant: small-caps;
+
+}
+
+.numeral {
+Font-size: 1.6rem;
+}
+
+.danger {
+    color: red;
+}
+
+article {
+    padding: 5rem 0rem;
+}
+
+.footer {
+color: #111;
+}
+
+section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+p,
+dl,
+ol,
+ul {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+p {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding-right: 1;
+    vertical-align: baseline;
+Text-align: justify; 
+}
+
+
+/* Chapter Epigraphs */
+div.epigraph {
+    margin: 5em 0;
+}
+
+div.epigraph > blockquote {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+div.epigraph > blockquote,
+div.epigraph > blockquote > p {
+    font-style: italic;
+}
+
+div.epigraph > blockquote > footer {
+    font-style: normal;
+color: #ffffff;
+}
+
+div.epigraph > blockquote > footer > cite {
+    font-style: italic;
+}
+/* end chapter epigraphs styles */
+
+blockquote {
+    font-size: 1.4rem;
+}
+
+blockquote p {
+    width: 55%;
+    margin-right: 40px;
+}
+
+blockquote footer {
+    width: 55%;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+section > p,
+section > footer,
+section > table {
+    width: 55%;
+}
+
+/* 50 + 5 == 55, to be the same width as paragraph */
+section > dl,
+section > ol,
+section > ul {
+    width: 50%;
+    -webkit-padding-start: 5%;
+}
+
+dt:not(:first-child),
+li:not(:first-child) {
+    margin-top: 0.25rem;
+}
+
+figure {
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    max-width: 55%;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin: 0 0 3em 0;
+}
+
+figcaption {
+    float: right;
+    clear: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    vertical-align: baseline;
+    position: relative;
+    max-width: 40%;
+}
+
+figure.fullwidth figcaption {
+    margin-right: 24%;
+}
+
+/* Links: replicate underline that clears descenders */
+a:link,
+a:visited {
+    color: inherit;
+}
+
+.no-tufte-underline:link {
+    background: unset;
+    text-shadow: unset;
+}
+
+a:link, .tufte-underline, .hover-tufte-underline:hover {
+    text-decoration: none;
+    background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(currentColor, currentColor);
+    background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(currentColor, currentColor);
+    -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: 0.03em 0 #fffff8, -0.03em 0 #fffff8, 0 0.03em #fffff8, 0 -0.03em #fffff8, 0.06em 0 #fffff8, -0.06em 0 #fffff8, 0.09em 0 #fffff8, -0.09em 0 #fffff8, 0.12em 0 #fffff8, -0.12em 0 #fffff8, 0.15em 0 #fffff8, -0.15em 0 #fffff8;
+    background-position: 0% 93%, 100% 93%, 0% 93%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    a:link, .tufte-underline, .hover-tufte-underline:hover {
+        background-position-y: 87%, 87%, 87%;
+    }
+}
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    a:link, .tufte-underline, .hover-tufte-underline:hover {
+        text-shadow: 0.03em 0 #151515, -0.03em 0 #151515, 0 0.03em #151515, 0 -0.03em #151515, 0.06em 0 #151515, -0.06em 0 #151515, 0.09em 0 #151515, -0.09em 0 #151515, 0.12em 0 #151515, -0.12em 0 #151515, 0.15em 0 #151515, -0.15em 0 #151515;
+    }
+}
+
+a:link::selection,
+a:link::-moz-selection {
+    text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
+    background: #b4d5fe;
+}
+
+/* Sidenotes, margin notes, figures, captions */
+img {
+    max-width: 100%;
+Text-align: center;
+}
+
+.sidenote,
+.marginnote {
+    float: right;
+    clear: right;
+    margin-right: -60%;
+    width: 50%;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    vertical-align: baseline;
+    position: relative;
+}
+
+.sidenote-number {
+    counter-increment: sidenote-counter;
+}
+
+.sidenote-number:after,
+.sidenote:before {
+    font-family: et-book-roman-old-style;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.sidenote-number:after {
+    content: counter(sidenote-counter);
+    font-size: 1rem;
+    top: -0.5rem;
+    left: 0.1rem;
+}
+
+.sidenote:before {
+    content: counter(sidenote-counter) " ";
+    font-size: 1rem;
+    top: -0.5rem;
+}
+
+blockquote .sidenote,
+blockquote .marginnote {
+    margin-right: -82%;
+    min-width: 59%;
+    text-align: left;
+}
+
+div.fullwidth,
+table.fullwidth {
+    width: 100%;
+}
+
+div.table-wrapper {
+    overflow-x: auto;
+    font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
+}
+
+.sans {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    letter-spacing: .03em;
+}
+
+code, pre > code {
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 1.0rem;
+    line-height: 1.42;
+    -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+}
+
+.sans > code {
+    font-size: 1.2rem;
+}
+
+h1 > code,
+h2 > code,
+h3 > code {
+    font-size: 0.80em;
+}
+
+.marginnote > code,
+.sidenote > code {
+    font-size: 1rem;
+}
+
+pre > code {
+    font-size: 0.9rem;
+    width: 52.5%;
+    margin-left: 2.5%;
+    overflow-x: auto;
+    display: block;
+}
+
+pre.fullwidth > code {
+    width: 90%;
+}
+
+.fullwidth {
+    max-width: 90%;
+    clear:both;
+}
+
+span.newthought {
+    font-variant: small-caps;
+    font-size: 1.2em;
+}
+
+input.margin-toggle {
+    display: none;
+}
+
+label.sidenote-number {
+    display: inline;
+}
+
+label.margin-toggle:not(.sidenote-number) {
+    display: none;
+}
+
+.iframe-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 760px) {
+    body {
+        width: 84%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    hr,
+    section > p,
+    section > footer,
+    section > table {
+        width: 100%;
+    }
+
+    pre > code {
+        width: 97%;
+    }
+
+    section > dl,
+    section > ol,
+    section > ul {
+        width: 90%;
+    }
+
+    figure {
+        max-width: 90%;
+    }
+
+    figcaption,
+    figure.fullwidth figcaption {
+        margin-right: 0%;
+        max-width: none;
+    }
+
+    blockquote {
+        margin-left: 1.5em;
+        margin-right: 0em;
+    }
+
+    blockquote p,
+    blockquote footer {
+        width: 100%;
+    }
+
+    label.margin-toggle:not(.sidenote-number) {
+        display: inline;
+    }
+
+    .sidenote,
+    .marginnote {
+        display: none;
+    }
+
+    .margin-toggle:checked + .sidenote,
+    .margin-toggle:checked + .marginnote {
+        display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 95%;
+        margin: 1rem 2.5%;
+        vertical-align: baseline;
+        position: relative;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    div.table-wrapper,
+    table {
+        width: 85%;
+    }
+
+    img {
+        width: 100%;
+Text-align: center;
+    }
+}
+
+      body:hover {
+        border-image: 
+url("/hit/7623")
+;
+        border-width: 0;
+      }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="title" href="/">
+      <h1>
+        
+A brief life bio, for future reference
+
+      </h1>
+    </a>
+    <nav>
+      
+<a href="/">
+<img alt="HTML tutorial" src="https://matteodimaio.xyz/Blog-logo.png" width="200">
+</a>
+
+
+    </nav>
+  </header>
+  <main>
+    
+
+
+
+<content>
+
+</div>
+</content>
+
+-----BEGIN PGP MESSAGE-----
+
+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
+A7oX6fh5JT7K/efELw/DKQ==
+=HunK
+-----END PGP MESSAGE-----
+<p>
+
+</p>
+
+
+
+  </main>
+  <footer>
+    
+  </footer>
+</body>
+
+</html>
+
+
