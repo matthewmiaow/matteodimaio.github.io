@@ -9,9 +9,9 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>
 📜
 
-<script src="//use.edgefonts.net/unifrakturcook:n7:all.js"></script>
 
-  
+
+<link rel="preload" href="/UnifrakturMaguntia.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/SourceSansPro-BASIC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/SourceSerifPro-BASIC-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/SourceSerifPro-BASIC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
@@ -75,9 +75,17 @@
         unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
         font-display: swap
     }
+       @font-face {
+        font-family: 'Unifraktur Maguntia';
+        font-weight: 400;
+        font-style: normal;
+        src: url('/UnifrakturMaguntia.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }                                                                                                              
  
     body {
-    font-family: "Menlo", "Source Serif Pro",  "Apple Garamond", "Baskerville", "Libre Baskerville", "Times New Roman", "Droid Serif", "Times", serif;
+    font-family: "Menlo", "Source Serif Pro", "Unifraktur Maguntia", "Apple Garamond", "Baskerville", "Libre Baskerville", "Times New Roman", "Droid Serif", "Times", serif;
     margin: auto;
     padding: 20px;
     max-width: 720px;
@@ -860,7 +868,7 @@ url("/hit/7550")
 <a href="/">
 </div>
 <div>
-<h1 style="font-family: UnifrakturCook"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Newest</a></h1>
+<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Newest</a></h1>
            
 <hr>
 <ul>
