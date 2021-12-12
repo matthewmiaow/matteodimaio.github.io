@@ -1,0 +1,152 @@
+<pre id="typewriter">
+<span class="var-highlight">Booting up cyberpunk-esque business card...</span> 
+
+| metaversePassport = {   
+|    oculus: <span class="string-highlight">'enochthechronocom'</span>,                    |
+|    mastodon: <span class="string-highlight">'@enochthechronocom@mstdn.social'</span>,                    |
+|    discord: <span class="string-highlight">'Enoch the chronocom#7180'</span>,                            |
+|    twitter: <span class="string-highlight">'@echronocom'</span>,                                         |
+|    email:[<span class="string-highlight">'matteo@matteodimaio.xyz'</span>,                               |
+|                <span class="string-highlight">'2179 775C CCBB 59C6 84FF BCCF 5434 3BCB E77B ECF8'</span>,|
+|                <span class="string-highlight">'https://matteodimaio.net/publickey.txt'</span>];          |
+|    reddit: <span class="string-highlight">'u/enochthechronocom'</span>,                                  |
+|    lesswrong: <span class="string-highlight">'matteodimaio-1'</span>,                                    |
+
+
+}; </pre>
+
+<style>
+
+Body {
+background-color: Black;
+}
+
+html { 
+       line-height: 1;
+       text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+       letter-spacing: 0.125em;
+       animation-duration: 0.01s;
+       animation-name: textflicker;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+}
+
+@keyframes textflicker {
+  from {
+    text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+  }
+  to {
+    text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+  }
+}
+
+
+.var-highlight{
+  color: #C0AD60;
+}
+.string-highlight{
+  color: #66c14d;
+}
+
+#typewriter{
+    font-size: 1em;
+    margin: 25%;
+color: #66c14d;
+    font-family: "Menlo";
+
+    &:after{
+      content: "|";
+      animation: blink 500ms linear infinite alternate;
+    }
+}
+
+@-webkit-keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+</style>
+
+<script>
+  function setupTypewriter(t) {
+      var HTML = t.innerHTML;
+
+      t.innerHTML = "";
+
+      var cursorPosition = 0,
+          tag = "",
+          writingTag = false,
+          tagOpen = false,
+          typeSpeed = 100,
+        tempTypeSpeed = 0;
+
+      var type = function() {
+        
+          if (writingTag === true) {
+              tag += HTML[cursorPosition];
+          }
+
+          if (HTML[cursorPosition] === "<") {
+              tempTypeSpeed = 0;
+              if (tagOpen) {
+                  tagOpen = false;
+                  writingTag = true;
+              } else {
+                  tag = "";
+                  tagOpen = true;
+                  writingTag = true;
+                  tag += HTML[cursorPosition];
+              }
+          }
+          if (!writingTag && tagOpen) {
+              tag.innerHTML += HTML[cursorPosition];
+          }
+          if (!writingTag && !tagOpen) {
+              if (HTML[cursorPosition] === " ") {
+                  tempTypeSpeed = 0;
+              }
+              else {
+                  tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+              }
+              t.innerHTML += HTML[cursorPosition];
+          }
+          if (writingTag === true && HTML[cursorPosition] === ">") {
+              tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+              writingTag = false;
+              if (tagOpen) {
+                  var newSpan = document.createElement("span");
+                  t.appendChild(newSpan);
+                  newSpan.innerHTML = tag;
+                  tag = newSpan.firstChild;
+              }
+          }
+
+          cursorPosition += 1;
+          if (cursorPosition < HTML.length - 1) {
+              setTimeout(type, tempTypeSpeed);
+          }
+
+      };
+
+      return {
+          type: type
+      };
+  }
+
+  var typer = document.getElementById('typewriter');
+
+  typewriter = setupTypewriter(typewriter);
+
+// https://css-tricks.com/snippets/css/typewriter-effect/
+
+  typewriter.type();
+</script>
