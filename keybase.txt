@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/enochthechronoco
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://matteodimaio.net
+  * I am enochthechronoco (https://keybase.io/enochthechronoco) on keybase.
+  * I have a public key ASCfFLproJ4BWcLF577N8TwBG4EbzC4koRPs0Kk2vAXQJwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01209f14ba6ba09e0159c2c5e7becdf13c011b811bcc2e24a113ecd0a936bc05d0270a",
+      "host": "keybase.io",
+      "kid": "01209f14ba6ba09e0159c2c5e7becdf13c011b811bcc2e24a113ecd0a936bc05d0270a",
+      "uid": "ac7e2a7286258989b4a17cc543412419",
+      "username": "enochthechronoco"
+    },
+    "merkle_root": {
+      "ctime": 1641362054,
+      "hash": "629d96a9946aca7303aeda97694932c0ba4d37d138c08eb6f8acda01f9633a5d45fef927d1fd4ddbb9197fddc1a79a14bbed00827dcc1482d36c04eefda9c69b",
+      "hash_meta": "d1dfc59246b68bd9be4567305296f152b1095abc9cce19a090166467fb178daf",
+      "seqno": 21564247
+    },
+    "service": {
+      "entropy": "dC/qLJx6tR8UYg9fY97XRvpg",
+      "hostname": "matteodimaio.net",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.9.0"
+  },
+  "ctime": 1641362088,
+  "expire_in": 504576000,
+  "prev": "6cf1ebc9cc5ab7b8d4355fd1853658a637594b67e4cbaf74202df0d203494243",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgnxS6a6CeAVnCxee+zfE8ARuBG8wuJKET7NCpNrwF0CcKp3BheWxvYWTESpcCB8QgbPHrycxat7jUNV/RhTZYpjdZS2fky690IC3w0gNJQkPEIFABzLurKZov0uPTyn+RnWagYcPs/Hk/7ZzqjjuA90YWAgHCo3NpZ8RAUKolDyegizTJ20k4r3xobQWsWN9DWfXOxsvCr8eJOlx5F+wEe767ah3RrTl7g1girRnDhsuNoo7yo8QJR7vMDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIB1TUT/wTa4RJJEGixVFu5tw3r3NdnQNH3StLGjNJuHlo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/enochthechronoco
+
+==================================================================
