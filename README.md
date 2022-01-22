@@ -11,5 +11,6 @@ The plan is for my website to include nicely-formatted:
 - self experiments and analysis 
 - interesting links and tidbits from the interweb
 
+I'm learning html+css from scratch, so bear with me!
 
 
