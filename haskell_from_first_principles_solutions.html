@@ -922,10 +922,17 @@ MD_
 <content>
   <h2>Chapter 1. Anything from Almost Nothing </h2>
 
-  1. $${(\Lambda a b c . c b a)zz(\Lambda w v.w)}$$
+  1. $${(\lambda a b c . c b a)zz(\lambda w v.w)}$$
   (Currying for clarity)
-  $${(\Lambda a . \Lambda b . \Lambda c . cba)(z)z(\Lambda w . \Lambda v.w)}$$
-
+  $${(\lambda a . \lambda b . \lambda c . cba)(z)z(\lambda w . \lambda v.w)}$$
+  (Eliminate the head and apply the variiable)
+  $${(\lambmbda b. \lambda c. cbz)(z)(\lambda w. \lambda v.w)}$$
+  (Eliminate from left to right, etc)
+  $${(\lambda c. czz)(\lambda w. \lambda v.w)}$$
+  $${(\lambda w. \lambda v.w)(z)z}$$
+  $${(\lambda v . z)(z)}$$
+  (Becoming the singular:)
+  $${z}$$
 
 </content>
 
