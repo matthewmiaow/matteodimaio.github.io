@@ -1,4 +1,4 @@
-# matteodimaio.net
+## matteodimaio.net
 
 This is the personal website/wiki of Matteo Di Maio. All of the static files are hosted here (thanks Github) through Pages. 
 
