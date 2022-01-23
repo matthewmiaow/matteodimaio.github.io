@@ -907,13 +907,13 @@ MD_
   </header>
   <main>
 <h1>
-    TITLE HERE
+    Solutions to Haskell from First Principles
 </h1>
 <hr>
 <p>
     <i>
         <time datetime="2021-08-22" pubdate>
-            DATE HERE
+            January 23, 02022
         </time>
     </i>
 </p>
@@ -926,14 +926,17 @@ MD_
   (Currying for clarity)
   $${(\lambda a . \lambda b . \lambda c . cba)(z)z(\lambda w . \lambda v.w)}$$
   (Eliminate the head and apply the variiable)
-  $${(\lambmbda b. \lambda c. cbz)(z)(\lambda w. \lambda v.w)}$$
+  $${(\lambda b. \lambda c. cbz)(z)(\lambda w. \lambda v.w)}$$
   (Eliminate from left to right, etc)
   $${(\lambda c. czz)(\lambda w. \lambda v.w)}$$
   $${(\lambda w. \lambda v.w)(z)z}$$
   $${(\lambda v . z)(z)}$$
   (Becoming the singular:)
   $${z}$$
-
+  2. $${(\lambda x. \lambda y.xyy)(\lambda a.a)b}$$
+  $${\lambda y.(\lambda a.a)yy)b}$$
+  $${\lambda a.a)(b)b}$$
+  $${b.b}$$
 </content>
 
 
