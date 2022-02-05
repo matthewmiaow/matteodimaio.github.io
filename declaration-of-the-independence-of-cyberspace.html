@@ -1,20 +1,31 @@
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
-  <title>Essays - Matteo Di Maio</title>
 
 <head>
-<link rel="icon" type="image/x-icon" href="/logo.ico">
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
- </head>
-
-
-<link rel="preload" href="/UnifrakturMaguntia.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>
+📜
+</text></svg>">
+  <title>
+A declaration of the independence of cyberspace
+</title>
+ 
+ <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	
 <link rel="preload" href="/SourceSansPro-BASIC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/SourceSerifPro-BASIC-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/SourceSerifPro-BASIC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/SourceSerifPro-BASIC-RegularItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/FancyEnglish.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
 <style>
     @font-face {
@@ -74,22 +85,23 @@
         unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
         font-display: swap
     }
-       @font-face {
-        font-family: 'Unifraktur Maguntia';
+
+@font-face {
+        font-family: 'Romantique Initials';
         font-weight: 400;
         font-style: normal;
-        src: url('/UnifrakturMaguntia.ttf') format('truetype');
+        src: url('/Romantiqueinitials.ttf') format('truetype');
         unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
         font-display: swap
-    }                                                                                                              
+    }
  
     body {
-    font-family: "Menlo", "Source Serif Pro", "Unifraktur Maguntia", "Apple Garamond", "Baskerville", "Libre Baskerville", "Times New Roman", "Droid Serif", "Times", serif;
+    font-family: "Source Serif Pro", "Intellecta Monograms Random Samples Eleven", "Romantique Initials", "Apple Garamond", "Baskerville", "Libre Baskerville", "Times New Roman", "Droid Serif", "Times", serif;
     margin: auto;
     padding: 20px;
     max-width: 720px;
     text-align: left;
-    background-color: white;
+    background-color: #fff;
     word-wrap: break-word;
     overflow-wrap: break-word;
     line-height: 1.5;
@@ -353,10 +365,10 @@ html {
 }
 
 body {
-    margin-left: 40%;
-    margin-right: 10%;
-    padding-right: 4%;
-    font-family: "Source Serif Pro",  "Apple Garamond", "Baskerville", "Libre Baskerville", "Times New Roman", "Droid Serif", "Times", serif;
+    margin-left: 15%;
+    margin-right: 4%;
+    padding-left: 4%;
+  padding-right: 20%;
     background-color: #f4f7f6;
     color: #111;
     max-width: 1400px;
@@ -372,20 +384,23 @@ body {
 }
 
 h1 {
-   font-feature-settings: 'smcp';
-    font-size: 1.75em;
-    line-height: 1.25;
-    letter-spacing: -0.75px;
-font-family: "Unifraktur Maguntia"                                                                                                                            
-}
-
-h1:first-of-type: {
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 4rem;
     margin-bottom: 1.5rem;
-    font-size: 3rem;
+    font-size: 3.2rem;
     line-height: 1;
-Font: Cheshire Initials;
+Text-align: center;
+font-variant: small-caps;
+Font-family: "Source Serif Pro";
+
+}
+
+.drop-cap:first-letter {
+  float: left;
+  font-size: 10em;
+  line-height: 1.2em;
+margin: 0;
+Font-family: "Romantique Initials";
 }
 
 .title {
@@ -437,13 +452,6 @@ p.subtitle {
     line-height: 1;
 }
 
-h3:first-of-type:first-letter {
-  float: left;
-  font-size: 5em;
-  margin: 0 .1em 0 0;
-  line-height: 0.85;
-  font-family: Unifraktur Maguntia
-}
 
 th {
 font-weight: 400;
@@ -629,15 +637,15 @@ img {
 Text-align: center;
 }
 
-.sidenote,
+.sidenote, 
 .marginnote {
     float: right;
     clear: right;
-    margin-right: -60%;
-    width: 50%;
+    margin-right: -30%;
+    width: 20%;
     margin-top: 0.3rem;
     margin-bottom: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.3;
     vertical-align: baseline;
     position: relative;
@@ -846,149 +854,125 @@ url("/hit/7550")
 ;
         border-width: 0;
       }
-               
-               
-a[href*="wikipedia.org/"] {
+	
+	a[href*="wikipedia.org/"] {
 background:url(/wikipedia.svg)no-repeat right center;
 padding-right:19px;
+border-bottom: 1px dashed #999;
+display: inline;
 		
 }
 a[href*="reddit.com/"] {
 background:url(/reddit.svg)no-repeat right center;
 padding-right:19px;
+border-bottom: 1px dashed #999;
+display: inline;
 		
 }
 a[href*="amazon.com/"] {
 background:url(/amazon.svg)no-repeat right center;
 padding-right:19px;
+border-bottom: 1px dashed #999;
+display: inline;
 		
 }
 a[href*=".pdf/"] {
 background:url(/pdf.svg)no-repeat right center;
 padding-right:19px;
-		
+border-bottom: 1px dashed #999;
+display: inline;
+	
 }
+	
   </style>
-
 </head>
 
 <body>
+  <header>
+    <a class="title" href="/">
+      <h1>
+        
+MD_
 
+      </h1>
+    </a>
+    <nav>
+      
+<a href="/">
+<img alt="HTML tutorial" src="https://matteodimaio.net/logo.png" width="200">
+</a>
+
+
+    </nav>
+  </header>
   <main>
+    <h1>
+    A declaration of the independence of cyberspace
+</h1>
+<hr>
+<p>
+    <i>
+        <time datetime="2021-08-22" pubdate>
+            06, Febuary, 02022
+        </time>
+    </i>
+</p>
+
 
 <content>
 
-<div>
-<a href="/">
-<img alt="HTML tutorial" src="https://matteodimaio.net/dithered-m.png" width="300">
-</a>
-</div>
-<div>
-<h3> THIS IS THE PERSONAL WEBSITE of <strong>Matteo Di Maio.</strong> Right now, it’s a <em>non sequitur</em> feed of essays, mainly from various school subjects, focusing on critical theory, literature, philosophy and classical studies.</h3>
-<p>  For updates, follow the <a href="https://www.reddit.com/r/enochthechronocom.rss"><em><u>RSS-feed</u></em></a>. For the latest posts, see <a href="/change-log.html"><em><u>Change-log.</u></em></a> Finally, for the purpose of this site, see <a href="/about-this-site.html"><em><u>About this site</u></em></a>.</p>
-<a href="/">
-</div>
-<div>
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Newest</a></h1>
-           
-<hr>
-<ul>
-                                                          <li><a href="/crypto.html">A references list for the crypto-curious/skeptical</a></li>
-                                                                 <li><a href="/future-holidays.html">Rationalist future family holidays</a></li>
-<li><a href="/lifecalendarcopy.html" class="link-local">How long will I live? {Graphical version}</a></li>
-                                                                                                                                  <li><a href="/slow-news.html" class="link-local">How do you read your 'slows'? The news and representativeness</a></li>
-                                                                 <li><a href="/the-wasps.html" class="link-local">'Just a little fable with a moral’: Philocleon and the comic spirit in <em>the Wasps</em></a></li>
-<li><a href="/how-long-will-i-live.html" class="link-local">How long will I live? (Or Reading List For the Rest of My Life, A)</a></li>
-                                                                                   <li><a href="/notes.html#paying-people-to-vote-wisely" class="link-local">Paying people to vote wisely</a></li>
-                                                                 <li><a href="/music.html">An eclectic playlist</a></li>
-</ul>
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Popular</a></h1>
-<ul>
-<hr>
-                                                                   <li><a href="/my-beliefs.html">References on my beliefs</a></li>
-<li><a href="/my-predictions.html" class="link-local">My predictions</a></li>
-<li><a href="/wheres-my-flying-car.html" class="link-local">"Where Is My Flying Car”—Make The Future Great Again</a></li>
-</ul>
+  <h3>by John Perry Barlow</h3>
+  <p>Governments of the Industrial World, you weary giants of flesh and steel, I come from Cyberspace, the new home of Mind. On behalf of the future, I ask you of the past to leave us alone. You are not welcome among us. You have no sovereignty where we gather.</p>
 
-<h1 style="font-family: Unifraktur Maguntia"><a href="#textbooks">Textbooks</a></h1>
-<hr>
-<ul>
-<li><a href="/haskell_from_first_principles_solutions.html">Haskell from First Principles solutions</a></li>
-</ul>
+  <p>We have no elected government, nor are we likely to have one, so I address you with no greater authority than that with which liberty itself always speaks. I declare the global social space we are building to be naturally independent of the tyrannies you seek to impose on us. You have no moral right to rule us nor do you possess any methods of enforcement we have true reason to fear.
 
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Artificial Intelligence</a></h1>
-<hr>
-<ul>
-<li><a href="/2021-generative-art-and-gender-representation-dimaio.pdf" class="link-local"><em>Ceci n'est pas une Artificial Intelligence:</em> A qualitative exploration of representation of gender and other concepts in Generative art and the wider media</a></li>
-<li><a href="/notes.html#trolley-problem" class="link-local">The trolley problem, but with Neuralink...</a></li>
-  <li><a href="/aesthetic-oxymorons.html" class="link-local"><b>NN art:</b> Aesthetic oxymorons</a></li>
-</ul>
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Design</a></h1>
-<hr>
-<ul>
-<li><a href="/typography-typography-and-tpygoarhpy.html" class="link-local">Typography, tYpOgRaPhY and tpygoarhpy</a></li>
-</ul>
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Literary criticism</a></h1>
-<hr>
-<ul>
-  <li><a href="/i-tonya.html" class="link-local">I, Tonya and the antibiopic</a></li>
-<li><a href="/altered-carbon-and-the-problem-of-the-cyborg.html" class="link-local">Altered Carbon and the problem of the cyborg</a></li>
-<li><a href="/cobra-kai-binary-poststructualism.html" class="link-local">Cobra Kai: any particular way you want me to analyze this Sensei?</a></li>
-<li><a href="/letters-to-a-young-contrarian-response.html" class="link-local">Letters to a young contrarian, responded to by a young contrarian</a></li>
-</ul>
+  <p>Governments derive their just powers from the consent of the governed. You have neither solicited nor received ours. We did not invite you. You do not know us, nor do you know our world. Cyberspace does not lie within your borders. Do not think that you can build it, as though it were a public construction project. You cannot. It is an act of nature and it grows itself through our collective actions.
 
-<h1 style="font-family:Unifraktur Magunt">Docs</h1>
-						<hr>
-						<ul>
-						  <li><a href="/declaration-of-the-independence-of-cyberspace.html">A declaration of the inderpendence of cyberspace</a></li>
-<li><a href="/principles-of-extropy.html">The principles of extropy</a></li>
-						  </ul>
+  <p>You have not engaged in our great and gathering conversation, nor did you create the wealth of our marketplaces. You do not know our culture, our ethics, or the unwritten codes that already provide our society more order than could be obtained by any of your impositions.</p>
 
+ <p> You claim there are problems among us that you need to solve. You use this claim as an excuse to invade our precincts. Many of these problems don't exist. Where there are real conflicts, where there are wrongs, we will identify them and address them by our means. We are forming our own Social Contract. This governance will arise according to the conditions of our world, not yours. Our world is different.
 
+ <p> Cyberspace consists of transactions, relationships, and thought itself, arrayed like a standing wave in the web of our communications. Ours is a world that is both everywhere and nowhere, but it is not where bodies live.
 
-						
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Fiction</a></h1>
-<hr>
-<ul>
-<li><a href="/plato-exe.html" class="link-local">Plato.exe: a work of collaborative fiction</a></li>
-<li><a href="/lockdown-fiction.html" class="link-local">#Lockdown</a></li>
-</ul>
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Classical studies</a></h1>
-<hr>
-<ul>
-  <li><a href="/roman-artwork-ideas-of-victory.html"  class="link-local">Classical Roman artwork and ideas of victory</a></li>
-<li><a href="/roman-attitudes-to-conquest.html" class="link-local">‘You get civilisation, you get civilisation, everyone gets civilisation!: Roman attitudes to conquest</a></li>
-<li><a href="/augustan-propaganda-in-the-ara-pacis.html" class="link-local">Augustan propaganda in the Ara Pacis</a></li>
-</ul>
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Other/personal</a></h1>
-<hr>
-<ul>
-<li><a href="/poems.html" class="link-local">Poems</a></li>
-  <li><a href="/notes.html" class="link-local">Notes & Miscellany</a></li> 
-  <li><a href="/todo.html" class="link-local">TODO</a></li>
-<li><a href="/super-top-secret-family-pizza-recipe.html" class="link-local">Super top secret family pizza recipe</a></li>
-<li><a href="https://www.instapaper.com/p/EChronocom" class="link-local">My link blog</a></li>
-  <li><a href="/links.html" class="link-local">Links & Cyberflâneur findings...</a></li>
-    <li><a href="/metaversebusinesscard.html" class="link-local">Contact</a></li>
-  <li><a href="https://www.goodreads.com/user/show/138388204-matteo-di-maio" class="link-local">Reading list</a></li>
-  <li><a href="/work.html">My journalism</a></li>
-  <li><a href="/about.html">About me</a></li>
+  <p>We are creating a world that all may enter without privilege or prejudice accorded by race, economic power, military force, or station of birth.
+
+<p>  We are creating a world where anyone, anywhere may express his or her beliefs, no matter how singular, without fear of being coerced into silence or conformity.
+
+  <p>Your legal concepts of property, expression, identity, movement, and context do not apply to us. They are all based on matter, and there is no matter here.
+
+  <p>Our identities have no bodies, so, unlike you, we cannot obtain order by physical coercion. We believe that from ethics, enlightened self-interest, and the commonweal, our governance will emerge. Our identities may be distributed across many of your jurisdictions. The only law that all our constituent cultures would generally recognize is the Golden Rule. We hope we will be able to build our particular solutions on that basis. But we cannot accept the solutions you are attempting to impose.
+
+ <p> In the United States, you have today created a law, the Telecommunications Reform Act, which repudiates your own Constitution and insults the dreams of Jefferson, Washington, Mill, Madison, DeToqueville, and Brandeis. These dreams must now be born anew in us.
+
+ <p> You are terrified of your own children, since they are natives in a world where you will always be immigrants. Because you fear them, you entrust your bureaucracies with the parental responsibilities you are too cowardly to confront yourselves. In our world, all the sentiments and expressions of humanity, from the debasing to the angelic, are parts of a seamless whole, the global conversation of bits. We cannot separate the air that chokes from the air upon which wings beat.
+
+<p>  In China, Germany, France, Russia, Singapore, Italy and the United States, you are trying to ward off the virus of liberty by erecting guard posts at the frontiers of Cyberspace. These may keep out the contagion for a small time, but they will not work in a world that will soon be blanketed in bit-bearing media.
+
+<p>  Your increasingly obsolete information industries would perpetuate themselves by proposing laws, in America and elsewhere, that claim to own speech itself throughout the world. These laws would declare ideas to be another industrial product, no more noble than pig iron. In our world, whatever the human mind may create can be reproduced and distributed infinitely at no cost. The global conveyance of thought no longer requires your factories to accomplish.
+
+ <p> These increasingly hostile and colonial measures place us in the same position as those previous lovers of freedom and self-determination who had to reject the authorities of distant, uninformed powers. We must declare our virtual selves immune to your sovereignty, even as we continue to consent to your rule over our bodies. We will spread ourselves across the Planet so that no one can arrest our thoughts.
+
+ <p> We will create a civilization of the Mind in Cyberspace. May it be more humane and fair than the world your governments have made before.
   
-</ul>
-</div>
-  <div style="padding: 10px; border: 2px solid red;"><b>Things I'm currently interested in/exploring:</b>
-    <p style="font-family: Menlo;font-size:10px;">Updated: 24/10/02021</p>
-    <li><a href="http://lojban.org/">Lojban</a></li>
-    <li> Adaptive music - <a href="https://endel.io/">Endel</a> and <a href="https://wendiyan.com/InTouch/">InTouch</a></li>
-    <li>>VRChat - I'm en0ch, and you can find me at the <a href="https://vrchat.com/home/launch?worldId=wrld_51dd76b0-fd86-4dfe-a53a-1eaaa8ca5225">Transhumanists in VR meetup</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Memetics">Memetics</a>; <a href="https://en.wikipedia.org/wiki/Snow_Crash">Snow Crash</a>, <a href="https://otherinter.net/research/lore/">Lore</a></li>
-</div>
+   <h3>Notes</h3>
+ <p>
+   This document harks back to the 90s, when the above form of techno-optimism was fashionable. So too, of course, were the myriad postmodern <a href="https://monoskop.org/images/4/42/Ludlow_Peter_Crypto_Anarchy_Cyberstates_and_Pirate_Utopias.pdf">critiques</a> of the Declaration's "neoliberal hubris". Such talk of a new "home of the mind" neglects the material fragility of fiber-optic cables. Likewise, the pastiche of the original "Declaration" was critiqued in line with the idea that America's founding fathers' shared a simillar hubristic vocabulary out of touch with the painful reality of America. One is reminded of an exchange in Neal Stephenson's <a href="https://en.wikipedia.org/wiki/Cryptonomicon">Cryptonomicon:</a>
 
-<a href="/">
-<img align="right" alt="HTML tutorial" src="/Greek.png" width="60"/>
-</a>
+   <blockquote>
 
 
+     "Very well, let me put it this way," Kivistik said magnanimously—he was not above dumbing down his material for the likes of Jon. "How many on-ramps will connect the world’s ghettos to the Information Superhighway?" <br>
+     Oh, that’s much clearer, everyone seemed to think. Point well taken, Geb! No one looked at Jon, that argumentative pariah. Jon looked helplessly over at Randy, signaling for help. <br>
+     Jon was a Hobbit who’d actually been out of the Shire recently, so he knew Randy was a dwarf. Now he was fucking up Randy’s life by calling upon Randy to jump up on the table, throw off his homespun cloak, and whip out his two-handed ax.<br>
+     The words came out of Randy’s mouth before he had time to think better of it. "The Information Superhighway is just a fucking metaphor! Give me a break!" he said.<br>
+
+     
+     </blockquote>
+
+   <p>So, what use does such a document hold these days? Well, I'm of the opinion that its central points still hold value:
+
+   <p>1. Cyberspace has no borders. This was perhaps a bit monolithic; old borders do not count so much in cyberspace; think crypto, or the "greater digital America" that is the online anglosphere. That doesn't mean cyberspace is <em>borderless</em> however; but its borders are esoteric, and ideological. And of course physical borders do break through; think the <a href="https://en.wikipedia.org/wiki/Great_Firewall">"Great Firewall of China"</a>. Bitcoin miners still manage to toil away within PRC, though.
+   <p>2. Likewise, the platonic internet ideal of "body-less" identities is no ubiqitous, but it is not a pipe-dream either. "Anons" with Anime avatars control <a href="https://twitter.com/ohmzeus">billions</a> in digital value; <a href="https://www.youtube.com/channel/UCZOE0VIASQTQ1X1w3BI1Hig">"V-tubers"</a> with voice-synthesises are as close to this ideal as one can get currently.
 </content>
 
 
@@ -996,50 +980,10 @@ padding-right:19px;
 
 </p>
 
-
-
   </main>
   <footer>
-With the goal of championing a more personal kind of analytics, do <a href="/guestbook.html">Sign the guestbook</a><br>
-<p style="text-align: center;font-size:70px;">&#934;</p><br>
-<br>
-Est. <a href="https://longnow.org/about/">02021</a> 
- | View on <a href="https://ipfs.matteodimaio.xyz/">IPFS</a>   
-	  <br>
-<script src="https://yesterwebring.neocities.org/script-min.js"></script>
-<webring-css site="https://matteodimaio.xyz/"></webring-css>  
-<style>:root {
---textColor:black;
---bgColor:#f4f7f6;
---linkColor:black;
---text-align:center;
-}</style>
     
-    <script>
-    var t = setInterval(function() {
-        if (window.goatcounter && window.goatcounter.visit_count) {
-            clearInterval(t)
-            window.goatcounter.visit_count({append: 'body'})
-        }
-    }, 100)
-</script>
-<script data-goatcounter="https://enochthechronocom.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-<script>
-    // Append to the <body>; can use a CSS selector to append somewhere else.
-    window.goatcounter.visit_count({append: 'body', style: 'div {border-color: #f4f7f6; background-color: #f4f7f6;}'
-                                   })
-</script>
-<script data-goatcounter="https://enochthechronocom.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-    <a style="font-family: Menlo;font-size:11px;color: green;" rel="me" href="https://mstdn.social/@enochthechronocom">~ Mastodon link back...</a>
-	  <a style="font-family: Menlo;font-size:11px;color: green;" href="https://keybase.io/enochthechronoco">&#128273; | ~ Keybase identity sig chain</a>
-
-<a style="font-family: Menlo;font-size:11px;color: green;" href="https://keyoxide.org/hkp/2179775cccbb59c684ffbccf54343bcbe77becf8">&#128273; | ~ OpenPGP sig chain</a>
-<br>
-&#8383; to enoch@ln.bitcoinbeach.com
-
-</footer>
+  </footer>
 </body>
 
 </html>
