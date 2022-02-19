@@ -1,0 +1,2271 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>
+📜
+</text></svg>">
+  <title>
+An introduction to cybernetics</title>
+ 
+ <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	
+<link rel="preload" href="/SourceSansPro-BASIC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/SourceSerifPro-BASIC-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/SourceSerifPro-BASIC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/SourceSerifPro-BASIC-RegularItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/FancyEnglish.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
+<style>
+    @font-face {
+        font-family: 'Source Serif Pro';
+        font-weight: 400;
+        font-style: normal;
+        src: url('/SourceSerifPro-BASIC-Regular.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+    @font-face {
+        font-family: 'Source Serif Pro';
+        font-weight: 400;
+        font-style: italic;
+        src: url('/SourceSerifPro-BASIC-RegularItalic.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Source Serif Pro';
+        font-weight: 600;
+        font-style: normal;
+        src: url('/SourceSerifPro-BASIC-Semibold.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+    @font-face {
+        font-family: 'Source Serif Pro';
+        font-weight: 700;
+        font-style: normal;
+        src: url('/SourceSerifPro-BASIC-Bold.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-weight: 400;
+        font-style: normal;
+        src: url('/SourceSansPro-BASIC-Regular.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-weight: 400;
+        font-style: italic;
+        src: url('/SourceSansPro-BASIC-RegularItalic.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-weight: 700;
+        font-style: normal;
+        src: url('/SourceSansPro-BASIC-Bold.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+
+@font-face {
+        font-family: 'Romantique Initials';
+        font-weight: 400;
+        font-style: normal;
+        src: url('/Romantiqueinitials.ttf') format('truetype');
+        unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
+        font-display: swap
+    }
+ 
+    body {
+    font-family: "Source Serif Pro", "Intellecta Monograms Random Samples Eleven", "Romantique Initials", "Apple Garamond", "Baskerville", "Libre Baskerville", "Times New Roman", "Droid Serif", "Times", serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6,
+strong,
+b {
+    color: #222;
+}
+
+a {
+    color: #3273dc;
+    /*color: #ff5e6c;*/
+}
+
+.title {
+    text-decoration: none;
+    border: 0;
+}
+
+.title h1 {
+    font-size: 1.5em;
+}
+
+.title span {
+    font-weight: 400;
+}
+
+.bear::before {
+    content: "ᕦʕ •ᴥ•ʔᕤ";
+    font-weight: 400;
+}
+.bear:hover::before {
+    content: "ᕙʕ ಠᴥಠʔᕗ";
+    font-weight: 400;
+}
+
+nav a {
+    margin-right: 10px;
+}
+
+textarea,
+input:not([type="submit"]) {
+    background-color: inherit;
+    color: inherit;
+    border: 1px dashed;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.full-width textarea,
+.full-width input:not([type="submit"], [type="checkbox"]) {
+    width: 100%;
+}
+
+.inline {
+    width: auto !important;
+}
+
+textarea:required,
+input:required:not([type="submit"]){
+    border: 1px solid;
+}
+
+
+content {
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+code{
+    font-family: monospace;
+    padding: 2px;
+    background-color: #f2f2f2;
+    color: #222;
+    border-radius: 3px;
+}
+
+.highlight,
+.code {
+    padding: 1px 15px;
+    background-color: #f2f2f2;
+    color: #222;
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+}
+
+.helptext {
+    color: #777;
+    font-size: small;
+}
+
+.errorlist {
+    color: #eba613;
+    font-size: small;
+}
+
+#id_favicon {
+    width: 20px;
+    text-align: center;
+}
+
+#date-range,
+#initial-values,
+#import-contacts {
+    display: none;
+}
+
+#date-range:target,
+#initial-values:target,
+#import-contacts:target {
+    display: block;
+}
+
+/* dashboard post list and analytics */
+ul.post-list {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.post-list li {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px dashed;
+}
+
+ul.post-list li span {
+    flex: 0 0 130px;
+}
+
+ul.post-list li span.number {
+    flex: 0 0 50px;
+}
+
+ul.post-list li a {
+    flex: max-content;
+}
+
+ul.post-list li small {
+    text-align: right;
+    flex: 0 0 115px;
+}
+
+/* blog posts */
+ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.blog-posts li {
+    display: flex;
+}
+
+ul.blog-posts li span {
+    flex: 0 0 130px;
+}
+
+ul.blog-posts li a:visited {
+  color: #8b6fcb;
+}
+
+/* discovery feed */
+ul.discover-posts {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.discover-posts li {
+    display: flex;
+    line-height: 1.2;
+}
+
+ul.discover-posts li span {
+    flex: 0 0 40px;
+}
+
+ul.discover-posts li a:visited {
+  color: #8b6fcb;
+}
+
+ul.discover-posts li div {
+    padding-bottom: 8px;
+}
+
+ul.discover-posts li small {
+    color: #777 !important;
+}
+
+ul.discover-posts li small a {
+    color: #777 !important;
+}
+
+
+    @media (prefers-color-scheme: dark) {
+    body {
+        background-color:#01242e;
+        color: #ddd;
+    }
+
+    h1,
+    h2,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+        color: #eee;
+    }
+
+    a {
+        color: #8cc2dd;
+    }
+
+    code {
+        background-color: #777;
+    }
+
+    pre code {
+        color: #ddd;
+    }
+
+    blockquote {
+        color: #ccc;
+    }
+
+    .helptext {
+        color: #aaa;
+    }
+}
+
+
+/* Tufte CSS styles */
+html {
+    font-size: 15px;
+}
+
+body {
+    margin-left: 15%;
+    margin-right: 4%;
+    padding-left: 4%;
+  padding-right: 20%;
+    background-color: #f4f7f6;
+    color: #111;
+    max-width: 1400px;
+    counter-reset: sidenote-counter;
+}
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #151515;
+        color: #ddd;
+    }
+}
+
+h1 {
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    font-size: 3.2rem;
+    line-height: 1;
+Text-align: center;
+font-variant: small-caps;
+Font-family: "Source Serif Pro";
+
+}
+
+.drop-cap:first-letter {
+  float: left;
+  font-size: 10em;
+  line-height: 1.2em;
+margin: 0;
+Font-family: "Romantique Initials";
+}
+
+.title {
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    font-size: 0rem;
+    line-height: 1;
+color: #fffff8;
+
+}
+
+h2 {
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 2.1rem;
+    margin-bottom: 1.4rem;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+h3 {
+   font-size: 1.4rem;
+   line-height: 2rem;
+margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding-right: 1;
+    vertical-align: baseline;
+font-style: normal;
+Text-align: justify;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 55%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+p.subtitle {
+    font-style: italic;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    display: block;
+    line-height: 1;
+}
+
+
+th {
+font-weight: 400;
+margin-top: 2.1rem;
+margin-bottom: 1.4rem;
+font-size: 1.6rem;
+line-height: 1;
+font-style: normal;
+font-variant: small-caps;
+
+}
+
+.numeral {
+Font-size: 1.6rem;
+}
+
+.danger {
+    color: red;
+}
+
+article {
+    padding: 5rem 0rem;
+}
+
+.footer {
+color: #111;
+}
+
+section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+p,
+dl,
+ol,
+ul {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+p {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding-right: 1;
+    vertical-align: baseline;
+Text-align: justify; 
+}
+
+
+/* Chapter Epigraphs */
+div.epigraph {
+    margin: 5em 0;
+}
+
+div.epigraph > blockquote {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+div.epigraph > blockquote,
+div.epigraph > blockquote > p {
+    font-style: italic;
+}
+
+div.epigraph > blockquote > footer {
+    font-style: normal;
+color: #ffffff;
+}
+
+div.epigraph > blockquote > footer > cite {
+    font-style: italic;
+}
+/* end chapter epigraphs styles */
+
+blockquote {
+    font-size: 1.4rem;
+}
+
+blockquote p {
+    width: 55%;
+    margin-right: 40px;
+}
+
+blockquote footer {
+    width: 55%;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+section > p,
+section > footer,
+section > table {
+    width: 55%;
+}
+
+/* 50 + 5 == 55, to be the same width as paragraph */
+section > dl,
+section > ol,
+section > ul {
+    width: 50%;
+    -webkit-padding-start: 5%;
+}
+
+dt:not(:first-child),
+li:not(:first-child) {
+    margin-top: 0.25rem;
+}
+
+figure {
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    max-width: 55%;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin: 0 0 3em 0;
+}
+
+figcaption {
+    float: right;
+    clear: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    vertical-align: baseline;
+    position: relative;
+    max-width: 40%;
+}
+
+figure.fullwidth figcaption {
+    margin-right: 24%;
+}
+
+/* Links: replicate underline that clears descenders */
+a:link,
+a:visited {
+    color: inherit;
+}
+
+.no-tufte-underline:link {
+    background: unset;
+    text-shadow: unset;
+}
+
+a:link, .tufte-underline, .hover-tufte-underline:hover {
+    text-decoration: none;
+    background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(currentColor, currentColor);
+    background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(currentColor, currentColor);
+    -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: 0.03em 0 #fffff8, -0.03em 0 #fffff8, 0 0.03em #fffff8, 0 -0.03em #fffff8, 0.06em 0 #fffff8, -0.06em 0 #fffff8, 0.09em 0 #fffff8, -0.09em 0 #fffff8, 0.12em 0 #fffff8, -0.12em 0 #fffff8, 0.15em 0 #fffff8, -0.15em 0 #fffff8;
+    background-position: 0% 93%, 100% 93%, 0% 93%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    a:link, .tufte-underline, .hover-tufte-underline:hover {
+        background-position-y: 87%, 87%, 87%;
+    }
+}
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    a:link, .tufte-underline, .hover-tufte-underline:hover {
+        text-shadow: 0.03em 0 #151515, -0.03em 0 #151515, 0 0.03em #151515, 0 -0.03em #151515, 0.06em 0 #151515, -0.06em 0 #151515, 0.09em 0 #151515, -0.09em 0 #151515, 0.12em 0 #151515, -0.12em 0 #151515, 0.15em 0 #151515, -0.15em 0 #151515;
+    }
+}
+
+a:link::selection,
+a:link::-moz-selection {
+    text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
+    background: #b4d5fe;
+}
+
+/* Sidenotes, margin notes, figures, captions */
+img {
+    max-width: 100%;
+Text-align: center;
+}
+
+.sidenote, 
+.marginnote {
+    float: right;
+    clear: right;
+    margin-right: -30%;
+    width: 20%;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.3;
+    vertical-align: baseline;
+    position: relative;
+}
+
+.sidenote-number {
+    counter-increment: sidenote-counter;
+}
+
+.sidenote-number:after,
+.sidenote:before {
+    font-family: et-book-roman-old-style;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.sidenote-number:after {
+    content: counter(sidenote-counter);
+    font-size: 1rem;
+    top: -0.5rem;
+    left: 0.1rem;
+}
+
+.sidenote:before {
+    content: counter(sidenote-counter) " ";
+    font-size: 1rem;
+    top: -0.5rem;
+}
+
+blockquote .sidenote,
+blockquote .marginnote {
+    margin-right: -82%;
+    min-width: 59%;
+    text-align: left;
+}
+
+div.fullwidth,
+table.fullwidth {
+    width: 100%;
+}
+
+div.table-wrapper {
+    overflow-x: auto;
+    font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
+}
+
+.sans {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    letter-spacing: .03em;
+}
+
+code, pre > code {
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 1.0rem;
+    line-height: 1.42;
+    -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+}
+
+.sans > code {
+    font-size: 1.2rem;
+}
+
+h1 > code,
+h2 > code,
+h3 > code {
+    font-size: 0.80em;
+}
+
+.marginnote > code,
+.sidenote > code {
+    font-size: 1rem;
+}
+
+pre > code {
+    font-size: 0.9rem;
+    width: 52.5%;
+    margin-left: 2.5%;
+    overflow-x: auto;
+    display: block;
+}
+
+pre.fullwidth > code {
+    width: 90%;
+}
+
+.fullwidth {
+    max-width: 90%;
+    clear:both;
+}
+
+span.newthought {
+    font-variant: small-caps;
+    font-size: 1.2em;
+}
+
+input.margin-toggle {
+    display: none;
+}
+
+label.sidenote-number {
+    display: inline;
+}
+
+label.margin-toggle:not(.sidenote-number) {
+    display: none;
+}
+
+.iframe-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 760px) {
+    body {
+        width: 84%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    hr,
+    section > p,
+    section > footer,
+    section > table {
+        width: 100%;
+    }
+
+    pre > code {
+        width: 97%;
+    }
+
+    section > dl,
+    section > ol,
+    section > ul {
+        width: 90%;
+    }
+
+    figure {
+        max-width: 90%;
+    }
+
+    figcaption,
+    figure.fullwidth figcaption {
+        margin-right: 0%;
+        max-width: none;
+    }
+
+    blockquote {
+        margin-left: 1.5em;
+        margin-right: 0em;
+    }
+
+    blockquote p,
+    blockquote footer {
+        width: 100%;
+    }
+
+    label.margin-toggle:not(.sidenote-number) {
+        display: inline;
+    }
+
+    .sidenote,
+    .marginnote {
+        display: none;
+    }
+
+    .margin-toggle:checked + .sidenote,
+    .margin-toggle:checked + .marginnote {
+        display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 95%;
+        margin: 1rem 2.5%;
+        vertical-align: baseline;
+        position: relative;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    div.table-wrapper,
+    table {
+        width: 85%;
+    }
+
+    img {
+        width: 100%;
+Text-align: center;
+    }
+}
+
+      body:hover {
+        border-image: 
+url("/hit/7550")
+;
+        border-width: 0;
+      }
+	
+	a[href*="wikipedia.org/"] {
+background:url(/wikipedia.svg)no-repeat right center;
+padding-right:19px;
+border-bottom: 1px dashed #999;
+display: inline;
+		
+}
+a[href*="reddit.com/"] {
+background:url(/reddit.svg)no-repeat right center;
+padding-right:19px;
+border-bottom: 1px dashed #999;
+display: inline;
+		
+}
+a[href*="amazon.com/"] {
+background:url(/amazon.svg)no-repeat right center;
+padding-right:19px;
+border-bottom: 1px dashed #999;
+display: inline;
+		
+}
+a[href*=".pdf/"] {
+background:url(/pdf.svg)no-repeat right center;
+padding-right:19px;
+border-bottom: 1px dashed #999;
+display: inline;
+	
+}
+
+#TOC {
+    border: 1px solid var(--GW-TOC-border-color);
+    background-color: var(--GW-TOC-background-color);
+    font-family: var(--GW-sans-serif-font-stack);
+    margin: 0 2rem 1.5rem 0;
+    line-height: 1.25;
+    padding: 10px 10px 2px 14px;
+    position: relative;
+    z-index: 11;
+  }
+
+  #TOC:empty {
+    display: none;
+  }
+
+  /*  On mobile, we want the TOC to be inline, but for desktop, we want it side by side with the content.
+    */
+  @media only screen and (max-width: 1280px) {
+    #TOC {
+        font-size: 0.95rem;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    #TOC {
+        font-size: 0.90rem;
+    }
+  }
+
+  @media only screen and (max-width: 1120px) {
+    #TOC {
+        font-size: 0.85rem;
+        margin: 0 1.5rem 1.25rem 0;
+    }
+  }
+
+  @media only screen and (max-width: 1040px) {
+    #TOC {
+        font-size: 0.80rem;
+        margin: 0 1.25rem 1rem 0;
+    }
+  }
+
+  @media only screen and (max-width: 960px) {
+    #TOC {
+        margin: 0 1rem 1rem 0;
+    }
+  }
+
+  @media only screen and (min-width: 900px) {
+    #TOC {
+        float: left;
+        max-width: 285px;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    #TOC {
+        float: none;
+        margin: 2em auto;
+        font-size: 1rem;
+    }
+    #TOC > ul > li > ul {
+        column-count: 2;
+    }
+  }
+
+  @media only screen and (max-width: 649px) {
+    #TOC a {
+        display: inline-block;
+    }
+    #TOC > ul > li > ul {
+        column-count: 1;
+    }
+    #TOC li li a {
+        padding: 0 0 1px 0;
+    }
+    #TOC li li li a {
+        padding: 0 0 2px 0;
+    }
+    #TOC li li li li a {
+        padding: 0 0 3px 0;
+    }
+    #TOC li li li li a {
+        padding: 0 0 4px 0;
+    }
+  }
+
+  /*=-----------------=*/
+  /*= TOC list layout =*/
+  /*=-----------------=*/
+
+  #TOC ul {
+    list-style-type: none;
+    padding-left: 0em;
+    margin-bottom: 0;
+    margin-top: 4px;
+    padding-left: 1.4em;
+    text-indent: 0;
+    padding: 0;
+    overflow: unset;
+  }
+
+  #TOC ul ul {
+    list-style-type: none;
+    padding-left: 0.7em;
+    margin-top: 2px;
+  }
+
+  #TOC li {
+    font-weight: bold;
+    margin: 5px 0 10px 0;
+    padding-left: 1.125em;
+    position: relative;
+    overflow-wrap: break-word;
+  }
+
+  #TOC li li {
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 0.9em;
+  }
+
+  #TOC p {
+    margin-top: 9px;
+    margin-bottom: 3px;
+  }
+
+  /*=------------------=*/
+  /*= TOC link styling =*/
+  /*=------------------=*/
+
+  #TOC a {
+    border: 0;
+    display: block;
+    position: relative;
+    padding: 0 0.25rem 0 0;
+  }
+
+  #TOC a:hover {
+    background-color: var(--GW-TOC-link-hover-background-color);
+    color: var(--GW-TOC-link-hover-color);
+  }
+  #TOC a:hover::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: var(--GW-TOC-link-hover-indicator-bar-color);
+    width: 0.25em;
+    height: 100%;
+  }
+
+  /*=--------------------------=*/
+  /*= Inline code in TOC links =*/
+  /*=--------------------------=*/
+
+  #TOC code {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    padding: 0;
+    background-color: inherit;
+  }
+
+  /*=-------------------------------=*/
+  /*= Wikipedia-style TOC numbering =*/
+  /*=-------------------------------=*/
+
+  #TOC > ul {
+    counter-reset: htoc_1;
+  }
+  #TOC > ul > li::before {
+    counter-increment: htoc_1;
+    content: counter(htoc_1) "\2006  ";
+  }
+  #TOC > ul ul {
+    counter-reset: htoc_2;
+  }
+  #TOC > ul ul li::before {
+    counter-increment: htoc_2;
+    content: counter(htoc_1) "." counter(htoc_2) "\2006  ";
+  }
+  #TOC > ul ul ul {
+    counter-reset: htoc_3;
+  }
+  #TOC > ul ul ul li::before {
+    counter-increment: htoc_3;
+    content: counter(htoc_1) "." counter(htoc_2) "." counter(htoc_3) "\2006  ";
+  }
+  #TOC > ul ul ul ul {
+    counter-reset: htoc_4;
+  }
+  #TOC > ul ul ul ul li::before {
+    counter-increment: htoc_4;
+    content: counter(htoc_1) "." counter(htoc_2) "." counter(htoc_3) "." counter(htoc_4) "\2006  ";
+  }
+  #TOC > ul ul ul ul ul {
+    counter-reset: htoc_5;
+  }
+  #TOC > ul ul ul ul ul li::before {
+    counter-increment: htoc_5;
+    content: counter(htoc_1) "." counter(htoc_2) "." counter(htoc_3) "." counter(htoc_4) "." counter(htoc_5) "\2006  ";
+  }
+  #TOC > ul ul ul ul ul ul {
+    counter-reset: htoc_6;
+  }
+  #TOC > ul ul ul ul ul ul li::before {
+    counter-increment: htoc_6;
+    content: counter(htoc_1) "." counter(htoc_2) "." counter(htoc_3) "." counter(htoc_4) "." counter(htoc_5) "." counter(htoc_6) "\2006  ";
+  }
+  #TOC ul li::before {
+    position: absolute;
+    right: calc(100% - 1em);
+    left: unset;
+    width: 111px;
+    text-align: right;
+    font-weight: normal;
+    pointer-events: none;
+    color: var(--GW-TOC-number-color);
+  }
+  #TOC ul li:hover::before {
+    color: var(--GW-TOC-number-hover-color);
+  }
+
+  /* The table of contents is a *table*, so align */
+  #TOC {
+    font-variant-numeric: tabular-nums;
+  }
+
+  #TOC:empty {
+    display: none;
+  }
+
+  /*  On mobile, we want the TOC to be inline, but for desktop, we want it side by side with the content.
+    */
+  @media only screen and (max-width: 1280px) {
+    #TOC {
+        font-size: 0.95rem;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    #TOC {
+        font-size: 0.90rem;
+    }
+  }
+
+  @media only screen and (max-width: 1120px) {
+    #TOC {
+        font-size: 0.85rem;
+        margin: 0 1.5rem 1.25rem 0;
+    }
+  }
+
+  @media only screen and (max-width: 1040px) {
+    #TOC {
+        font-size: 0.80rem;
+        margin: 0 1.25rem 1rem 0;
+    }
+  }
+
+  @media only screen and (max-width: 960px) {
+    #TOC {
+        margin: 1 1rem 1rem 1;
+    }
+  }
+
+  @media only screen and (min-width: 900px) {
+    #TOC {
+        float: left;
+        max-width: 285px;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    #TOC {
+        float: none;
+        margin: 2em auto;
+        font-size: 1rem;
+    }
+    #TOC > ul > li > ul {
+        column-count: 2;
+    }
+  }
+
+  @media only screen and (max-width: 649px) {
+    #TOC a {
+        display: inline-block;
+    }
+    #TOC > ul > li > ul {
+        column-count: 1;
+    }
+    #TOC li li a {
+        padding: 0 0 1px 0;
+    }
+    #TOC li li li a {
+        padding: 0 0 2px 0;
+    }
+    #TOC li li li li a {
+        padding: 0 0 3px 0;
+    }
+    #TOC li li li li a {
+        padding: 0 0 4px 0;
+    }
+  }
+
+  /*=-----------------=*/
+  /*= TOC list layout =*/
+  /*=-----------------=*/
+
+  #TOC ul {
+    list-style-type: none;
+    padding-left: 4em;
+    padding-right: 6em;
+    margin-bottom: 0;
+    margin-top: 4px;
+    padding-left: 1.4em;
+    text-indent: 0;
+    padding: 0;
+    overflow: unset;
+  }
+
+  #TOC ul ul {
+    list-style-type: none;
+    padding-left: 0.7em;
+    margin-top: 2px;
+  }
+
+  #TOC li {
+    font-weight: bold;
+    margin: 5px 0 10px 0;
+    padding-left: 1.125em;
+    position: relative;
+    overflow-wrap: break-word;
+  }
+
+  #TOC li li {
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 0.9em;
+  }
+
+  #TOC p {
+    margin-top: 9px;
+    margin-bottom: 3px;
+  }
+
+  /*=------------------=*/
+  /*= TOC link styling =*/
+  /*=------------------=*/
+
+  #TOC a {
+    border: 0;
+    display: block;
+    position: relative;
+    padding: 0 0.25rem 0 0;
+  }
+
+  #TOC a:hover {
+    background-color: var(--GW-TOC-link-hover-background-color);
+    color: var(--GW-TOC-link-hover-color);
+  }
+  #TOC a:hover::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: var(--GW-TOC-link-hover-indicator-bar-color);
+    width: 0.25em;
+    height: 100%;
+  }
+
+  /*=--------------------------=*/
+  /*= Inline code in TOC links =*/
+  /*=--------------------------=*/
+
+  #TOC code {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    padding: 0;
+    background-color: inherit;
+  }
+
+  /*=-------------------------------=*/
+  /*= Wikipedia-style TOC numbering =*/
+  /*=-------------------------------=*/
+
+  #TOC > ul {
+    counter-reset: htoc_1;
+  }
+  #TOC > ul > li::before {
+    counter-increment: htoc_1;
+    content: counter(htoc_1) "\2006  ";
+  }
+  #TOC > ul ul {
+    counter-reset: htoc_2;
+  }
+  #TOC > ul ul li::before {
+    counter-increment: htoc_2;
+    content: counter(htoc_1) "." counter(htoc_2) "\2006  ";
+  }
+  #TOC > ul ul ul {
+    counter-reset: htoc_3;
+  }
+  #TOC > ul ul ul li::before {
+    counter-increment: htoc_3;
+    content: counter(htoc_1) "." counter(htoc_2) "." counter(htoc_3) "\2006  ";
+  }
+  #TOC > ul ul ul ul {
+    counter-reset: htoc_4;
+  }
+  #TOC > ul ul ul ul li::before {
+    counter-increment: htoc_4;
+    content: counter(htoc_1) "." counter(htoc_2) "." counter(htoc_3) "." counter(htoc_4) "\2006  ";
+  }
+  #TOC > ul ul ul ul ul {
+    counter-reset: htoc_5;
+  }
+  #TOC > ul ul ul ul ul li::before {
+    counter-increment: htoc_5;
+    content: counter(htoc_1) "." counter(htoc_2) "." counter(htoc_3) "." counter(htoc_4) "." counter(htoc_5) "\2006  ";
+  }
+  #TOC > ul ul ul ul ul ul {
+    counter-reset: htoc_6;
+  }
+  #TOC > ul ul ul ul ul ul li::before {
+    counter-increment: htoc_6;
+    content: counter(htoc_1) "." counter(htoc_2) "." counter(htoc_3) "." counter(htoc_4) "." counter(htoc_5) "." counter(htoc_6) "\2006  ";
+  }
+  #TOC ul li::before {
+    position: absolute;
+    right: calc(100% - 1em);
+    left: unset;
+    width: 111px;
+    text-align: right;
+    font-weight: normal;
+    pointer-events: none;
+    color: var(--GW-TOC-number-color);
+  }
+  #TOC ul li:hover::before {
+    color: var(--GW-TOC-number-hover-color);
+  }
+
+  /* The table of contents is a *table*, so align */
+  #TOC {
+    font-variant-numeric: tabular-nums;
+  }
+
+
+  a[href*="pespmc1.vub.ac.be/"] {
+background:url("https://matteodimaio.net/pdf.svg")no-repeat right center;
+padding-right:19px;
+border-bottom: 1px dashed #999;
+display: inline;
+	
+  }
+
+
+  #answers {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightgrey;
+  margin-top: 20px;
+  display: none;
+  
+  }
+  
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="title" href="/">
+      <h1>
+        
+MD_
+
+      </h1>
+    </a>
+    <nav>
+      
+<a href="/">
+<img alt="HTML tutorial" src="https://matteodimaio.net/logo.png" width="200">
+</a>
+
+
+    </nav>
+  </header>
+  <main>
+    <h1>
+An introduction to Cybernetics 
+</h1>
+<hr>
+<p>
+    <i>
+        <time datetime="2021-08-22" pubdate>
+            06, Febuary, 02022
+        </time>
+    </i>
+</p>
+<p>This is an html translation of W. Ross Ashby's formative Cybernetics textbook, which you can find <a href="http://pespmc1.vub.ac.be/books/IntroCyb.pdf">here</a></p>
+<hr/>
+<p>| <em>meta</em> <br/>
+|  <em>In progress • Docs • Cybernetics</em>  |</p>
+<hr/>
+
+
+<content>
+
+
+<h3>By W. Ross Ashby </h3>
+
+<h3> <em>M.A., M.D.(Cantab.), D.P.M. Director of Research Barnwood House, Gloucester</em></h3>
+
+
+<div style="padding: 10px; border: 2px solid red;"><b>Copyright notice</b>
+    <p style="font-family: Menlo;font-size:10px;">
+
+
+
+Copyright © 1956, 1999 <br>
+by The Estate of W. Ross Ashby <br>
+Non- profit reproduction and distribution of this text for<br>
+educational and research reasons is permitted<br>
+providing this copyright statement is included<br>
+Referencing this text:<br>
+W. Ross Ashby, An Introduction to Cybernetics,<br>
+Chapman & Hall, London, 1956. Internet (1999):<br>
+http://pcp.vub.ac.be/books/IntroCyb.pdf<br>
+Prepared for the Principia<br>
+Cybernetica Web<br>
+With kind permission of the Estate trustees<br>
+Jill Ashby<br>
+Sally Bannister<br>
+Ruth Pettit<br>
+Many thanks to<br>
+Mick Ashby<br>
+Concept<br>
+Francis Heylighen<br>
+Realisation<br>
+Alexander Riegler<br>
+with additional help from<br>
+Didier Durlinger<br>
+An Vranckx<br>
+Véronique Wilquet<br>
+</p>
+
+
+</div>
+
+
+<h3>PREFACE</h3>
+<p class="drop-cap">Many workers in the biological sciences—physiologists, psychologists, sociologists—are interested in cybernetics and would like to apply its methods and techniques to their own speciality. Many have, however, been prevented from taking up the subject by an impression that its use must be preceded by a long study of electronics and advanced pure mathematics; for they have formed the impression that cybernetics and these subjects are inseparable.</p>
+
+<p>The author is convinced, however, that this impression is false. The basic ideas of cybernetics can be treated without reference to electronics, and they are fundamentally simple; so although advanced techniques may be necessary for advanced applications, a great deal can be done, especially in the biological sciences, by the use of quite simple techniques, provided they are used with a clear and deep understanding of the principles involved. It is the author’s belief that if the subject is founded in the common-place and well understood, and is then built up carefully, step by step, there is no reason why the worker with only elementary mathematical knowledge should not achieve a complete understanding
+of its basic principles. With such an understanding he will then be
+able to see exactly what further techniques he will have to learn if
+he is to proceed further; and, what is particularly useful, he will be
+able to see what techniques he can safely ignore as being irrelevant to his purpose.</p>
+
+<p>The book is intended to provide such an introduction. It starts
+from common-place and well-understood concepts, and proceeds,
+step by step, to show how these concepts can be made exact, and
+how they can be developed until they lead into such subjects as
+feedback, stability, regulation, ultrastability, information, coding,
+noise, and other cybernetic topics. Throughout the book no
+knowledge of mathematics is required beyond elementary algebra; in particular, the arguments nowhere depend on the calculus
+(the few references to it can be ignored without harm, for they are
+intended only to show how the calculus joins on to the subjects
+discussed, if it should be used). The illustrations and examples are
+mostly taken from the biological, rather than the physical, sciences. Its overlap with Design for a Brain is small, so that the two
+books are almost independent. They are, however, intimately
+related, and are best treated as complementary; each will help to
+illuminate the other.</p>
+
+<p>It is divided into three parts.</p>
+<p>Part I deals with the principles of Mechanism, treating such
+matters as its representation by a transformation, what is meant by
+“stability”, what is meant by “feedback”, the various forms of
+independence that can exist within a mechanism, and how mechanisms can be coupled. It introduces the principles that must be
+followed when the system is so large and complex (e.g. brain or
+society) that it can be treated only statistically. It introduces also
+the case when the system is such that not all of it is accessible to
+direct observation—the so-called Black Box theory.</p>
+<p>Part II uses the methods developed in Part I to study what is
+meant by “information”, and how it is coded when it passes
+through a mechanism. It applies these methods to various problems in biology and tries to show something of the wealth of possible applications. It leads into Shannon’s theory; so after reading
+this Part the reader will be able to proceed without difficulty to the
+study of Shannon’s own work.</p>
+<p>Part III deals with mechanism and information as they are used
+in biological systems for regulation and control, both in the inborn
+systems studied in physiology and in the acquired systems studied
+in psychology. It shows how hierarchies of such regulators and
+controllers can be built, and how an amplification of regulation is
+thereby made possible. It gives a new and altogether simpler
+account of the principle of ultrastability. It lays the foundation for
+a general theory of complex regulating systems, developing further the ideas of Design for a Brain. Thus, on the one hand it provides an explanation of the outstanding powers of regulation
+possessed by the brain, and on the other hand it provides the principles by which a designer may build machines of like power.</p>
+<p>Though the book is intended to be an easy introduction, it is not
+intended to be merely a chat about cybernetics—it is written for
+those who want to work themselves into it, for those who want to
+achieve an actual working mastery of the subject. It therefore contains abundant easy exercises, carefully graded, with hints and
+explanatory answers, so that the reader, as he progresses, can test his
+grasp of what he has read, and can exercise his new intellectual muscles. A few exercises that need a special technique have been marked
+thus: *Ex. Their omission will not affect the reader’s progress.</p>
+<p>For convenience of reference, the matter has been divided into
+sections; all references are to the section, and as these numbers are
+shown at the top of every page, finding a section is as simple and
+direct as finding a page. The section is shown thus: S.9/14—indicating the fourteenth section in Chapter 9. Figures, Tables, and
+Exercises have been numbered within their own sections; thus
+Fig. 9/14/2 is the second figure in S.9/14. A simple reference, e.g.
+Ex. 4, is used for reference within the same section. Whenever a
+word is formally defined it is printed in <b>bold-faced</b> type.</p>
+<p>I would like to express my indebtedness to Michael B. Sporn,
+who checked all the Answers. I would also like to take this opportunity to express my deep gratitude to the Governors of Barnwood
+House and to Dr. G. W. T. H. Fleming for the generous support that
+made these researches possible. Though the book covers many topics, these are but means; the end has been throughout to make clear
+what principles must be followed when one attempts to restore normal function to a sick organism that is, as a human patient, of fearful complexity. It is my faith that the new understanding may lead
+to new and effective treatments, for the need is great.</p>
+<p>W. ROSS ASHBY</p>
+<p style="text-align: right">Barnwood House, <br>
+Gloucester</p>
+
+
+
+
+<div id="TOC">
+<ul>
+<li>
+<a href="#what-is-new"><span>WHAT IS NEW</span></a>
+<ul>
+<li>
+<a href="#poc"><span>The peculiarities of cybernetics</span></a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#uoc"><span>The uses of cybernetics</span></a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#mechanisms"><span>PART ONE: mechanisms</span></a>
+<ul>
+<li>
+<a href="#change"><span>Change</span></a>
+<ul>
+<li>
+<a href="#transformation"><span>Transformation</span></a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#repeated-change"><span>Repeated change</span></a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#the-determinate-machine"><span>The determinate machine</span></a>
+<ul>
+<li>
+<a href="#vectors"><span>Vectors</span></a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#the-machine-with-input"><span>The machine with input</span></a>
+<ul>
+<li>
+<a href="#coupling-systems"><span>Coupling systems</span></a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#feedback"><span>Feedback</span></a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#independence-within-a-whole"><span>Independence within a whole</span></a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#the-very-large-system"><span>The very large system</span></a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#stability"><span>Stability</span></a>
+<ul>
+<li>
+<a href="#disturbance"><span>Disturbance</span></a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#equillibrium"><span>Equilibrium in part and whole</span></a>
+</li>
+</ul>
+</li>
+</li>
+<li>
+<a href="#the-black-box"><span>The black box</span></a>
+<ul>
+<li>
+<a href="#isomorphic-machines"><span>Isomorphic machines</span></a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#homomorphic-machines"><span>Homomorphic machines</span></a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#the-very-large-box"><span>The very large box</span></a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#the-incompletely-observable-box"><span>The incompletely observable box</span></a>
+</li>
+</ul>
+</li>
+</li>
+</ul>
+</li>
+<li>
+<a href="#variety"><span>PART TWO: variety</span></a>
+<ul>
+<li>
+
+<a href="#quantity-of-variety"><span>Quantity of variety</span></a>
+
+<ul>
+<li>
+<a href="#constraint"><span>Constraint</span></a>
+</li>
+</ul>
+
+<ul>
+<li>
+<a href="#importance-of-constraint"><span>Importance of constraint</span></a>
+</li>
+</ul>
+
+<ul>
+<li>
+<a href="#variety-in-machines"><span>Variety in machines</span></a>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li>
+
+<a href="#transmission-of-variety"><span>Transmission of variety</span></a>
+
+<ul>
+<li>
+<a href="#inversion"><span>Inversion</span></a>
+</li>
+</ul>
+
+<ul>
+<li>
+<a href="#transmission-from-system-to-system"><span>Transmission from system to system</span></a>
+</li>
+</ul>
+
+<ul>
+<li>
+<a href="#transmission-through-a-channel"><span>Transmission through a channel</span></a>
+</li>
+</ul>
+
+</li>
+</ul>
+
+<ul>
+<li>
+
+<a href="#randomizingincessant-transmission"><span>Incessant transmission</span></a>
+
+<ul>
+<li>
+<a href="#the-markov-chain"><span>The Markov chain</span></a>
+</li>
+</ul>
+
+<ul>
+<li>
+<a href="#entropy"><span>Entropy</span></a>
+</li>
+</ul>
+
+<ul>
+<li>
+<a href="#de-anonymization"><span>Noise</span></a>
+</li>
+</ul>
+
+</li>
+</ul>
+</li>
+<li>
+<a href="#see-also"><span>PART THREE: regulation and control</span></a>
+
+
+<ul>
+<li>
+
+<a href="#randomizing"><span>Regulation in biological systems</span></a>
+
+<ul>
+<li>
+<a href="#de-anonymization"><span>Survival</span></a>
+</li>
+</ul>
+
+
+</li>
+</ul>
+
+<ul>
+<li>
+
+<a href="#randomizing"><span>Requisite variety</span></a>
+
+<ul>
+<li>
+<a href="#de-anonymization"><span>The Law</span></a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#de-anonymization"><span>Control</span></a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#de-anonymization"><span>Some variations</span></a>
+</li>
+</ul>
+
+</li>
+</ul>
+
+<ul>
+<li>
+
+<a href="#randomizing"><span>The error-controlled regulator</span></a>
+
+<ul>
+<li>
+<a href="#de-anonymization"><span>The Markovian machine</span></a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#de-anonymization"><span>Markovian regulation</span></a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#de-anonymization"><span>Determinate regulation</span></a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#de-anonymization"><span>The power amplifier</span></a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#de-anonymization"><span>Games and strategies</span></a>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li>
+
+<a href="#randomizing"><span>Regulating the very large system</span></a>
+
+<ul>
+<li>
+<a href="#de-anonymization"><span>Repetitive disturbance</span></a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#de-anonymization"><span>Designing the regulator</span></a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#de-anonymization"><span>Quantity of selection</span></a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#de-anonymization"><span>Selection and machinery</span></a>
+</li>
+</ul>
+
+
+</li>
+</ul>
+<ul>
+<li>
+
+<a href="#randomizing"><span>Amplifying regulation</span></a>
+
+<ul>
+<li>
+<a href="#de-anonymization"><span>What is an amplifier?</span></a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#de-anonymization"><span>Amplification in the brain</span></a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="#de-anonymization"><span>Amplifying intelligence</span></a>
+</li>
+</ul>
+
+
+</li>
+</ul>
+
+
+</li>
+<li>
+<a href="#external-links"><span>References</span></a>
+</li>
+<li>
+<a href="#appendices"><span>Answers to exercises</span></a>
+
+</li>
+</ul>
+</div>
+
+<hr>
+
+<h3 id="what-is-new">WHAT IS NEW</h3>
+
+<p>1/1. Cybernetics was defined by Wiener as “the science of control
+and communication, in the animal and the machine”—in a word,
+as the art of steermanship, and it is to this aspect that the book will
+be addressed. Co-ordination, regulation and control will be its
+themes, for these are of the greatest biological and practical interest.
+We must, therefore, make a study of mechanism; but some
+introduction is advisable, for cybernetics treats the subject from a
+new, and therefore unusual, angle. Without introduction, Chapter
+2 might well seem to be seriously at fault. The new point of view
+should be clearly understood, for any unconscious vacillation
+between the old and the new is apt to lead to confusion.</p>
+
+<p>1/2. <em id="poc">The peculiarities of cybernetics.</em> Many a book has borne the
+title “Theory of Machines”, but it usually contains information
+about mechanical things, about levers and cogs. Cybernetics, too,
+is a “theory of machines”, but it treats, not things but ways of
+behaving. It does not ask “what is this thing?” but “what does it
+do?” Thus it is very interested in such a statement as “this variable
+is undergoing a simple harmonic oscillation”, and is much less
+concerned with whether the variable is the position of a point on
+a wheel, or a potential in an electric circuit. It is thus essentially
+functional and behaviouristic.
+Cybernetics started by being closely associated in many ways
+with physics, but it depends in no essential way on the laws of
+physics or on the properties of matter. Cybernetics deals with all
+forms of behaviour in so far as they are regular, or determinate, or
+reproducible. The materiality is irrelevant, and so is the holding or
+not of the ordinary laws of physics. (The example given in S.4/15
+will make this statement clear.) The truths of cybernetics are not
+conditional on their being derived from some other branch of science. Cybernetics has its own foundations. It is partly the aim of
+this book to display them clearly.</p>
+
+<p>1/3. Cybernetics stands to the real machine—electronic, mechanical, neural, or economic—much as geometry stands to a real object
+in our terrestrial space. There was a time when “geometry” meant
+such relationships as could be demonstrated on three-dimensional
+objects or in two-dimensional diagrams. The forms provided by
+the earth—animal, vegetable, and mineral—were larger in number
+and richer in properties than could be provided by elementary
+geometry. In those days a form which was suggested by geometry
+but which could not be demonstrated in ordinary space was suspect
+or inacceptable. Ordinary space dominated geometry.
+Today the position is quite different. Geometry exists in its own
+right, and by its own strength. It can now treat accurately and
+coherently a range of forms and spaces that far exceeds anything
+that terrestrial space can provide. Today it is geometry that contains the terrestrial forms, and not vice versa, for the terrestrial
+forms are merely special cases in an all-embracing geometry.
+The gain achieved by geometry’s development hardly needs to
+be pointed out. Geometry now acts as a framework on which all
+terrestrial forms can find their natural place, with the relations
+between the various forms readily appreciable. With this increased
+understanding goes a correspondingly increased power of control.
+Cybernetics is similar in its relation to the actual machine. It
+takes as its subject-matter the domain of “all possible machines”,
+and is only secondarily interested if informed that some of them
+have not yet been made, either by Man or by Nature. What cybernetics offers is the framework on which all individual machines
+may be ordered, related and understood.</p>
+
+<p>1/4. Cybernetics, then, is indifferent to the criticism that some of
+the machines it considers are not represented among the machines
+found among us. In this it follows the path already followed with
+obvious success by mathematical physics. This science has long
+given prominence to the study of systems that are well known to
+be non-existent—springs without mass, particles that have mass
+but no volume, gases that behave perfectly, and so on. To say that
+these entities do not exist is true; but their non-existence does not
+mean that mathematical physics is mere fantasy; nor does it make
+the physicist throw away his treatise on the Theory of the Massless Spring, for this theory is invaluable to him in his practical
+work. The fact is that the massless spring, though it has no physical representation, has certain properties that make it of the highest importance to him if he is to understand a system even as
+simple as a watch.</p>
+
+<p>The biologist knows and uses the same principle when he gives
+to Amphioxus, or to some extinct form, a detailed study quite out Of
+proportion to its present-day ecological or economic importance.
+In the same way, cybernetics marks out certain types of mechanism (S.3/3) as being of particular importance in the general theory; and it does this with no regard for whether terrestrial
+machines happen to make this form common. Only after the study
+has surveyed adequately the possible relations between machine
+and machine does it turn to consider the forms actually found in
+some particular branch of science.</p>
+
+<p>1/5. In keeping with this method, which works primarily with the
+comprehensive and general, cybernetics typically treats any
+given, particular, machine by asking not “what individual act will
+it produce here and now?” but “what are all the possible behaviours that it can produce?”</p>
+
+<p>It is in this way that information theory comes to play an essential part in the subject; for information theory is characterised
+essentially by its dealing always with a set of possibilities; both its
+primary data and its final statements are almost always about the
+set as such, and not about some individual element in the set.</p>
+
+<p>This new point of view leads to the consideration of new types
+of problem. The older point of view saw, say, an ovum grow into
+a rabbit and asked “why does it do this”—why does it not just stay
+an ovum?” The attempts to answer this question led to the study
+of energetics and to the discovery of many reasons why the ovum
+should change—it can oxidise its fat, and fat provides free energy;
+it has phosphorylating enzymes, and can pass its metabolises
+around a Krebs’ cycle; and so on. In these studies the concept of
+energy was fundamental.</p>
+<p>Quite different, though equally valid, is the point of view of
+cybernetics. It takes for granted that the ovum has abundant free
+energy, and that it is so delicately poised metabolically as to be, in
+a sense, explosive. Growth of some form there will be; cybernetics
+asks “why should the changes be to the rabbit-form, and not to a
+dog-form, a fish-form, or even to a teratoma-form?” Cybernetics
+envisages a set of possibilities much wider than the actual, and then
+asks why the particular case should conform to its usual particular
+restriction. In this discussion, questions of energy play almost no
+part—the energy is simply taken for granted. Even whether the system is closed to energy or open is often irrelevant; what is important
+is the extent to which the system is subject to determining and controlling factors. So no information or signal or determining factor
+may pass from part to part without its being recorded as a significant event. Cybernetics might, in fact, be defined as the study of systems that are open to energy but closed to information and
+control—systems that are “information-tight” (S.9/19.).</p>
+
+<p>1/6. <em id="uoc">The uses of cybernetics.</em> After this bird’s-eye view of cybernetics we can turn to consider some of the ways in which it promises to be of assistance. I shall confine my attention to the
+applications that promise most in the biological sciences. The
+review can only be brief and very general. Many applications
+have already been made and are too well known to need description here; more will doubtless be developed in the future. There
+are, however, two peculiar scientific virtues of cybernetics that
+are worth explicit mention.</p>
+
+<p>One is that it offers a single vocabulary and a single set of concepts suitable for representing the most diverse types of system.
+Until recently, any attempt to relate the many facts known about,
+say, servo-mechanisms to what was known about the cerebellum
+was made unnecessarily difficult by the fact that the properties of
+servo-mechanisms were described in words redolent of the automatic pilot, or the radio set, or the hydraulic brake, while those of
+the cerebellum were described in words redolent of the dissecting
+room and the bedside—aspects that are irrelevant to the similarities between a servo-mechanism and a cerebellar reflex. Cybernetics offers one set of concepts that, by having exact
+correspondences with each branch of science, can thereby bring
+them into exact relation with one other.</p>
+
+<p>It has been found repeatedly in science that the discovery that
+two branches are related leads to each branch helping in the development of the other. (Compare S.6/8.) The result is often a markedly accelerated growth of both. The infinitesimal calculus and
+astronomy, the virus and the protein molecule, the chromosomes
+and heredity are examples that come to mind. Neither, of course,
+can give proofs about the laws of the other, but each can give suggestions that may be of the greatest assistance and fruitfulness.
+The subject is returned to in S.6/8. Here I need only mention the
+fact that cybernetics is likely to reveal a great number of interesting and suggestive parallelisms between machine and brain and
+society. And it can provide the common language by which discoveries in one branch can readily be made use of in the others.</p>
+
+<p>1/7. <em>The complex system.</em> The second peculiar virtue of cybernetics is that it offers a method for the scientific treatment of the system in which complexity is outstanding and too important to be
+ignored Such systems are, as we well know, only too common in
+the biological world!</p>
+
+<p>In the simpler systems, the methods of cybernetics sometimes
+show no obvious advantage over those that have long been
+known. It is chiefly when the systems become complex that the
+new methods reveal their power.</p>
+<p>Science stands today on something of a divide. For two centuries
+it has been exploring systems that are either intrinsically simple or
+that are capable of being analysed into simple components. The fact
+that such a dogma as “vary the factors one at a time” could be
+accepted for a century, shows that scientists were largely concerned
+in investigating such systems as allowed this method; for this
+method is often fundamentally impossible in the complex systems.
+Not until Sir Donald Fisher’s work in the ’20s, with experiments
+conducted on agricultural soils, did it become clearly recognised that
+there are complex systems that just do not allow the varying of only
+one factor at a time—they are so dynamic and interconnected that
+the alteration of one factor immediately acts as cause to evoke alterations in others, perhaps in a great many others. Until recently, science tended to evade the study of such systems, focusing its attention
+on those that were simple and, especially, reducible (S.4/14).</p>
+
+<p>In the study of some systems, however, the complexity could
+not be wholly evaded. The cerebral cortex of the free-living
+organism, the ant-hill as a functioning society, and the human
+economic system were outstanding both in their practical importance and in their intractability by the older methods. So today we
+see psychoses untreated, societies declining, and economic systems faltering, the scientist being able to do little more than to
+appreciate the full complexity of the subject he is studying. But
+science today is also taking the first steps towards studying “complexity” as a subject in its own right.</p>
+
+<p>Prominent among the methods for dealing with complexity is
+cybernetics. It rejects the vaguely intuitive ideas that we pick up
+from handling such simple machines as the alarm clock and the
+bicycle, and sets to work to build up a rigorous discipline of the subject. For a time (as the first few chapters of this book will show) it
+seems rather to deal with truisms and platitudes, but this is merely
+because the foundations are built to be broad and strong. They are
+built so that cybernetics can be developed vigorously, without t e
+primary vagueness that has infected most past attempts to grapple
+with, in particular, the complexities of the brain in action.</p>
+
+<p>Cybernetics offers the hope of providing effective methods for
+the study, and control, of systems that are intrinsically extremely
+complex. It will do this by first marking out what is achievable
+(for probably many of the investigations of the past attempted the
+impossible), and then providing generalised strategies, of demonstrable value, that can be used uniformly in a variety of special
+cases. In this way it offers the hope of providing the essential
+methods by which to attack the ills—psychological, social, economic—which at present are defeating us by their intrinsic complexity. Part III of this book does not pretend to offer such
+methods perfected, but it attempts to offer a foundation on which
+such methods can be constructed, and a start in the right direction</p>
+
+<hr>
+
+<h2>PART ONE</h2>
+<h3>MECHANISM</h3>
+<blockquote>The properties commonly ascribed to any object
+are, in last analysis, names for its behavior.<br>
+&mdash; Herrick
+</blockquote>
+
+
+<h3 id="change" style="text-align: center">CHANGE</h3>
+<hr>
+<p>The most fundamental concept in cybernetics is that of “difference”, either that two things are recognisably different or that
+one thing has changed with time. Its range of application need not
+be described now, for the subsequent chapters will illustrate the
+range abundantly. All the changes that may occur with time are
+naturally included, for when plants grow and planets age and
+machines move some change from one state to another is implicit.
+So our first task will be to develop this concept of “change”, not
+only making it more precise but making it richer, converting it to
+a form that experience has shown to be necessary if significant
+developments are to be made.
+<p>Often a change occurs continuously, that is, by infinitesimal
+steps, as when the earth moves through space, or a sunbather’s
+skin darkens under exposure. The consideration of steps that are
+infinitesimal, however, raises a number of purely mathematical
+difficulties, so we shall avoid their consideration entirely. Instead,
+we shall assume in all cases that the changes occur by finite steps
+in time and that any difference is also finite. We shall assume that
+the change occurs by a measurable jump, as the money in a bank
+account changes by at least a penny. Though this supposition may
+seem artificial in a world in which continuity is common, it has
+great advantages in an Introduction and is not as artificial as it
+seems. When the differences are finite, all the important questions, as we shall see later, can be decided by simple counting, so
+that it is easy to be quite sure whether we are right or not. Were
+we to consider continuous changes we would often have to compare infinitesimal against infinitesimal, or to consider what we
+would have after adding together an infinite number of infinitesimals—questions by no means easy to answer.
+<p>As a simple trick, the discrete can often be carried over into the
+continuous, in a way suitable for practical purposes, by making a
+graph of the discrete, with the values shown as separate points. It
+is then easy to see the form that the changes will take if the points
+were to become infinitely numerous and close together.
+<p>In fact, however, by keeping the discussion to the case of the
+finite difference we lose nothing. For having established with certainty what happens when the differences have a particular size
+we can consider the case when they are rather smaller. When this
+case is known with certainty we can consider what happens when
+they are smaller still. We can progress in this way, each step being
+well established, until we perceive the trend; then we can say what
+is the limit as the difference tends to zero. This, in fact, is the
+method that the mathematician always does use if he wants to be
+really sure of what happens when the changes are continuous.
+<p>Thus, consideration of the case in which all differences are
+finite loses nothing, it gives a clear and simple foundation; and it
+can always be converted to the continuous form if that is desired.
+<p>The subject is taken up again in S.3/3.
+<br>
+  <p>Next, a few words that will have to be used repeatedly. Consider the simple example in which, under the influence of sunshine, pale skin changes to dark skin. Something, the pale skin, is
+acted on by a factor, the sunshine, and is changed to dark skin.
+That which is acted on, the pale skin, will be called the operand,
+the factor will be called the operator, and what the operand is
+changed to will be called the transform. The change that occurs,
+which we can represent unambiguously by
+
+   $${pale skin → dark skin}$$
+    
+<p>is the transition.
+<p>The transition is specified by the two states and the indication
+of which changed to which.
+
+  <hr>
+<h3 id="transformation" style="text-align: center">TRANSFORMATION</h3>
+<hr>
+<p>The single transition is, however, too simple. Experience has
+shown that if the concept of “change” is to be useful it must be
+enlarged to the case in which the operator can act on more than
+one operand, inducing a characteristic transition in each. Thus the
+operator “exposure to sunshine” will induce a number of transitions, among which are:
+
+  $${cold \ soil → warm \ soil}$$
+ $${unexposed \ photographic \ plate → exposed \ plate}$$
+$${coloured \ pigment → bleached \ pigment}$$
+
+  <p>Such a set of transitions, on a set of operands, is a <b>transformation</b>.
+
+<p>Another example of a transformation is given by the simple
+coding that turns each letter of a message to the one that follows
+it in the alphabet,
+Z being turned to A; so CAT would become
+DBU. The transformation is defined by the table:
+
+  $${A → B}$$
+  $${B → C}$$
+  $${…}$$
+  $${Y → Z}$$
+  $${Z → A}$$
+  
+<p>Notice that the transformation is defined, not by any reference to
+what it “really” is, nor by reference to any physical cause of the
+change, but by the giving of a set of operands and a statement of
+what each is changed to. The transformation is concerned with
+what happens, not with why it happens. Similarly, though we may
+sometimes know something of the operator as a thing in itself (as
+we know something of sunlight), this knowledge is often not
+essential; what we must know is how it acts on the operands; that
+is, we must know the transformation that it effects.
+<p>For convenience of printing, such a transformation can also be
+  expressed thus:
+
+
+
+
+
+$${\begin{align*}
+  \bigg\downarrow  \          &&  A \  B ... Y \ Z \\
+  && B \ C … Z \ A \\ 
+\end{align*}}$$
+
+
+  
+ <p>We shall use this form as standard.
+<p>2/4. Closure. When an operator acts on a set of operands it may
+happen that the set of transforms obtained contains no element
+  that is not already present in the set of operands, i.e. the transformation creates no new element. Thus, in the transformation
+
+
+$${\begin{align*}
+  \bigg\downarrow  \          &&  A \ B ... Y \ Z \\
+  && B \ C … Z \ A \\ 
+\end{align*}}$$
+
+  
+<p>every element in the lower line occurs also in the upper. When this
+occurs, the set of operands is closed under the transformation. The
+property of “closure”, is a relation between a transformation and
+a particular set of operands; if either is altered the closure may
+alter.
+<p>It will be noticed that the test for closure is made, not by reference to whatever may be the cause of the transformation but by
+reference of the details of the transformation itself. It can therefore be applied even when we know nothing of the cause responsible for the changes. 
+
+
+
+  <div style="padding: 10px; border: 2px solid red;"><b>Exercises</b>
+    <p style="font-family: Menlo;font-size:10px;">
+ <b>Ex. 1:</b> If the operands are the positive integers 1, 2, 3, and 4, and the operator is
+ “add three to it”, the transformation is:<br>
+
+
+$${\begin{align*}
+  \bigg\downarrow  \          &&  1 \ 2 \ 3 \ 4 \\
+  && 4 \ 5 \ 6 \ 7 \\ 
+\end{align*}}$$
+
+ 
+Is it closed ?<br>
+<b>Ex. 2.</b> The operands are those English letters that have Greek equivalents (i.e.
+excluding j, q, etc.), and the operator is “turn each English letter to its Greek
+ equivalent”. Is the transformation closed ?<br>
+
+ <b>Ex. 3:</b> Are the following transformations closed or not:<br>
+
+ $${
+\begin{align*}
+  A: \bigg\downarrow  \          &&  a \ b \ c \ d \\
+ && a \ a \ a \ a \\
+ \end{align*}
+
+ }$$
+  $${
+ \begin{align*}
+  B: \bigg\downarrow  \          &&  f \ g \ p \ q \\
+ && g \ f \ q \ p \\
+ \end{align*}
+
+ }$$
+  $${
+ \begin{align*}
+  C: \bigg\downarrow  \          &&  f \ g \ p \\
+ && g \ f \ q \\
+ \end{align*}
+
+ }$$
+  $${
+ \begin{align*}
+  D: \bigg\downarrow  \          &&  f \ g \\
+ && g \ f \\
+ \end{align*}
+
+ }$$
+
+ <b>Ex. 4:</b> Write down, in the form of Ex. 3, a transformation that has only one operand and is closed.<br>
+ <b>Ex. 5:</b> Mr. C, of the Eccentrics’ Chess Club, has a system of play that rigidly prescribes, for every possible position, both for White and slack (except for
+those positions in which the player is already mated) what is the player’s best
+next move. The theory thus defines a transformation from position to position. On being assured that the transformation was a closed one, and that C
+always plays by this system, Mr. D. at once offered to play C for a large
+stake. Was D wise?<br>
+ 
+</p>
+
+
+</div>
+
+
+  <button onclick="getAnswers()">Answers</button>
+
+<div id="answers">
+ 1: No. 2: No. 3. A, yes; B, yes; C, no; D, yes. 4: It must be of the form a → a. 5: Yes; a position with a player mated can have no transform, for no further legal move exists; if C's transformation is closed, every position his move create can be followed by another, so his transformation can contain no mating moves.
+</div>
+
+<script>
+function getAnswers() {
+  var x = document.getElementById("answers");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+
+ 
+
+</content>
+
+
+<p>
+
+</p>
+
+  </main>
+  <footer>
+    
+  </footer>
+</body>
+
+</html>
+
+
