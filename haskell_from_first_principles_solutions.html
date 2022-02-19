@@ -15,7 +15,7 @@
 📜
 </text></svg>">
   <title>
-TEMPLATE
+Haskell Solutions
 </title>
  
  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -918,6 +918,7 @@ MD_
     </i>
 </p>
 
+<p class="drop-cap"> This is just one of many textbooks I'm working through on my quest to learn Haskell.</p>
 
 <content>
   <h2>Chapter 1. Anything from Almost Nothing </h2>
@@ -937,6 +938,34 @@ MD_
   $${\lambda y.(\lambda a.a)yy)b}$$
   $${\lambda a.a)(b)b}$$
   $${b.b}$$
+
+  <h2>Chapter 2. Basic expressions and functions</h2>
+  
+
+  <p>  Most arithmetic functions in Haskell (and math) are left-associative. So 2*3*4 is evaluated as (2*3)*4. Exponentiation is right-associative, so 2 ^ 3 ^ 4 is evaluated as 2 ^ ( 3 ^ 4). Unlike multiplication, which is commutative and not affected by order of operations, which expression we evaluate with exponentiation is more important. i.e.:</p>
+
+ <code> 2 ^ 3 ^ 4<br>
+   2417851639229258349412352<br></code>
+  <p> Whereas</p>
+  <code>(2 ^ 3) ^ 4<br>
+4096<br></code>
+
+ <h3>Exercises: Parentheses and Association:</h3>
+<p>Here's some revision testing our intuitions around order-of-operations. In Haskell, we can get a numerical representation of the priority of an infix operator by running <code>:info</code>. i.e. <code>:info (*)</code><br>
+<code> 7 * </code><br></p>
+<code>1.<br>
+a) 8+7 *9<br>
+  b) (8+7)* 9<br></code>
+ <p>Yes, parentheses change the evaluation of this equation.</p> 
+<code>2.<br>
+  a) perimeter x y = (x *2) + (y+2)<br>
+  b) perimeter x y = x * 2 + y * 2<br></code>
+  <p>No, as multiplication is already prioritised over addition, the evaluation result should be the same. </p>
+  <code>3.<br>
+    a) f x = x / 2 + 9<br>
+    b) f x = x / (2 + 9)<br></code>
+  <p>Yes, <code>a</code> will evaluate <code>x / 2</code> first, while b will evaluate <code> (2 + 9)</code> first.</p>
+
 </content>
 
 
