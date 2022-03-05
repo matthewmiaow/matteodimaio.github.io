@@ -2,3 +2,9 @@
 
 2022-02-12T03:21:11+00:00	fourth time lucky
 2022-02-12T03:29:39+00:00	if you're just setting up twtxt now, you probably can't use the official client because of the python 3.9 issue, but twtxtc (https://github.com/neauoire/twtxtc) works for me
+2022-03-05T09:25:26.000000Z	running
+2022-03-05T09:25:26.000001Z	dwm
+2022-03-05T09:25:26.000002Z	on
+2022-03-05T09:25:26.000003Z	arch
+2022-03-05T09:26:03.000000Z	[trying again] running dwm on arch
+2022-03-05T09:26:14.000000Z	better
