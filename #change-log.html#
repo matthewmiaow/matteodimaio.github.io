@@ -1,20 +1,75 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <title>Essays - Matteo Di Maio</title>
 
 <head>
-<link rel="icon" type="image/x-icon" href="/logo.ico">
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
- </head>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>
+📜
+</text></svg>">
+  <title>
+Change-log |
+MD_
+</title>
+  
 
 
-<link rel="preload" href="/UnifrakturMaguntia.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-<link rel="preload" href="/SourceSansPro-BASIC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  
+
+<!-- Primary Meta Tags -->
+<meta name="title" content="Change-log">
+<meta name="description"
+  content="An occasionally updated list of changes to my website, blog and articles. Could perhaps be useful to those learning HTML, CSS from scratch and constantly proble">
+<meta name="keywords" content="" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Change-log">
+<meta property="og:url" content="http://blog.matteodimaio.xyz">
+<meta property="og:title" content="Change-log">
+<meta property="og:description" content="An occasionally updated list of changes to my website, blog and articles. Could perhaps be useful to those learning HTML, CSS from scratch and constantly proble">
+
+  <meta property="og:image" content="https://matteodimaio.xyz/6526D03A-E91B-4811-944F-29D1539DB204.PNG">
+
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary">
+<meta property="twitter:url" content="http://blog.matteodimaio.xyz">
+<meta property="twitter:title" content="Change-log">
+<meta property="twitter:description" content="An occasionally updated list of changes to my website, blog and articles. Could perhaps be useful to those learning HTML, CSS from scratch and constantly proble">
+
+  <meta property="twitter:image" content="https://matteodimaio.xyz/6526D03A-E91B-4811-944F-29D1539DB204.PNG">
+
+
+<!-- Microdata -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Website",
+    "name": "Change-log",
+    "url": "http://blog.matteodimaio.xyz",
+    "description": "An occasionally updated list of changes to my website, blog and articles. Could perhaps be useful to those learning HTML, CSS from scratch and constantly proble",
+    "about": {
+      "@type": "Change-log",
+      "description": "An occasionally updated list of changes to my website, blog and articles. Could perhaps be useful to those learning HTML, CSS from scratch and constantly proble"
+    },
+  }
+</script>
+
+  
+
+
+  
+
+
+
+ <link rel="preload" href="/SourceSansPro-BASIC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/SourceSerifPro-BASIC-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/SourceSerifPro-BASIC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/SourceSerifPro-BASIC-RegularItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/FancyEnglish.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
 <style>
     @font-face {
@@ -74,22 +129,23 @@
         unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
         font-display: swap
     }
-       @font-face {
-        font-family: 'Unifraktur Maguntia';
+
+@font-face {
+        font-family: 'Romantique Initials';
         font-weight: 400;
         font-style: normal;
-        src: url('/UnifrakturMaguntia.ttf') format('truetype');
+        src: url('/Romantiqueinitials.ttf') format('truetype');
         unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
         font-display: swap
     }
-
+ 
     body {
-    font-family: "Menlo", "Source Serif Pro", "Unifraktur Maguntia", "Apple Garamond", "Baskerville", "Libre Baskerville", "Times New Roman", "Droid Serif", "Times", serif;
+    font-family: "Source Serif Pro", "Intellecta Monograms Random Samples Eleven", "Romantique Initials", "Apple Garamond", "Baskerville", "Libre Baskerville", "Times New Roman", "Droid Serif", "Times", serif;
     margin: auto;
     padding: 20px;
     max-width: 720px;
     text-align: left;
-    background-color: white;
+    background-color: #fff;
     word-wrap: break-word;
     overflow-wrap: break-word;
     line-height: 1.5;
@@ -353,10 +409,9 @@ html {
 }
 
 body {
-    margin-left: 40%;
-    margin-right: 10%;
-    padding-right: 4%;
-    font-family: "Source Serif Pro",  "Apple Garamond", "Baskerville", "Libre Baskerville", "Times New Roman", "Droid Serif", "Times", serif;
+    margin-left: 15%;
+    margin-right: 4%;
+    padding-left: 4%;
     background-color: #f4f7f6;
     color: #111;
     max-width: 1400px;
@@ -372,20 +427,23 @@ body {
 }
 
 h1 {
-   font-feature-settings: 'smcp';
-    font-size: 1.75em;
-    line-height: 1.25;
-    letter-spacing: -0.75px;
-font-family: "Unifraktur Maguntia"
-}
-
-h1:first-of-type: {
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 4rem;
     margin-bottom: 1.5rem;
-    font-size: 3rem;
+    font-size: 3.2rem;
     line-height: 1;
-Font: Cheshire Initials;
+Text-align: center;
+font-variant: small-caps;
+Font-family: "Source Serif Pro";
+
+}
+
+.drop-cap:first-letter {
+  float: left;
+  font-size: 10em;
+  line-height: 1.2em;
+margin: 0;
+Font-family: "Romantique Initials";
 }
 
 .title {
@@ -437,13 +495,6 @@ p.subtitle {
     line-height: 1;
 }
 
-h3:first-of-type:first-letter {
-  float: left;
-  font-size: 5em;
-  margin: 0 .1em 0 0;
-  line-height: 0.85;
-  font-family: Unifraktur Maguntia
-}
 
 th {
 font-weight: 400;
@@ -490,7 +541,7 @@ p {
     margin-bottom: 1.4rem;
     padding-right: 1;
     vertical-align: baseline;
-Text-align: justify;
+Text-align: justify; 
 }
 
 
@@ -841,155 +892,113 @@ Text-align: center;
 }
 
       body:hover {
-        border-image:
+        border-image: 
 url("/hit/7550")
 ;
         border-width: 0;
       }
-
-
-a[href*="wikipedia.org/"] {
-background:url(/wikipedia.svg)no-repeat right center;
-padding-right:19px;
-
-}
-a[href*="reddit.com/"] {
-background:url(/reddit.svg)no-repeat right center;
-padding-right:19px;
-
-}
-a[href*="amazon.com/"] {
-background:url(/amazon.svg)no-repeat right center;
-padding-right:19px;
-
-}
-a[href*=".pdf/"] {
-background:url(/pdf.svg)no-repeat right center;
-padding-right:19px;
-
-}
   </style>
-
 </head>
 
 <body>
+  <header>
+    <a class="title" href="/">
+      <h1>
+        
+MD_
 
+      </h1>
+    </a>
+    <nav>
+      
+<a href="/">
+<img alt="HTML tutorial" src="https://matteodimaio.net/logo.png" width="200">
+</a>
+
+
+    </nav>
+  </header>
   <main>
+    
+
+
 
 <content>
-
-<div>
+<div><p><em>An occasionally updated list of changes to my website, blog and articles. Could perhaps be useful to those learning HTML, CSS from scratch and constantly problem solving.</em></p>
+  <h1> 02022 </h1>
+  
+  <hr>
+  <h2>FEBUARY</h2>
+  <ul>
+    <li>Added a "docs" category to the main page, and updated the formatting on my Declaration of the Indeppendence of Cyberspace page</li>
+  </ul>
+  
+  
+  <h2> JANUARY</h2>
+  <ul>
+    <li>Added <a href="/todo.html">a TODO page, with ideas for future articles/self improvement</a></li>
+<li>I've migrated hosting from Github pages to my own VPS, along with email. If you also want your own email server/'net real-estate, this <a href="https://github.com/LukeSmithxyz/emailwiz">script</a> might be useful. So you're now visiting a nginx server.</li>
+    <li><a href="/crypto">Crypto page updated with lightning network extras</li>
+  </ul>
+  
+  <h1 id="2021">02021</h1>
+  
+  <hr>
+  <h2> NOVEMBER/DECEMBER</h2>
+  <ul>
+    <li>Standardised formatting and outlined on <a href="/about-this-site">About this site</a> page</li>
+    <li>Added link icons for out-links to Wikipedia, Amazon, Reddit, and hosted PDFS</li>
+  <li><a href=“https://matteodimaio.net/crypto.html”>Wrote up</a> my experiences with PoolTogetherDAO, as a defence of crypto’s promise, in face of a recent onslaught by regulators (and smolweb practitioners) on the concept of “web3”. When in fact, yes, open source, permissionless, autonomous and community governed finance protocols are good! Beware — not all “DAOS” stay true to the “D” part… </li>
+<li>Made a cyberpunk-inspired “metaverse business card” for my <a href=“https://matteodimaio.net/metaversebusinesscard.html”>contact page</a>, a la Hiro Protagonist in Snow Crash</li>
+    <li>Changed TLD to .net</li>
+  </ul>
+  
+  <hr/>
+  <h2 id="october">OCTOBER</h2>
+  <ul>
+    <li>I've expanded my <a href="https://matteodimaio.xyz/how-long-will-i-live">page</a> on quantifying my life with reference to the Long Now foundation's Manual for Civilisation, which simplified the whole "which 3,000 books should  I use my life to read" question.</li>
+    <li>Added <a href="https://matteodimaio.xyz/future-holidays.html">Rationalist family holidays"</a></li>
+    <li> Compiled some supporting <a href="https://matteodimaio.xyz/my-beliefs.html">references</a> for  my current "Beliefs" with a capital  B.</li>
+  </ul>
+  
+  
+<hr/>
+  <h2 id="september">SEPTEMBER</h2>
+  <ul>
+    <li>I dithered the main typographic "M" on my index.html page. Dithering is a method by which you can computationally reduce the size of an image whilst retaining its 'looks'. You can dither your own images <a href="https://ditherit.com">here</a>, and read more about the energy savings <a href="https://solar.lowtechmagazine.com/about.html">here</a></li>
+      <li>Expanded the below article with some new research on the role of the anti-nuclear movment in generating "postmodernism".</li>
+  </ul>
+  
+<h2 id="august">AUGUST</h2>
+<ul>
+  <li> Updated my Where Is My Flying Car review with some new counter-arguments.</li>
+  <li> Wrote up a musing + a practical <a href="https://matteodimaio.xyz/slow-news.html">resource</a> on the reasoning behind the slow news trend.</li>
+  <li> Complied my <a href="https://matteodimaio.xyz/notes.html">notes</a></li>
+<li> Switched from hosting at Bear Blog through the blog subdomain to my main domain. Bear blog is an amazing project, but doesn't as of yet have an export function, and I wanted to back up my stuff.</li> 
+<li> <a href="https://matteodimaio.xyz/altered-carbon-and-the-problem-of-the-cyborg.html">Altered Carbon and the problem of the cyborg</a></li>
+<li><a href="http://matteodimaio.xyz/super-top-secret-family-pizza-recipe.html">Super top secret family pizza recipe</a></li>
+<li>After long puzzling (this is self-congratulatory I must admit) at the phenomenon of being able to read only partial text, I wrote: <a href="http://matteodimaio.xyz/typography-typography-and-tpygoarhpy.html">Typography, typography and tpygoarhpy</a></li>
+<li>Added <a href="http://matteodimaio.xyz/about-this-site.html"><em>About this site</em></a></li>
+<li><a href="http://matteodimaio.xyz/wheres-my-flying-car.html">Where Is My Flying Car</a> — my review of J Storrs Hall’s book, as well as an attempt to articulate my feelings regarding the future and Gen Z’s general existential nihilism.</li>
+<li>Fiction: <a href="http://matteodimaio.xyz/plato-exe.html">Plato.exe</a></li>
+<li>Fiction: <a href="http://matteodimaio.xyz/lockdown-fiction.html">#Lockdown</a></li>
+<li>At least a whole hour of head scratching as to why my drop caps occurred on the first paragraph on WebKit browsers, but on the date line on Chromium ones. Regressed to a messy hack of making my first paragraph < h3 > and styling it that way. The dateline derives its styling from the < p > tag, but my drop cap style was only p:first-of-type:first-letter: {}. ???</li>
+<li><a href="http://matteodimaio.xyz/augustan-propaganda-in-the-ara-pacis.html">Augustan propaganda in the Ara Pacis</a></li>
+<li><a href="http://matteodimaio.xyz/roman-artwork-ideas-of-victory.html">Classical Roman artwork and ideas of victory</a></li>
+<li><a href="http://matteodimaio.xyz/my-predictions.html">2021’s predictions</a></li>
+<li><a href="https://matteodimaio.xyz/roman-attitudes-to-conquest.html">Roman attitudes to conquest</a></li>
+<li><a href="https://matteodimaio.xyz/letters-to-a-young-contrarian-response.html">Letters to a young contrarian, responded to by a young contrarian</a></li>
+<li><a href="https://matteodimaio.xyz/cobra-kai-binary-poststructualism.html">Cobra Kai: any particular way you want me to analyze this Sensei?</a></li>
+</ul>
+<h2 id="july">JULY</h2>
+<ul>
+<li>Design updated from Menlo, dark background to current style, inspired by the typography of Ye Olde books, using a CSS style sheet from <a href="https://www.cssbed.com/">CSS bed</a>, customized to my liking.</li>
+<li>Bearblog.dev is discovered through the Text-only websites <a href="https://sjmulder.nl/en/textonly.html">directory</a>.</li>
+</ul>
 <a href="/">
-<img alt="HTML tutorial" src="https://matteodimaio.net/dithered-m.png" width="300">
+<img alt="HTML tutorial" src="https://matteodimaio.xyz/bottom.png" width="auto"/>
 </a>
 </div>
-<div>
-  <h3> THIS IS THE PERSONAL WEBSITE of <strong>Matteo Di Maio.</strong> Right now, it’s a <em>non sequitur</em> feed of essays, mainly from various school subjects, focusing on all the things you'd expect someone like me to be interested in.</h3>
-<p>  For updates, follow the <a href="https://www.reddit.com/r/enochthechronocom.rss"><em><u>RSS-feed</u></em></a>. For the latest posts, see <a href="/change-log.html"><em><u>Change-log.</u></em></a> Finally, for the purpose of this site, see <a href="/about-this-site.html"><em><u>About this site</u></em></a>.</p>
-<a href="/">
-</div>
-<div>
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Newest</a></h1>
-
-<hr>
-<ul>
-  <li><a href="/cybernetics.html">An introduction to Cybernetics</a></li>
-                                                          <li><a href="/crypto.html">A references list for the crypto-curious/skeptical</a></li>
-                                                                 <li><a href="/future-holidays.html">Rationalist future family holidays</a></li>
-<li><a href="/lifecalendarcopy.html" class="link-local">How long will I live? {Graphical version}</a></li>
-                                                                                                                                  <li><a href="/slow-news.html" class="link-local">How do you read your 'slows'? The news and representativeness</a></li>
-                                                                 <li><a href="/the-wasps.html" class="link-local">'Just a little fable with a moral’: Philocleon and the comic spirit in <em>the Wasps</em></a></li>
-<li><a href="/how-long-will-i-live.html" class="link-local">How long will I live? (Or Reading List For the Rest of My Life, A)</a></li>
-                                                                                   <li><a href="/notes.html#paying-people-to-vote-wisely" class="link-local">Paying people to vote wisely</a></li>
-                                                                 <li><a href="/music.html">An eclectic playlist</a></li>
-</ul>
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Popular</a></h1>
-<ul>
-<hr>
-                                                                   <li><a href="/my-beliefs.html">References on my beliefs</a></li>
-<li><a href="/my-predictions.html" class="link-local">My predictions</a></li>
-<li><a href="/wheres-my-flying-car.html" class="link-local">"Where Is My Flying Car”—Make The Future Great Again</a></li>
-</ul>
-
-<h1 style="font-family: Unifraktur Maguntia"><a href="#textbooks">Textbooks</a></h1>
-<hr>
-<ul>
-<li><a href="/haskell_from_first_principles_solutions.html">Haskell from First Principles solutions</a></li>
-</ul>
-
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Artificial Intelligence</a></h1>
-<hr>
-<ul>
-<li><a href="/2021-generative-art-and-gender-representation-dimaio.pdf" class="link-local"><em>Ceci n'est pas une Artificial Intelligence:</em> A qualitative exploration of representation of gender and other concepts in Generative art and the wider media</a></li>
-<li><a href="/notes.html#trolley-problem" class="link-local">The trolley problem, but with Neuralink...</a></li>
-  <li><a href="/aesthetic-oxymorons.html" class="link-local"><b>NN art:</b> Aesthetic oxymorons</a></li>
-</ul>
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Design</a></h1>
-<hr>
-<ul>
-<li><a href="/typography-typography-and-tpygoarhpy.html" class="link-local">Typography, tYpOgRaPhY and tpygoarhpy</a></li>
-</ul>
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Literary criticism</a></h1>
-<hr>
-<ul>
-  <li><a href="/i-tonya.html" class="link-local">I, Tonya and the antibiopic</a></li>
-<li><a href="/letters-to-a-young-contrarian-response.html" class="link-local">Letters to a young contrarian, responded to by a young contrarian</a></li>
-</ul>
-
-<h1 style="font-family: Unifraktur Maguntia">Docs</h1>
-						<hr>
-						<ul>
-<<<<<<< HEAD
-<li><a href="/cybernetics.html">Introduction to Cybernetics</a></li>						  <li><a href="/declaration-of-the-independence-of-cyberspace.html">A declaration of the independence of cyberspace</a></li>
-=======
-<li><a href="/introtocybernetics.html/">Introduction to Cybernetics</a></li>						  <li><a href="/declaration-of-the-independence-of-cyberspace.html">A declaration of the independence of cyberspace</a></li>
-<li><a href="/introtocybernetics.html/">Science as Falsification</a></li>
->>>>>>> 9d4e5a76b0e96ff176da3823092e96c2c5a0875c
-<li><a href="/principles-of-extropy.html">The Principles of Extropy</a></li>
-						  </ul>
-
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Fiction</a></h1>
-<hr>
-<ul>
-<li><a href="/plato-exe.html" class="link-local">Plato.exe: a work of collaborative fiction</a></li>
-<li><a href="/lockdown-fiction.html" class="link-local">#Lockdown</a></li>
-</ul>
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Classical studies</a></h1>
-<hr>
-<ul>
-  <li><a href="/roman-artwork-ideas-of-victory.html"  class="link-local">Classical Roman artwork and ideas of victory</a></li>
-<li><a href="/roman-attitudes-to-conquest.html" class="link-local">‘You get civilisation, you get civilisation, everyone gets civilisation!: Roman attitudes to conquest</a></li>
-<li><a href="/augustan-propaganda-in-the-ara-pacis.html" class="link-local">Augustan propaganda in the Ara Pacis</a></li>
-</ul>
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Other/personal</a></h1>
-<hr>
-<ul>
-<li><a href="/poems.html" class="link-local">Poems</a></li>
-  <li><a href="/notes.html" class="link-local">Notes & Miscellany</a></li>
-  <li><a href="/todo.html" class="link-local">TODO</a></li>
-<li><a href="/super-top-secret-family-pizza-recipe.html" class="link-local">Super top secret family pizza recipe</a></li>
-<li><a href="https://www.instapaper.com/p/EChronocom" class="link-local">My link blog</a></li>
-  <li><a href="/links.html" class="link-local">Links & Cyberflâneur findings...</a></li>
-    <li><a href="/metaversebusinesscard.html" class="link-local">Contact</a></li>
-  <li><a href="https://www.goodreads.com/user/show/138388204-matteo-di-maio" class="link-local">Reading list</a></li>
-  <li><a href="/work.html">My journalism</a></li>
-  <li><a href="/about.html">About me</a></li>
-
-</ul>
-</div>
-  <div style="padding: 10px; border: 2px solid red;"><b>Things I'm currently interested in/exploring:</b>
-    <p style="font-family: Menlo;font-size:10px;">Updated: 24/10/02021</p>
-    <li><a href="http://lojban.org/">Lojban</a></li>
-    <li> Adaptive music - <a href="https://endel.io/">Endel</a> and <a href="https://wendiyan.com/InTouch/">InTouch</a></li>
-    <li>>VRChat - I'm en0ch, and you can find me at the <a href="https://vrchat.com/home/launch?worldId=wrld_51dd76b0-fd86-4dfe-a53a-1eaaa8ca5225">Transhumanists in VR meetup</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Memetics">Memetics</a>; <a href="https://en.wikipedia.org/wiki/Snow_Crash">Snow Crash</a>, <a href="https://otherinter.net/research/lore/">Lore</a></li>
-</div>
-
-<a href="/">
-<img align="right" alt="HTML tutorial" src="/Greek.png" width="60"/>
-</a>
-
-
 </content>
 
 
@@ -1001,46 +1010,9 @@ padding-right:19px;
 
   </main>
   <footer>
-With the goal of championing a more personal kind of analytics, do <a href="/guestbook.html">Sign the guestbook</a><br>
-<p style="text-align: center;font-size:70px;">&#934;</p><br>
-<br>
-Est. <a href="https://longnow.org/about/">02021</a>
- | View on <a href="https://ipfs.matteodimaio.xyz/">IPFS</a>
-	  <br>
-<script src="https://yesterwebring.neocities.org/script-min.js"></script>
-<webring-css site="https://matteodimaio.xyz/"></webring-css>
-<style>:root {
---textColor:black;
---bgColor:#f4f7f6;
---linkColor:black;
---text-align:center;
-}</style>
+   
 
-    <script>
-    var t = setInterval(function() {
-        if (window.goatcounter && window.goatcounter.visit_count) {
-            clearInterval(t)
-            window.goatcounter.visit_count({append: 'body'})
-        }
-    }, 100)
-</script>
-<script data-goatcounter="https://enochthechronocom.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-<script>
-    // Append to the <body>; can use a CSS selector to append somewhere else.
-    window.goatcounter.visit_count({append: 'body', style: 'div {border-color: #f4f7f6; background-color: #f4f7f6;}'
-                                   })
-</script>
-<script data-goatcounter="https://enochthechronocom.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-    <a style="font-family: Menlo;font-size:11px;color: green;" rel="me" href="https://mstdn.social/@enochthechronocom">~ Mastodon link back...</a>
-	  <a style="font-family: Menlo;font-size:11px;color: green;" href="https://keybase.io/enochthechronoco">&#128273; | ~ Keybase identity sig chain</a>
-
-<a style="font-family: Menlo;font-size:11px;color: green;" href="https://keyoxide.org/hkp/2179775cccbb59c684ffbccf54343bcbe77becf8">&#128273; | ~ OpenPGP sig chain</a>
-<br>
-&#8383; to enoch@ln.bitcoinbeach.com
-
-</footer>
+  </footer>
 </body>
 
 </html>
