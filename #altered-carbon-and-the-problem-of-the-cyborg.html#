@@ -1,20 +1,27 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-  <title>Essays - Matteo Di Maio</title>
 
 <head>
-<link rel="icon" type="image/x-icon" href="/logo.ico">
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
- </head>
-
-
-<link rel="preload" href="/UnifrakturMaguntia.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>
+📜
+</text></svg>">
+  <title>
+Altered Carbon and the problem of the cyborg 
+</title>
+ 
+ <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	
 <link rel="preload" href="/SourceSansPro-BASIC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/SourceSerifPro-BASIC-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/SourceSerifPro-BASIC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/SourceSerifPro-BASIC-RegularItalic.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/FancyEnglish.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
 <style>
     @font-face {
@@ -74,22 +81,23 @@
         unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
         font-display: swap
     }
-       @font-face {
-        font-family: 'Unifraktur Maguntia';
+
+@font-face {
+        font-family: 'Romantique Initials';
         font-weight: 400;
         font-style: normal;
-        src: url('/UnifrakturMaguntia.ttf') format('truetype');
+        src: url('/Romantiqueinitials.ttf') format('truetype');
         unicode-range: U+0020-007E, U+2010, U+2013-2014, U+2018-2019, U+201C-201D;
         font-display: swap
     }
-
+ 
     body {
-    font-family: "Menlo", "Source Serif Pro", "Unifraktur Maguntia", "Apple Garamond", "Baskerville", "Libre Baskerville", "Times New Roman", "Droid Serif", "Times", serif;
+    font-family: "Source Serif Pro", "Intellecta Monograms Random Samples Eleven", "Romantique Initials", "Apple Garamond", "Baskerville", "Libre Baskerville", "Times New Roman", "Droid Serif", "Times", serif;
     margin: auto;
     padding: 20px;
     max-width: 720px;
     text-align: left;
-    background-color: white;
+    background-color: #fff;
     word-wrap: break-word;
     overflow-wrap: break-word;
     line-height: 1.5;
@@ -353,10 +361,10 @@ html {
 }
 
 body {
-    margin-left: 40%;
-    margin-right: 10%;
-    padding-right: 4%;
-    font-family: "Source Serif Pro",  "Apple Garamond", "Baskerville", "Libre Baskerville", "Times New Roman", "Droid Serif", "Times", serif;
+    margin-left: 15%;
+    margin-right: 4%;
+    padding-left: 4%;
+  padding-right: 20%;
     background-color: #f4f7f6;
     color: #111;
     max-width: 1400px;
@@ -372,20 +380,23 @@ body {
 }
 
 h1 {
-   font-feature-settings: 'smcp';
-    font-size: 1.75em;
-    line-height: 1.25;
-    letter-spacing: -0.75px;
-font-family: "Unifraktur Maguntia"
-}
-
-h1:first-of-type: {
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 4rem;
     margin-bottom: 1.5rem;
-    font-size: 3rem;
+    font-size: 3.2rem;
     line-height: 1;
-Font: Cheshire Initials;
+Text-align: center;
+font-variant: small-caps;
+Font-family: "Source Serif Pro";
+
+}
+
+.drop-cap:first-letter {
+  float: left;
+  font-size: 10em;
+  line-height: 1.2em;
+margin: 0;
+Font-family: "Romantique Initials";
 }
 
 .title {
@@ -437,13 +448,6 @@ p.subtitle {
     line-height: 1;
 }
 
-h3:first-of-type:first-letter {
-  float: left;
-  font-size: 5em;
-  margin: 0 .1em 0 0;
-  line-height: 0.85;
-  font-family: Unifraktur Maguntia
-}
 
 th {
 font-weight: 400;
@@ -490,7 +494,7 @@ p {
     margin-bottom: 1.4rem;
     padding-right: 1;
     vertical-align: baseline;
-Text-align: justify;
+Text-align: justify; 
 }
 
 
@@ -629,15 +633,15 @@ img {
 Text-align: center;
 }
 
-.sidenote,
+.sidenote, 
 .marginnote {
     float: right;
     clear: right;
-    margin-right: -60%;
-    width: 50%;
+    margin-right: -30%;
+    width: 20%;
     margin-top: 0.3rem;
     margin-bottom: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.3;
     vertical-align: baseline;
     position: relative;
@@ -841,203 +845,107 @@ Text-align: center;
 }
 
       body:hover {
-        border-image:
+        border-image: 
 url("/hit/7550")
 ;
         border-width: 0;
       }
-
-
 a[href*="wikipedia.org/"] {
 background:url(/wikipedia.svg)no-repeat right center;
 padding-right:19px;
-
+border-bottom: 1px dashed #999;
+display: inline;
+		
 }
 a[href*="reddit.com/"] {
 background:url(/reddit.svg)no-repeat right center;
 padding-right:19px;
-
+border-bottom: 1px dashed #999;
+display: inline;
+		
 }
 a[href*="amazon.com/"] {
 background:url(/amazon.svg)no-repeat right center;
 padding-right:19px;
-
+border-bottom: 1px dashed #999;
+display: inline;
+		
 }
 a[href*=".pdf/"] {
 background:url(/pdf.svg)no-repeat right center;
 padding-right:19px;
-
+border-bottom: 1px dashed #999;
+display: inline;
+	
 }
   </style>
-
 </head>
 
 <body>
+  <header>
+    <a class="title" href="/">
+      <h1>
+        
+Altered Carbon and the problem of the cyborg
 
+      </h1>
+    </a>
+    <nav>
+      
+<a href="/">
+<img alt="HTML tutorial" src="https://matteodimaio.net/logo.png" width="200">
+</a>
+
+
+    </nav>
+  </header>
   <main>
-
-<content>
-
-<div>
-<a href="/">
-<img alt="HTML tutorial" src="https://matteodimaio.net/dithered-m.png" width="300">
-</a>
-</div>
-<div>
-  <h3> THIS IS THE PERSONAL WEBSITE of <strong>Matteo Di Maio.</strong> Right now, it’s a <em>non sequitur</em> feed of essays, mainly from various school subjects, focusing on all the things you'd expect someone like me to be interested in.</h3>
-<p>  For updates, follow the <a href="https://www.reddit.com/r/enochthechronocom.rss"><em><u>RSS-feed</u></em></a>. For the latest posts, see <a href="/change-log.html"><em><u>Change-log.</u></em></a> Finally, for the purpose of this site, see <a href="/about-this-site.html"><em><u>About this site</u></em></a>.</p>
-<a href="/">
-</div>
-<div>
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Newest</a></h1>
-
+<h1>
+Altered Carbon and the problem of the cyborg
+</h1>
 <hr>
-<ul>
-  <li><a href="/cybernetics.html">An introduction to Cybernetics</a></li>
-                                                          <li><a href="/crypto.html">A references list for the crypto-curious/skeptical</a></li>
-                                                                 <li><a href="/future-holidays.html">Rationalist future family holidays</a></li>
-<li><a href="/lifecalendarcopy.html" class="link-local">How long will I live? {Graphical version}</a></li>
-                                                                                                                                  <li><a href="/slow-news.html" class="link-local">How do you read your 'slows'? The news and representativeness</a></li>
-                                                                 <li><a href="/the-wasps.html" class="link-local">'Just a little fable with a moral’: Philocleon and the comic spirit in <em>the Wasps</em></a></li>
-<li><a href="/how-long-will-i-live.html" class="link-local">How long will I live? (Or Reading List For the Rest of My Life, A)</a></li>
-                                                                                   <li><a href="/notes.html#paying-people-to-vote-wisely" class="link-local">Paying people to vote wisely</a></li>
-                                                                 <li><a href="/music.html">An eclectic playlist</a></li>
-</ul>
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Popular</a></h1>
-<ul>
-<hr>
-                                                                   <li><a href="/my-beliefs.html">References on my beliefs</a></li>
-<li><a href="/my-predictions.html" class="link-local">My predictions</a></li>
-<li><a href="/wheres-my-flying-car.html" class="link-local">"Where Is My Flying Car”—Make The Future Great Again</a></li>
-</ul>
-
-<h1 style="font-family: Unifraktur Maguntia"><a href="#textbooks">Textbooks</a></h1>
-<hr>
-<ul>
-<li><a href="/haskell_from_first_principles_solutions.html">Haskell from First Principles solutions</a></li>
-</ul>
-
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Artificial Intelligence</a></h1>
-<hr>
-<ul>
-<li><a href="/2021-generative-art-and-gender-representation-dimaio.pdf" class="link-local"><em>Ceci n'est pas une Artificial Intelligence:</em> A qualitative exploration of representation of gender and other concepts in Generative art and the wider media</a></li>
-<li><a href="/notes.html#trolley-problem" class="link-local">The trolley problem, but with Neuralink...</a></li>
-  <li><a href="/aesthetic-oxymorons.html" class="link-local"><b>NN art:</b> Aesthetic oxymorons</a></li>
-</ul>
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Design</a></h1>
-<hr>
-<ul>
-<li><a href="/typography-typography-and-tpygoarhpy.html" class="link-local">Typography, tYpOgRaPhY and tpygoarhpy</a></li>
-</ul>
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Literary criticism</a></h1>
-<hr>
-<ul>
-  <li><a href="/i-tonya.html" class="link-local">I, Tonya and the antibiopic</a></li>
-<li><a href="/letters-to-a-young-contrarian-response.html" class="link-local">Letters to a young contrarian, responded to by a young contrarian</a></li>
-</ul>
-
-<h1 style="font-family: Unifraktur Maguntia">Docs</h1>
-						<hr>
-						<ul>
-
-<li><a href="/cybernetics.html">Introduction to Cybernetics</a></li>						  <li><a href="/declaration-of-the-independence-of-cyberspace.html">A declaration of the independence of cyberspace</a></li>
-<li><a href="/falsificationism.pdf/">Science as Falsification</a></li>
-<li><a href="/principles-of-extropy.html">The Principles of Extropy</a></li>
-						  </ul>
-
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Fiction</a></h1>
-<hr>
-<ul>
-<li><a href="/plato-exe.html" class="link-local">Plato.exe: a work of collaborative fiction</a></li>
-<li><a href="/lockdown-fiction.html" class="link-local">#Lockdown</a></li>
-</ul>
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Classical studies</a></h1>
-<hr>
-<ul>
-  <li><a href="/roman-artwork-ideas-of-victory.html"  class="link-local">Classical Roman artwork and ideas of victory</a></li>
-<li><a href="/roman-attitudes-to-conquest.html" class="link-local">‘You get civilisation, you get civilisation, everyone gets civilisation!: Roman attitudes to conquest</a></li>
-<li><a href="/augustan-propaganda-in-the-ara-pacis.html" class="link-local">Augustan propaganda in the Ara Pacis</a></li>
-</ul>
-<h1 style="font-family: Unifraktur Maguntia"><a href="#newest" title="Link to section: § &#39;Newest&#39;">Other/personal</a></h1>
-<hr>
-<ul>
-<li><a href="/poems.html" class="link-local">Poems</a></li>
-  <li><a href="/notes.html" class="link-local">Notes & Miscellany</a></li>
-  <li><a href="/todo.html" class="link-local">TODO</a></li>
-<li><a href="/super-top-secret-family-pizza-recipe.html" class="link-local">Super top secret family pizza recipe</a></li>
-<li><a href="https://www.instapaper.com/p/EChronocom" class="link-local">My link blog</a></li>
-  <li><a href="/links.html" class="link-local">Links & Cyberflâneur findings...</a></li>
-    <li><a href="/metaversebusinesscard.html" class="link-local">Contact</a></li>
-  <li><a href="https://www.goodreads.com/user/show/138388204-matteo-di-maio" class="link-local">Reading list</a></li>
-  <li><a href="/work.html">My journalism</a></li>
-  <li><a href="/about.html">About me</a></li>
-
-</ul>
-</div>
-  <div style="padding: 10px; border: 2px solid red;"><b>Things I'm currently interested in/exploring:</b>
-    <p style="font-family: Menlo;font-size:10px;">Updated: 24/10/02021</p>
-    <li><a href="http://lojban.org/">Lojban</a></li>
-    <li> Adaptive music - <a href="https://endel.io/">Endel</a> and <a href="https://wendiyan.com/InTouch/">InTouch</a></li>
-    <li>>VRChat - I'm en0ch, and you can find me at the <a href="https://vrchat.com/home/launch?worldId=wrld_51dd76b0-fd86-4dfe-a53a-1eaaa8ca5225">Transhumanists in VR meetup</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Memetics">Memetics</a>; <a href="https://en.wikipedia.org/wiki/Snow_Crash">Snow Crash</a>, <a href="https://otherinter.net/research/lore/">Lore</a></li>
-</div>
-
-<a href="/">
-<img align="right" alt="HTML tutorial" src="/Greek.png" width="60"/>
-</a>
-
-
-</content>
-
-
 <p>
-
+    <i>
+        <time datetime="2021-08-22" pubdate>
+            October 26, 2021
+        </time>
+    </i>
 </p>
 
+<content>
+<p><em>How do contemporary cyberpunk shows like <a href="https://en.wikipedia.org/wiki/Altered_Carbon_(TV_series)">Altered Carbon</a> contradict the post-feminist vision first championed in <a href="https://en.wikipedia.org/wiki/Donna_Haraway">Donna Haraway’s</a> <a href="https://en.wikipedia.org/wiki/A_Cyborg_Manifesto">Cyborg Manifesto?</a></em></p>
+<div><p>| <em>meta</em> <br/>
+|  <em>Finished • NCEA</em>  |</p>
+
+<p class="drop-cap">You could call it the curse of the techno-optimist. To be forever pushing technology as the answer to society’s woes; and, to be perpetually disappointed when that very same technology ends up further entrenching a historical power structure. In 2012, at the dawn of the <a href="https://en.wikipedia.org/wiki/Arab_Spring">Arab Spring</a>, social media sites like Facebook and Twitter received praise in the West for their role in uprooting autocratic regimes in the Middle East. Today, those very same regimes have risen again; Facebook and its kin, however, are now the most powerful monopolies in the history of man. To the <a href="https://en.wikipedia.org/wiki/Cypherpunk">cypherpunks</a> of the early 1990s web, the internet was a liberating technology. 2021’s conventional wisdom sees it as addictive and proprietary. (Simultaneously existing with the <a href="http://signal.org">real<aisation</a> <a href="https://ethereum.org/en/">of</a> <a href="https://bitcoin.org">the</a> <a href="https://tornado.cash">cypherpunk</a> vision, ironically.)</p>
+<p>It’s through this lens on the dangers of technological hubris that I approached Laeta Kalogridis’s 2018 television sci-fi Altered Carbon. The heavily cyberpunk tale chronicles the exploits of Takeshi Kovacs — a historic rebel in a world where interstellar travel is facilitated by the transfer of digital human consciousness (stacks) between bodies (sleeves). The dystopian world of Altered Carbon has achieved the creation of what are essential “iSouls” — digital embodiments of the human consciousness. Physical bodies are resigned to the role of locomotory pain and pleasure vehicle. Bodies have become fully commercialised: “would you care for this premium arm, sir?” The sex — a feature of all cyberpunk post- Blade Runner — is everywhere; whilst the stack system means buying sex is equivalent to buying a body.</p>
+<p>So how does the cycle of techno-utopianism play into all of this? Well, none of the rabid gender- relative exploitation of the Altered Carbon world sounds very feminist; certainly not the kind of Marxist feminism championed in American media theorist Donna Haraway’s 1985 treatise the Cyborg Manifesto. Haraway’s essay saw technological change and the development of rhetorical and physical “cyborgs” — creatures neither machine or person, but both; as a liberating force, and the synthesis of a new kind of feminism that operated outside of traditional gender solidarity.
+Traditional feminism seeks to tear down patriarchal power structures through increasing the collective solidarity of women; their rights, and their political clout. Haraway worried that this might cultivate the mistruth that all men are one way, and that all men are another — “a cyborg theory of wholes and parts,” however, tries to explain identity outside of this naturalistic binary. Haraway suggested that feminists move on from “identity politics” — destroying traditional gender norms not through an embrace of gender but a destruction of it. The cyborg is a creature whose physical form is a better expression of their wants and needs and feelings — a respite from naturalist determinism, in other words. Haraway’s proposed new model of identity was one founded on affinity of ideas; outside of a physical form now far too disparate and individualised to form any meaningful dichotomy. As Hari Kunzru wrote in Wired magazine in 1997: “… if women (and men) aren’t natural but are constructed, like a cyborg, then, given the right tools, we can all be reconstructed.”</p>
+<p>Altered Carbon offers a rebuke to the posthumanist optimism of Hallway’s Cyborg Manifesto — that the transcending of human form would liberate humans from oppressive social identity. Instead, in the world of Altered Carbon, sex somehow becomes more engrained, more commoditised. The body becomes just that — a physical form, an item to be bought and sold. On the course of his investigation, in vivid illustration of this, protagonist Takeshi Kovacs runs into “Heaven in the Sky” — a brothel of sorts for “meths” (from Methulsa, who lived forever in the Bible). Unbeknownst to the hired prostitutes, they’ve been coded “neo-catholic” — a death to their real body will permanently shut down their stack or digital consciousness. Sadistic meths arrive to pay for the “real thing.” This is obviously horrific. This sci-fi world, which has achieved the “ultimate seperation of mind and body”, is very much still a patriarchy; perhaps even a more exploitative one.</p>
+<p>So what kind of gender politics is really at play in Altered Carbon — and how might it explain where Haraway went wrong?</p>
+<p>Our society — and Altered Carbon’s society — may sort and shift the sense of value we place on gender, or physicality, or dress code. But we always place intelligence at the top of the value pyramid. When intelligence and personality become seperate physical entities to “rest of the body” — as with the ‘stacks’ and ‘sleeves’ — the body becomes innately less societally valued, which in turn legitimises its exploitation. But of course the mind can never really be separated from the body, because the body is where we feel pain (even emotional pain). So this cyborg-like separation just amounts to more pain — semantically the body is not valued or considered important, and yet the mind still takes the burden of the body’s denigration. The lesson, then, is that even mental oppression is physical oppression.</p>
+<p>So that’s the reason behind Altered Carbon’s voyeuristic exploitation. But what about the idea of destroyed gender dichotomies? Well, for all the genetic engineering in Altered Carbon, the bodies — Takeshi’s and Alice’s and even Poe the AI’s — still look like human bodies. The cyborg aspect of their physical identity is buried in the back of the head, a carbon sheath for human consciousness. The most the series experiments with the potential of fluid physical form is in the character of Alice, who inhabits both a traditionally “male” and traditionally “female” body at different points in the timeline. In both forms her partner loves and recognises her, so there’s that. Perhaps this restraint is more just the aesthetic demands of cyberpunk as a genre?</p>
+<p>But then again: Altered Carbon is but a fiction. Reality may be telling a different story. We are already cyborgs, to a certain extent. Our phones are our memories, our brains, our identities. In the “metaverse” — the world within a world of Virtual Reality — customisable avatars have been shown to offer the disenfranchised and disillusioned a degree of form escapism. For example, the Electronic Frontier Foundation, in response to Facebook moving towards realistic “body-mapping” with their virtual reality projects, wrote that: “An avatar can help someone remove constraints imposed on them by wider societal biases… trans and gender non-conforming individuals can more accurately reflect their true self, relieving the effects of gender dysphoria and transphobia, which has shown therapeutic benefits.” So this kind of contemporary cyborg — a brain and personality in the physical, a body in the unreal — is already demonstrating the desired application of Haraway’s cyborg theory.</p>
+<p>What about when we look for alternatives to Altered Carbon’s dystopia in other parts of the current world? (Anything that challenges the conventional wisdom on identity politics is bound to border on the controversial.) What do we get when we apply cyborg theory to New Zealand’s current gender debate — over Kiwi weightlifter <a href="https://en.wikipedia.org/wiki/Laurel_Hubbard">Laurel Hubbard</a>, the first openly transgender athlete to complete at the olympic games? We get a recognition of the complicatedness of gender (as a social issue), but also the increasing complicatedness of sex (as a biological issue). What actually makes a man? A y chromosome? Testosterone levels above the 10 nmol/L threshold recognised by the Olympic committee? A legal document? One but not the others? What happens if you’re a cisgender male who happens to have genetically-deterministic low levels of T? Or a cisgender male who happens to have naturally abnormally high levels of the same hormone. How can he be justly included when a cisgender male with low testosterone is excluded for drugging himself with the same substance?</p>
+<p>(What might a “Cyborg Olympics” look like, then? What if we just accepted drugging as a posthuman inveitability? Is that more or less fair?)<label class="margin-toggle sidenote-number" for=sn-reviewing></label>
+<input id=sn-reviewing class="margin-toggle sf-hidden" type=checkbox>
+<span class=sidenote>
+A few days after I first wrote this, Applied Divinity Studies came out with <a href="https://applieddivinitystudies.com/olympics/">the transhuman olympics</a>, a proposal for an Olympics with no drug testing and no restrictions on artificial aids. I’m inclined to think it would be a fairer, certainly more exciting to watch.
+</span>
+
+<p>The feminists Haraway was subverting argue for gender empowerment within a binary. But when modern science and modern theory combine to disassociate one biological identifier from the other — sex gets even more confusing. Deciding who’s “male” and who’s “female” becomes impossible. And thus Haraway’s societal cyborg transition is complete. As with everything modern, it is perhaps not a better world per say, simply a weirder one.</p>
+<section class="footnotes">
+<ol>
+</ol>
+</section>
+</div>
+</content>
 
 
   </main>
   <footer>
-With the goal of championing a more personal kind of analytics, do <a href="/guestbook.html">Sign the guestbook</a><br>
-<p style="text-align: center;font-size:70px;">&#934;</p><br>
-<br>
-Est. <a href="https://longnow.org/about/">02021</a>
- | View on <a href="https://ipfs.matteodimaio.xyz/">IPFS</a>
-	  <br>
-<script src="https://yesterwebring.neocities.org/script-min.js"></script>
-<webring-css site="https://matteodimaio.xyz/"></webring-css>
-<style>:root {
---textColor:black;
---bgColor:#f4f7f6;
---linkColor:black;
---text-align:center;
-}</style>
-
-    <script>
-    var t = setInterval(function() {
-        if (window.goatcounter && window.goatcounter.visit_count) {
-            clearInterval(t)
-            window.goatcounter.visit_count({append: 'body'})
-        }
-    }, 100)
-</script>
-<script data-goatcounter="https://enochthechronocom.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-<script>
-    // Append to the <body>; can use a CSS selector to append somewhere else.
-    window.goatcounter.visit_count({append: 'body', style: 'div {border-color: #f4f7f6; background-color: #f4f7f6;}'
-                                   })
-</script>
-<script data-goatcounter="https://enochthechronocom.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-    <a style="font-family: Menlo;font-size:11px;color: green;" rel="me" href="https://mstdn.social/@enochthechronocom">~ Mastodon link back...</a>
-	  <a style="font-family: Menlo;font-size:11px;color: green;" href="https://keybase.io/enochthechronoco">&#128273; | ~ Keybase identity sig chain</a>
-
-<a style="font-family: Menlo;font-size:11px;color: green;" href="https://keyoxide.org/hkp/2179775cccbb59c684ffbccf54343bcbe77becf8">&#128273; | ~ OpenPGP sig chain</a>
-<br>
-&#8383; to enoch@ln.bitcoinbeach.com
-
-</footer>
+    
+  </footer>
 </body>
 
 </html>
