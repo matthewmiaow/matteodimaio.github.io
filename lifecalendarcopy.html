@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Life calendar</title>
- 
+
 
     <link href="../fonts/space-mono.css" rel="stylesheet" type="text/css" media="all">
 <link rel="preload" href="/SourceSansPro-BASIC-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
@@ -124,7 +124,7 @@ Font-family: "Romantique Initials";
 
 
 
-    
+
     <p id="cal"></p>
     <script>
         function weeksBetween(d1, d2) {
@@ -135,12 +135,12 @@ Font-family: "Romantique Initials";
         var currentNode = document.getElementById('currentWeeks');
         var life = 91.2;
         var born = new Date(2005, 2, 16);
-        var current = new Date(2022, 01, 28);
+        var current = new Date(2022, 03, 25);
         var weekssalive = weeksBetween(born, current);
 	var school = 130
 var restoftime = 140
         currentNode.innerHTML = weekssalive;
-        
+
         for (year = 0; year < life; year++) {
             var pad = (year < 10) ? '&nbsp;' : '';
             var yearHTML = '' + year + pad + ' ';
@@ -151,12 +151,12 @@ var restoftime = 140
 	else {
                     yearHTML += '&#x25A1;&hairsp;';
                 }
-            
+
             }
             yearHTML += '<br/>';
             root.innerHTML += yearHTML;
         }
-        
+
         var targetWidth = root.offsetWidth + 1;
         document.getElementsByTagName("body")[0].style.width = targetWidth +'px';
     </script>
